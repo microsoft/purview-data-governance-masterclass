@@ -1,23 +1,30 @@
-# Microsoft Purview Data Governance In-A-Day
+![Banner](./assets/banner.png)
+
+# Microsoft Purview Data Governance End-to-End
 
 > **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) Data & AI Cloud Solution Architect, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to migrate to the new Purview experience may do so by following the supported migration paths, old concepts are however not covered by this guide.
 
 ## 🤷🏼 Purpose
+
 This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. Assuming attendees know nothing about the service or functionality but have defined a set of data governance evaluation or implementation criteria.
 
-At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
+This masterclass is split into multiple labs, each with its own objectives. At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
 
 ## 🧑🏼‍🎓 Audience
+
 This masterclass is designed for: Data Stewards, Data Governance Managers, Domain/Business Owners, and Data Security Specialists who have a fundamental understanding of Data Governance and terminology.
 
 ## 📋 Attendee Pre-requisites
+
 Each attendee should have access to the Purview portal at purview.microsoft.com and be granted permission to administer the data catalog (either temporarily or permanently) for the purpose of this workshop.
 If interested in loading existing business glossaries, the attendee should bring their business glossaries in an Excel spreadsheet to be loaded into Purview.
 
 ## 🧑🏼‍🏫 Facilitator's Role
+
 In addition to being a Purview expert, the facilitator's role is to facilitate an equal balance of productive discussion / discovery and Purview portal configuration progress. Timings per task are indicative only, and pace should be determined by the facilitator. The entire business data estate will not be fully curated at the end of this masterclass, rather, attendees will be equipped to continue the curation process themselves (due to time investment required).
 
 ## 📃 Agenda
+
 1. Exec Overview & Introduction
 2. Designing for business domains
 3. Considerations for Business Glossaries
@@ -36,3 +43,28 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 16. Asset Auditing and History
 17. Custom functionality with APIs and SDKs
 18. Business Continuity and Disaster Recovery
+
+## 🗃️ Microsoft Purview Solutions
+
+Throughout this masterclass, you will interact with the following Microsoft Purview solutions:
+
+- Data Map
+- Data Catalog
+- Information Protection
+- Workflows
+- Audit
+- Settings
+
+## Icon Legend
+
+Thoughout the labs, you will see the following icons. Take a minute to familiarise yourself with them before starting the labs.
+
+- 🎯 **Outcome:** Refers to the learning or implementation outcome that is achieved at the end of the task.
+- 🫂 **Team Activity:** Refers to a group activity that will take place, usually a discussion, team breakout or other interaction.
+- ✍️ **Do in Purview:** Refers to an activity to completed in the Purview portal to implement Microsoft Purview functionality.
+- ✨ **Pro Tip:** Refers to a takeaway or key best practice from the instructor.
+- ⏸️ **Wait:** Refers to short pause or reflection period to await results, for example, waiting for a data source scan to complete
+
+## Ready to Start?
+
+👉 [Continue: Introductions & Exec Overview](./Lab-01.md)
