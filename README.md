@@ -26,23 +26,25 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 ## 📃 Agenda
 
 1. Exec Overview & Introduction
-2. Designing for business domains
-3. Considerations for Business Glossaries
-4. Managing Glossary Terms
-5. Articulating OKRs
-6. Registering Data Sources
-7. Defining Scans and Scan Rulesets
-8. Curating Data Assets
-9. Data Products
-10. Data Quality
-11. Self-Service Workflows
-12. Data Access Requests
-13. Bridging Purview Compliance portal to the Data Map
-14. Custom Classifications
-15. Data Estate Health
-16. Asset Auditing and History
-17. Custom functionality with APIs and SDKs
-18. Business Continuity and Disaster Recovery
+2. Data Map Foundations
+3. Sensitivity Labels and Lineage Connections
+4. Registering Data Sources
+5. Defining Scans and Scan Rulesets
+6. Curating Data Assets
+7. Designing for business domains
+8. Considerations for Business Glossaries
+9. Managing Glossary Terms
+10. Articulating OKRs
+11. Data Products
+12. Data Quality
+13. Self-Service Workflows
+14. Data Access Requests
+15. Bridging Purview Compliance portal to the Data Map
+16. Custom Classifications
+17. Data Estate Health
+18. Asset Auditing and History
+19. Custom functionality with APIs and SDKs
+20. Business Continuity and Disaster Recovery
 
 ## 🗃️ Microsoft Purview Solutions
 
