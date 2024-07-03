@@ -88,9 +88,27 @@ Save and run the scan. After a scan is configured, open the Data Source and note
 
 ### Understanding Scan Rulesets
 
-> Source: ...
+> Source: [Creating Scan Rule Sets](https://learn.microsoft.com/en-us/purview/create-a-scan-rule-set)
 
-TODO: Add content
+Microsoft Purview comes with a default Scan Ruleset for each data source type. These rulesets are designed to scan the most common file types and metadata. Each scan ingests the metadata and applies a series of classifications to the dataset. Out of the box, there are over 200+ classifications that can be applied, ranging from Government issued IDs (Australian Passport Number, US Social Security Number...), Fiancial, Personal, Security... to custom classifications that you can define based on the shape of your data.
+
+![Scan Rule Set](/assets/scan-rule-set-overview.png)
+
+The default ruleset for each data source is a good starting point, but you may want to create custom rulesets to better suit your organization's needs as you learn about your data. For example, you may want to exclude certain file types from a scan or you may want to apply a specific classification to a certain type of data.
+
+As scans consume compute resources, it's important to ensure that your rulesets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to reduce costs and improve the performance of your scans. In a practical sense, there is no point analysing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
+
+**✨ Pro Tip:** You can only use the scan rule set in the domain where you created it.
+
+### Exercise: Creating a Scan Ruleset
+
+**🫂 Team Activity:** [10 minutes] Discuss the need for custom scan rulesets in your organization. Consider the following:
+
+- Are there any file types that should be excluded from the scan?
+- Are there any classifications that should be applied to specific types of data?
+- Are there any classifications that should be excluded from the scan?
+
+**✍️ Do in Purview:** [10 minutes] Create a custom scan ruleset for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
 
 ---
 
