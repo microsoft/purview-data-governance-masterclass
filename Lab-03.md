@@ -110,8 +110,42 @@ As scans consume compute resources, it's important to ensure that your rulesets 
 
 **✍️ Do in Purview:** [10 minutes] Create a custom scan ruleset for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
 
+## Task 4: Understanding Integration Runtimes (optional)
+
+> Microsoft Purview Solution: Data Map
+
+**⏰ Duration:** 10 minutes
+
+**🎯 Outcome:** At the end of this task, you will have a better understanding of the different types of integration runtimes available in Microsoft Purview.
+
+### Understanding Integration Runtimes
+
+> Source: [Choose the right integration runtime](https://learn.microsoft.com/en-us/purview/choose-the-right-integration-runtime-configuration)
+
+Microsoft Purview uses integration runtimes (IR) to connect to data sources. These runtimes can be auto-resolved by Azure or self-hosted (SHIR) by your organization. The choice of integration runtime depends on the data source you are connecting to and the network configuration of your organization.
+
+You can choose between:
+
+- **Azure Integration Runtime:** This runtime is managed by Azure and is used to connect to Azure data sources. It is auto-resolved by Azure and does not require any additional configuration.
+
+- **Managed Virtual Network (VNet) Integration Runtime:** This runtime is used to connect to data sources in a virtual network. It is auto-resolved by Azure and does not require any additional configuration.
+
+- **Self-hosted Integration Runtime:** This runtime is hosted on your organization's network and is used to connect to on-premises data sources. It requires additional configuration to connect to your data source.
+
+- **Kubernetes supported Self-Hosted Integration Runtime (Preview):** This runtime is used to connect to on-premises data sources. It requires additional configuration to connect to your data source.
+
+- **AWS Integration Runtime:** This runtime is used to connect to AWS data sources.
+
+Not all data sources support all integration runtime types. You can read more in the documentation linked above.
+
+**✨ Pro Tip:** When choosing an integration runtime, consider the network configuration of your organization and the data source you are connecting to. If you are connecting to an on-premises data source, you will need to use a self-hosted integration runtime.
+
+**🫂 Team Activity:** [10 minutes] Review the integration runtimes available in Microsoft Purview and discuss which runtimes are best suited to your organization's needs.
+
 ---
 
-**⏸️ Reflection:** ....coming soon....
+**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You have also learned about integration runtimes and how they can be used to connect to data sources. This means you are now ready to build on top of this foundation and start to map data into business domains.
+
+Before you leave, review this section again to understand what is required as your organization onboards new data sources or scales Purview across the enterprise.
 
 👉 [Continue: Lab 4](./Lab-04.md)
