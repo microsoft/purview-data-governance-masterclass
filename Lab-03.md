@@ -110,7 +110,56 @@ As scans consume compute resources, it's important to ensure that your rulesets 
 
 **✍️ Do in Purview:** [10 minutes] Create a custom scan ruleset for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
 
-## Task 4: Understanding Integration Runtimes (optional)
+## Task 4: Classifications
+
+> Microsoft Purview Solution: Data Map
+
+**⏰ Duration:** 10 minutes
+
+**🎯 Outcome:** At the end of this task, you will have a better understanding of system and custom classifications in Purview Data Governance, including how to configure them.
+
+### Understanding Classifications
+
+As previously explained, Classifications are applied at the time of scanning, and are used to categorize and label data assets. Microsoft Purview comes with several international system classifications that are scanned for by default, but you can also create custom classifications to more accurately detect and tag data throughout your organization.
+
+**Example:** How asset-level classifications appear for an Azure SQL Table:
+![Asset-level Classifications](/assets/asset-level-classifications.png)
+
+**Example:** How schema-level classifications appear for an Azure SQL Table:
+![Schema-level Classifications](/assets/schema-level-classifications.png)
+
+#### Custom Classifications
+
+If a bespoke classification does not exist out of the box, you may decide to create a "custom" classification. These may either be regular expression patterns or dictionary lookups. You can further define a percentage of sampled rows that must match the regular expression or dictionary lookup to apply the classification.
+
+An example of a custom classification may be a specifically formatted Invoice ID (e.g. INV-123-XYZ) which needs to be classified as coming from a specific system, or an X (formerly Twitter) handle (e.g. @username).
+
+### Exercise: Creating a Custom Classification
+
+**✍️ Do in Purview:** [10 minutes] Based on your answer to the questions in the previous team activity, go ahead and create the custom classification.
+
+1. In the Data Map solution, navigate to 'Annotation Management' and select 'Classifications'. Click '+ New' and provide a name and description.
+
+   ![New Classification](./assets/new-classification.png)
+
+2. Now we want to associate a classification rule with this classification. Click '+ New' under 'Classification Rules'
+
+   - Provide a name and description for the rule.
+   - Next, we need to associate the rule with a our previously created classification.
+   - Leave the state as 'Enabled'.
+   - Select the type, we will leave it at Regular Expression.
+
+   Select 'Continue'.
+
+3. Now we can go ahead and configure our regular expression. Either do so by following the prompt to upload sample data or supplying your own regex pattern.
+
+   - Specify the Data Pattern.
+   - Set the Minimum Match Threshold (the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.)
+     **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled and the value will be fixed at 60%.
+   - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
+   - Click 'Create' to confirm your classification rule.
+
+## Task 5: Understanding Integration Runtimes (optional)
 
 > Microsoft Purview Solution: Data Map
 
