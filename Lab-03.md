@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 2: Managing Data Sources
+# Lab 3: Managing Data Sources
 
 ## Task 1: Registering Data Sources
 
@@ -158,6 +158,8 @@ An example of a custom classification may be a specifically formatted Invoice ID
      **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled and the value will be fixed at 60%.
    - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
    - Click 'Create' to confirm your classification rule.
+
+You may decide to revise the Scan Rule Sets from task 3 to include your new classification.
 
 ## Task 5: Understanding Integration Runtimes (optional)
 
