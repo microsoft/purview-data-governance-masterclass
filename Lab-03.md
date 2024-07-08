@@ -193,6 +193,24 @@ Not all data sources support all integration runtime types. You can read more in
 
 **🫂 Team Activity:** [10 minutes] Review the integration runtimes available in Microsoft Purview and discuss which runtimes are best suited to your organization's needs.
 
+## Task 6: Monitoring (optional)
+
+Each scan you configure in Microsoft Purview Data Governance has an associated Run ID, which uniquely identifies it. You can view an all-up scan status via the Data Map's Monitoring tab and drill deeper into each category to discover more details.
+
+![Data Map Monitoring](./assets/data-map-monitoring.png)
+
+More Details:
+
+![Scan Status](/assets/data-map-scan-status.png)
+
+Additional information (including logs) are available.
+
+### Exercise: Monitor your data source scans
+
+**✍️ Do in Purview:** [5 minutes] Spend a few minutes familiarizing yourself with the types of scan statuses and logs available in the Monitoring tab of the Data Map solution.
+
+- Did your data source scan from Task 2 complete successfully? If not, can you find out why?
+
 ---
 
 **⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
