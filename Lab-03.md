@@ -195,7 +195,13 @@ Not all data sources support all integration runtime types. You can read more in
 
 ---
 
-**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You have also learned about integration runtimes and how they can be used to connect to data sources. This means you are now ready to build on top of this foundation and start to map data into business domains.
+**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
+
+What does this all mean? You are now ready to build on top of this foundation and start to map data into business domains.
+
+Each time a data source is onboarded, you will (roughly) follow these steps:
+
+![Data Source Onboarding Process](./assets/data-source-onboarding-process.png)
 
 Before you leave, review this section again to understand what is required as your organization onboards new data sources or scales Purview across the enterprise.
 
