@@ -135,6 +135,6 @@ This schedule applies to all the health control tools???
 **⏸️ Wait:** Wait for the control refresh to run and check the health control dashboard to see the updated health status of the control.
 
 
-**⏸️ Reflection:** ....coming soon....
 
-👉 [Continue: Lab 4](./Min-Lab-02 Data  Estate Health Actions.md)
+
+👉 [Continue: MEH Lab 2](./Min-Lab-02 Metadata quality.md)
