@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 2: Managing Data Sources
+# Lab 3: Managing Data Sources
 
 ## Task 1: Registering Data Sources
 
@@ -88,12 +88,139 @@ Save and run the scan. After a scan is configured, open the Data Source and note
 
 ### Understanding Scan Rulesets
 
-> Source: ...
+> Source: [Creating Scan Rule Sets](https://learn.microsoft.com/en-us/purview/create-a-scan-rule-set)
 
-TODO: Add content
+Microsoft Purview comes with a default Scan Ruleset for each data source type. These rulesets are designed to scan the most common file types and metadata. Each scan ingests the metadata and applies a series of classifications to the dataset. Out of the box, there are over 200+ classifications that can be applied, ranging from Government issued IDs (Australian Passport Number, US Social Security Number...), Fiancial, Personal, Security... to custom classifications that you can define based on the shape of your data.
+
+![Scan Rule Set](/assets/scan-rule-set-overview.png)
+
+The default ruleset for each data source is a good starting point, but you may want to create custom rulesets to better suit your organization's needs as you learn about your data. For example, you may want to exclude certain file types from a scan or you may want to apply a specific classification to a certain type of data.
+
+As scans consume compute resources, it's important to ensure that your rulesets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to reduce costs and improve the performance of your scans. In a practical sense, there is no point analysing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
+
+**✨ Pro Tip:** You can only use the scan rule set in the domain where you created it.
+
+### Exercise: Creating a Scan Ruleset
+
+**🫂 Team Activity:** [10 minutes] Discuss the need for custom scan rulesets in your organization. Consider the following:
+
+- Are there any file types that should be excluded from the scan?
+- Are there any classifications that should be applied to specific types of data?
+- Are there any classifications that should be excluded from the scan?
+
+**✍️ Do in Purview:** [10 minutes] Create a custom scan ruleset for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
+
+## Task 4: Classifications
+
+> Microsoft Purview Solution: Data Map
+
+**⏰ Duration:** 10 minutes
+
+**🎯 Outcome:** At the end of this task, you will have a better understanding of system and custom classifications in Purview Data Governance, including how to configure them.
+
+### Understanding Classifications
+
+As previously explained, Classifications are applied at the time of scanning, and are used to categorize and label data assets. Microsoft Purview comes with several international system classifications that are scanned for by default, but you can also create custom classifications to more accurately detect and tag data throughout your organization.
+
+**Example:** How asset-level classifications appear for an Azure SQL Table:
+![Asset-level Classifications](/assets/asset-level-classifications.png)
+
+**Example:** How schema-level classifications appear for an Azure SQL Table:
+![Schema-level Classifications](/assets/schema-level-classifications.png)
+
+#### Custom Classifications
+
+If a bespoke classification does not exist out of the box, you may decide to create a "custom" classification. These may either be regular expression patterns or dictionary lookups. You can further define a percentage of sampled rows that must match the regular expression or dictionary lookup to apply the classification.
+
+An example of a custom classification may be a specifically formatted Invoice ID (e.g. INV-123-XYZ) which needs to be classified as coming from a specific system, or an X (formerly Twitter) handle (e.g. @username).
+
+### Exercise: Creating a Custom Classification
+
+**✍️ Do in Purview:** [10 minutes] Based on your answer to the questions in the previous team activity, go ahead and create the custom classification.
+
+1. In the Data Map solution, navigate to 'Annotation Management' and select 'Classifications'. Click '+ New' and provide a name and description.
+
+   ![New Classification](./assets/new-classification.png)
+
+2. Now we want to associate a classification rule with this classification. Click '+ New' under 'Classification Rules'
+
+   - Provide a name and description for the rule.
+   - Next, we need to associate the rule with a our previously created classification.
+   - Leave the state as 'Enabled'.
+   - Select the type, we will leave it at Regular Expression.
+
+   Select 'Continue'.
+
+3. Now we can go ahead and configure our regular expression. Either do so by following the prompt to upload sample data or supplying your own regex pattern.
+
+   - Specify the Data Pattern.
+   - Set the Minimum Match Threshold (the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.)
+     **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled and the value will be fixed at 60%.
+   - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
+   - Click 'Create' to confirm your classification rule.
+
+You may decide to revise the Scan Rule Sets from task 3 to include your new classification.
+
+## Task 5: Understanding Integration Runtimes (optional)
+
+> Microsoft Purview Solution: Data Map
+
+**⏰ Duration:** 10 minutes
+
+**🎯 Outcome:** At the end of this task, you will have a better understanding of the different types of integration runtimes available in Microsoft Purview.
+
+### Understanding Integration Runtimes
+
+> Source: [Choose the right integration runtime](https://learn.microsoft.com/en-us/purview/choose-the-right-integration-runtime-configuration)
+
+Microsoft Purview uses integration runtimes (IR) to connect to data sources. These runtimes can be auto-resolved by Azure or self-hosted (SHIR) by your organization. The choice of integration runtime depends on the data source you are connecting to and the network configuration of your organization.
+
+You can choose between:
+
+- **Azure Integration Runtime:** This runtime is managed by Azure and is used to connect to Azure data sources. It is auto-resolved by Azure and does not require any additional configuration.
+
+- **Managed Virtual Network (VNet) Integration Runtime:** This runtime is used to connect to data sources in a virtual network. It is auto-resolved by Azure and does not require any additional configuration.
+
+- **Self-hosted Integration Runtime:** This runtime is hosted on your organization's network and is used to connect to on-premises data sources. It requires additional configuration to connect to your data source.
+
+- **Kubernetes supported Self-Hosted Integration Runtime (Preview):** This runtime is used to connect to on-premises data sources. It requires additional configuration to connect to your data source.
+
+- **AWS Integration Runtime:** This runtime is used to connect to AWS data sources.
+
+Not all data sources support all integration runtime types. You can read more in the documentation linked above.
+
+**✨ Pro Tip:** When choosing an integration runtime, consider the network configuration of your organization and the data source you are connecting to. If you are connecting to an on-premises data source, you will need to use a self-hosted integration runtime.
+
+**🫂 Team Activity:** [10 minutes] Review the integration runtimes available in Microsoft Purview and discuss which runtimes are best suited to your organization's needs.
+
+## Task 6: Monitoring (optional)
+
+Each scan you configure in Microsoft Purview Data Governance has an associated Run ID, which uniquely identifies it. You can view an all-up scan status via the Data Map's Monitoring tab and drill deeper into each category to discover more details.
+
+![Data Map Monitoring](./assets/data-map-monitoring.png)
+
+More Details:
+
+![Scan Status](/assets/data-map-scan-status.png)
+
+Additional information (including logs) are available.
+
+### Exercise: Monitor your data source scans
+
+**✍️ Do in Purview:** [5 minutes] Spend a few minutes familiarizing yourself with the types of scan statuses and logs available in the Monitoring tab of the Data Map solution.
+
+- Did your data source scan from Task 2 complete successfully? If not, can you find out why?
 
 ---
 
-**⏸️ Reflection:** ....coming soon....
+**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
+
+What does this all mean? You are now ready to build on top of this foundation and start to map data into business domains.
+
+Each time a data source is onboarded, you will (roughly) follow these steps:
+
+![Data Source Onboarding Process](./assets/data-source-onboarding-process.png)
+
+Before you leave, review this section again to understand what is required as your organization onboards new data sources or scales Purview across the enterprise.
 
 👉 [Continue: Lab 4](./Lab-04.md)
