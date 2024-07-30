@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 5: Custom Functionality with APIs and SDKs
+# Lab 13: Custom Functionality with APIs and SDKs
 
 ## Task 1: Capturing Events
 
@@ -37,4 +37,4 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 **⏸️ Reflection:** Great job! You now have a better understanding of the Purview APIs available to your organization to build, extend and automate aspects of Microsoft Purview Data Governance.
 
-🏁 [Back to Overview](./README.md)
+🏁 [Complete: Back to Overview](./README.md)

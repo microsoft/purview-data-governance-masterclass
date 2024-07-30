@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 5: Business Continuity and Disaster Recovery
+# Lab 12: Business Continuity and Disaster Recovery
 
 ## Task 1: Understand your Responsibilities
 
@@ -30,8 +30,6 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 ---
 
-## Move on to Lab Last
-
 **⏸️ Reflection:** You just learnt the business continuity and disaster recovery options available to you in Microsoft Purview. Now let's see what you can do with the APIs and SDKs.
 
-👉 [Continue: Lab Last](./Lab-last.md)
+👉 [Continue: Lab 13](./Lab-13%20-%20Custom%20API%20Functionality.md)

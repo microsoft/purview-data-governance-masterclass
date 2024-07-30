@@ -223,4 +223,4 @@ Each time a data source is onboarded, you will (roughly) follow these steps:
 
 Before you leave, review this section again to understand what is required as your organization onboards new data sources or scales Purview across the enterprise.
 
-👉 [Continue: Lab 4](./Lab-04.md)
+👉 [Continue: Lab 4](./Lab-04%20-%20Business%20Domains%20and%20Terms.md)

@@ -103,3 +103,9 @@ Data Governance Scalability is achieved by transforming previously static glossa
 **✨ Pro Tip:** Try out the new Copilot integration to generate industry-relevant terms.
 
 **✨ Pro Tip:** Try out the new Term Policies features.
+
+---
+
+**⏸️ Reflection:** At this point you have implemented one or more business domains and articulated the value of business concepts over your physical data estate to assist in data governance. You have also created glossary terms to provide context to your data assets. Ready to move on?
+
+👉 [Continue: Lab 5](./Lab-05%20-%20Curating%20Data%20Assets.md)

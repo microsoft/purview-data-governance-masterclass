@@ -159,4 +159,4 @@ After registration, the Status should appear as: `Connected`
 
 Lastly, you learned about the benefit of data lineage and how common ETL tools like Azure Data Factory and data sharing services like Azure Data Share can be connected to Microsoft Purview to inform transformation and external content sharing lineage.
 
-👉 [Continue: Lab 3](./Lab-03.md)
+👉 [Continue: Lab 3](./Lab-03%20-%20Managing%20Data%20Sources.md)

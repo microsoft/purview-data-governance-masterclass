@@ -69,4 +69,4 @@ Thoughout the labs, you will see the following icons. Take a minute to familiari
 
 ## Ready to Start?
 
-👉 [Continue: Introductions & Exec Overview](./Lab-01.md)
+👉 [Continue: Introductions & Exec Overview](./Lab-01%20-%20Introduction%20and%20Overview.md)
