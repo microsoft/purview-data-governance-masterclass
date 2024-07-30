@@ -45,3 +45,41 @@ Each team will briefly present their design back to the cohort. Once all teams h
 You will expand on this master diagram as you continue through this course
 
 **✍️ Do in Purview:** [10 minutes] Using your master diagram, transfer your business domains, descriptions, owners etc into the Purview Data Governance Portal. You will build on these going forward. You can mark them as 'draft' and notice how the results will be hidden from the search results.
+
+## Task 2: Create Business Domain Terms (Glossary Terms)
+
+**⏰ Duration:** 5 minutes
+
+**🎯 Outcome:** At the end of this task, you will have defined one or more glossaries (dictionaries) for one or more domains.
+
+### Understanging Business Domain Terms
+
+Business domain terms, or glossary terms, are crucial for managing, governing, and making data discoverable. These terms are more than just a vocabulary for business users; they are related to data assets, categorized. and provide context - greatly simplifying technical jargon associated with your data or industry. Terms play a key role in data governance, helping data stewards to apply policies and scale data governance as the data estate expands.
+
+Data Governance Scalability is achieved by transforming previously static glossary terms (in prior versions of Azure Purivew) into active terms containing policies going forward. This change allows automatic application of associated policies every time the term is applied to a data product, hence ensuring security and discoverability while offloading the burden from data stewards.
+
+**Key Facts**
+
+- **Terms** are grouped under their respective Business Domains as to provide context for each segment of your company, hence aiding the team to differentiate between the meanings if ever a term is shared across different domains.
+
+- **Policies** attached to the terms provide specific business health goals, data governance requirements, and terms of use to any data product that the term is applied to.
+
+- **Custom Attributes** can be added to the glossary terms to provide more information, and they can be edited, updated or removed as per business requirements.
+
+- **Publishing** a Term makes it visible to all users, this step needs to be performed once the term is ready to be used within the business domain.
+
+- **Linking Data Products** to Terms is a feature that allows glossary terms to become more contextual and accurate to their business domain.
+
+- **Related Terms** provide better business context and can be managed from the glossary term page. They can be added as a synonym or a related term and can be removed when necessary.
+
+### Excersise: Creating Business Domains Terms
+
+**🫂 Team Activity:** [5 minutes] Discuss how your organization handles acronyms and word dictionaries today.
+
+- Where do new starters go to get familiar with your glossary today?
+- Do you have one or more large spreadsheet(s) of terminology?
+- Are you using a SharePoint site to let users discover business terms?
+- How beneficial would it be to co-locate the business glossary with the data governance tooling
+
+**✍️ Do in Purview:** [5 minutes] Create new terms for Business Domains of your choosing and note the 'steward' and 'expert' fields where you can assign a respective colleague.
+
