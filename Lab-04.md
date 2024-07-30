@@ -46,11 +46,28 @@ You will expand on this master diagram as you continue through this course
 
 **✍️ Do in Purview:** [10 minutes] Using your master diagram, transfer your business domains, descriptions, owners etc into the Purview Data Governance Portal. You will build on these going forward. You can mark them as 'draft' and notice how the results will be hidden from the search results.
 
-## Task 2: Create Business Domain Terms (Glossary Terms)
+## Task 2: Map Business Domains to Data Map Collections
 
-**⏰ Duration:** 5 minutes
+**🎯 Outcome:** At the end of this task, you will have scoped your business domains to a subset of collections from your Data Map.
 
-**🎯 Outcome:** At the end of this task, you will have defined one or more glossaries (dictionaries) for one or more domains.
+### Understanding the relationship between Business Domains and Data Map Collections
+
+Business Domains may change frequently as your organization evolves or adopts Purview, and thus responsibilities for data assets may shift too. When you map your business domains to your data map collections, you are creating a link between the business context and the technical data assets.
+
+This link (mapping to Data Map collections) is crucial for ensuring that data assets are managed and governed effectively. By mapping business domains to Data Map collections, you can ensure that the right people are responsible for, and the right policies applied to, the correct data assets.
+
+**🫂 Team Activity:** [5 minutes] As a group, discuss the relationship between the Data Map's Collections and the Data Catalog's Business Domains.
+
+- For a given Business Domain, which collection hierarchies would you expect to be included?
+- What are the key data assets that would be included in this Business Domain?
+
+**✍️ Do in Purview:** [5 minutes] Perform the required mapping for your business domains. This will help you to scope the data assets that are relevant to each business domain during the data curation and discovery phases.
+
+## Task 3: Create Business Domain Terms (Glossary Terms)
+
+**⏰ Duration:** 10 minutes
+
+**🎯 Outcome:** At the end of this task, you will have defined one or more Business Domain Terms (glossary terms / vocabulary) for your newly created business domains.
 
 ### Understanging Business Domain Terms
 
@@ -83,3 +100,6 @@ Data Governance Scalability is achieved by transforming previously static glossa
 
 **✍️ Do in Purview:** [5 minutes] Create new terms for Business Domains of your choosing and note the 'steward' and 'expert' fields where you can assign a respective colleague.
 
+**✨ Pro Tip:** Try out the new Copilot integration to generate industry-relevant terms.
+
+**✨ Pro Tip:** Try out the new Term Policies features.
