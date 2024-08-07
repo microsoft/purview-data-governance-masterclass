@@ -2,7 +2,7 @@
 
 # Microsoft Purview Data Governance End-to-End
 
-> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) Data & AI Cloud Solution Architect, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to migrate to the new Purview experience may do so by following the supported migration paths, old concepts are however not covered by this guide.
+> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) and [Minette Steynberg](https://www.linkedin.com/in/msteynberg) Data & AI Cloud Solution Architects, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to migrate to the new Purview experience may do so by following the supported migration paths, old concepts are however not covered by this guide.
 
 ## 🤷🏼 Purpose
 
