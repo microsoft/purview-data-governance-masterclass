@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 9: Data Estate Health Overview
+# Lab 9: Health Management Overview
 
 **⏰ Duration:** 30 minutes
 
@@ -18,7 +18,7 @@ The purpose of Data Estate Health is Purview is to provide customers with the to
 
 By having a toolset available which can quantify the health of the data estate, emphasis can be placed on the importance and need to have a more proactive and dedicated approach to improving data health and drive behaviour and decisions to actively improve it.
 
-## Task 1: Understand the Data Estate Health Controls
+## Task 1: Understand the Health Management Controls
 
 > Microsoft Purview Solution: Data Data Catalog
 
@@ -62,7 +62,7 @@ With health controls you can define and measure the vital signs of your data acr
 
   What is the quality of our data in terms of accuracy, completeness, conformity, uniqueness ,consistancy and timeliness?
 
-### Exercise: Review Health Controls Dashboard
+### Exercise: Review the Health Controls Dashboard
 
 **🫂 Team Activity:** [15 minutes] Review the [available health controls](https://learn.microsoft.com/en-us/purview/how-to-health-controls) and discuss the importance of each of health control within your organization.
 
@@ -70,13 +70,13 @@ With health controls you can define and measure the vital signs of your data acr
 
 ![Register data source button](./assets/health-control-dashboard.png)
 
-Initially you will see a summary of the health controls and the number of controls that are in place. There will not be any current scores displays as these are calculated based on the controls that are in place and the rules that are defined.
+Initially you will see a summary of the health controls and the number of controls that are in place. There will not be any current scores displayd as these are calculated based on the controls that are in place and the rules that are defined.
 
 - Active controls: The number of controls that are currently in place
 - Not Healthy: The number of controls which are considered not healthy based on the health status rules that have been defined.
 - Fair: The number of controls which are considered fair based on the health status rules that have been defined.
 - Healthy: The number of controls which are considered healthy based on the health status rules that have been defined.
-- Expired: ????
+- Expired: A control would be expired when it is not being evaluated or is no longer needed because it is always green, which would be rare.  The control can be set to not active which will make it expired.  This happens in the health control edit panel by flipping the active switch at the top.  This requires data health owner permissions.   
 
 Click on a control name to view the details of the control. This will show you the control description, the health status, the owner, the business domain,the target value and when the control was created.
 
