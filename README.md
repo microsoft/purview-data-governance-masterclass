@@ -2,7 +2,7 @@
 
 # Microsoft Purview Data Governance End-to-End
 
-> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) and [Minette Steynberg](https://www.linkedin.com/in/msteynberg) Data & AI Cloud Solution Architects, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to migrate to the new Purview experience may do so by following the supported migration paths, old concepts are however not covered by this guide.
+> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) and [Minette Steynberg](https://www.linkedin.com/in/msteynberg) Data & AI Cloud Solution Architects, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to [migrate to the new Purview experience](./Lab-00%20-%20Upgrading%20to%20Microsoft%20Purview.md) may do so by following the supported migration paths, old concepts are however not covered by this guide.
 
 ## 🤷🏼 Purpose
 
@@ -10,13 +10,23 @@ This masterclass is designed to educate attendees on the end-to-end implementati
 
 This masterclass is split into multiple labs, each with its own objectives. At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
 
+## 🗺️ Content Navigation
+
+These labs build on one another. It is recommended to follow them in order.
+
+- **1-Day Workshop (8 hours)**
+  Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
+- **3-Day Workshop (24 hours)** Complete all tasks, including those the practical exercises. Ample time is provided for discussion and reflection.
+
+Allow for a 15-minute break at least every 90 minutes (at the facilitator's discretion) and allow for an approximately 1-hour lunch break.
+
 ## 🧑🏼‍🎓 Audience
 
 This masterclass is designed for: Data Stewards, Data Governance Managers, Domain/Business Owners, and Data Security Specialists who have a fundamental understanding of Data Governance and terminology.
 
 ## 📋 Attendee Pre-requisites
 
-Each attendee should have access to the Purview portal at purview.microsoft.com and be granted permission to administer the data catalog (either temporarily or permanently) for the purpose of this workshop.
+Each attendee should have access to the Purview portal at [purview.microsoft.com](purview.microsoft.com) and be granted permission to administer the Data Catalog (either temporarily or permanently) for the purpose of this workshop.
 If interested in loading existing business glossaries, the attendee should bring their business glossaries in an Excel spreadsheet to be loaded into Purview.
 
 ## 🧑🏼‍🏫 Facilitator's Role
@@ -53,7 +63,6 @@ Throughout this masterclass, you will interact with the following Microsoft Purv
 - Data Map
 - Data Catalog
 - Information Protection
-- Workflows
 - Audit
 - Settings
 
