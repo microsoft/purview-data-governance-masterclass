@@ -55,4 +55,4 @@ Well done! This part Lab has shown you to the value of Microsoft Purview for fed
 
 **⏸️ Reflection:** At this point in the masterclass, you have learnt the value of Microsoft Purview and how a federated data governance model can be adopted to scale enterprise-wide.
 
-👉 [Continue: Lab 2](./Lab-02%20-%20Designing%20the%20Skeleton.md)
+👉 [Continue: Lab 2](./Lab-02%20-%20Designing%20the%20Data%20Map.md)
