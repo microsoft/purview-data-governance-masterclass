@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 2: Designing the Skeleton
+# Lab 2: Designing the Data Map
 
 ## Task 1: Consider the Design
 
