@@ -242,4 +242,4 @@ Data quality alerts can be set up to notify you when the quality of the data fal
 Follow the steps in this tutorial to set up a data quality alert: [Set up a data quality alert](https://learn.microsoft.com/en-us/purview/how-to-data-quality-notifications#set-data-quality-alerts)
 
 
-👉 [Continue: Lab 09](./Lab-09%20-%20Data%20Estate%20Health%20Controls.md)
+👉 [Continue: Lab 10](./Lab-10%20-%20Health%20Management%20Actions.md)
