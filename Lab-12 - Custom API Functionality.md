@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 13: Custom Functionality with APIs and SDKs
+# Lab 12: Custom Functionality with APIs and SDKs
 
 ## Task 1: Capturing Events
 

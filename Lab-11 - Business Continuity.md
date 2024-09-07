@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 12: Business Continuity and Disaster Recovery
+# Lab 11: Business Continuity and Disaster Recovery
 
 ## Task 1: Understand your Responsibilities
 

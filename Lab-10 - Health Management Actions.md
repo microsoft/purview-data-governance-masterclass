@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 11: Data Estate Health Actions
+# Lab 10: Data Estate Health Actions
 
 **⏰ Duration:** 30 minutes
 
