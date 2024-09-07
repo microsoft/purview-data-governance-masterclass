@@ -18,7 +18,7 @@ To register a source, you require the role of a Data Source Admin alongside anot
 
 ### Exercise: Adding Data Sources
 
-**🫂 Team Activity:** [15 minutes] Review the [supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) and discuss which data sources you would like to onboard first. Start with something that minimises admin overhead or extensive configuration (think: Azure SQL Database or Azure Data Lake Storage).
+**🫂 Team Activity:** [15 minutes] Review the [supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) and discuss which data sources you would like to onboard first. Start with something that minimizes admin overhead or extensive configuration (think: Azure SQL Database or Azure Data Lake Storage).
 
 - What are the common data sources throughout your organization?
 - Is the data source in Azure, another cloud provider, or on premises?
@@ -28,7 +28,7 @@ To register a source, you require the role of a Data Source Admin alongside anot
 
 ![Register data source button](./assets/register-datasource-button.png)
 
-Once registered, your data map should be polulated. Next:
+Once registered, your data map should be populated. Next:
 
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
@@ -70,7 +70,7 @@ After registering your source, you can move it to another collection within the 
 2. Set up the name, credential, and scan level. Then determine into which collection the data source scan's artifacts (assets) will be written. Follow the steps to provide the Purview MSI its required access to the data source. Test the connection, then proceed.
    ![Configure Scan Details](./assets/configure-scan-details.png)
 
-3. The next steps depend on the type of data source but typically require you to select the scope of your scan (ie. which locations in the Storage Account need to be scanned), the types of file extensions to be scanned, the scan ruleset to use (we will look at this next), and the freqency of the scan.
+3. The next steps depend on the type of data source but typically require you to select the scope of your scan (ie. which locations in the Storage Account need to be scanned), the types of file extensions to be scanned, the scan rule set to use (we will look at this next), and the frequency of the scan.
 
 Save and run the scan. After a scan is configured, open the Data Source and note the recent scans, each scan has options to trigger the scan manually, edit, or delete it.
 
@@ -78,37 +78,37 @@ Save and run the scan. After a scan is configured, open the Data Source and note
 
 **⏸️ Wait:** A data source scan will have to complete before you can move on to the next section. You can use the 'Monitoring' tab of the Data Map or the Scan Details to track scan the scan status.
 
-## Task 3: Defining Scan Rulesets
+## Task 3: Defining Scan Rule sets
 
 > Microsoft Purview Solution: Data Map
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have a better understanding of scan rulesets, how to implement them, and when to use them to optimise data source scanning and reduce cost.
+**🎯 Outcome:** At the end of this task, you will have a better understanding of scan rules ets, how to implement them, and when to use them to optimize data source scanning and reduce cost.
 
-### Understanding Scan Rulesets
+### Understanding Scan Rule sets
 
 > Source: [Creating Scan Rule Sets](https://learn.microsoft.com/en-us/purview/create-a-scan-rule-set)
 
-Microsoft Purview comes with a default Scan Ruleset for each data source type. These rulesets are designed to scan the most common file types and metadata. Each scan ingests the metadata and applies a series of classifications to the dataset. Out of the box, there are over 200+ classifications that can be applied, ranging from Government issued IDs (Australian Passport Number, US Social Security Number...), Fiancial, Personal, Security... to custom classifications that you can define based on the shape of your data.
+Microsoft Purview comes with a default Scan Rule set for each data source type. These rule sets are designed to scan the most common file types and metadata. Each scan ingests the metadata and applies a series of classifications to the dataset. Out of the box, there are over 200+ classifications that can be applied, ranging from Government issued IDs (Australian Passport Number, US Social Security Number...), Financial, Personal, Security... to custom classifications that you can define based on the shape of your data.
 
 ![Scan Rule Set](/assets/scan-rule-set-overview.png)
 
-The default ruleset for each data source is a good starting point, but you may want to create custom rulesets to better suit your organization's needs as you learn about your data. For example, you may want to exclude certain file types from a scan or you may want to apply a specific classification to a certain type of data.
+The default rule set for each data source is a good starting point, but you may want to create custom rule sets to better suit your organization's needs as you learn about your data. For example, you may want to exclude certain file types from a scan or you may want to apply a specific classification to a certain type of data.
 
-As scans consume compute resources, it's important to ensure that your rulesets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to reduce costs and improve the performance of your scans. In a practical sense, there is no point analysing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
+As scans consume compute resources, it's important to ensure that your rule sets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to reduce costs and improve the performance of your scans. In a practical sense, there is no point analyzing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
 
 **✨ Pro Tip:** You can only use the scan rule set in the domain where you created it.
 
-### Exercise: Creating a Scan Ruleset
+### Exercise: Creating a Scan Rule set
 
-**🫂 Team Activity:** [10 minutes] Discuss the need for custom scan rulesets in your organization. Consider the following:
+**🫂 Team Activity:** [10 minutes] Discuss the need for custom scan rule sets in your organization. Consider the following:
 
 - Are there any file types that should be excluded from the scan?
 - Are there any classifications that should be applied to specific types of data?
 - Are there any classifications that should be excluded from the scan?
 
-**✍️ Do in Purview:** [10 minutes] Create a custom scan ruleset for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
+**✍️ Do in Purview:** [10 minutes] Create a custom scan rule set for a data source that you have previously scanned. Start by selecting the 'Scan rule sets' tab in the Data Map solution and clocking the 'New' button.
 
 ## Task 4: Classifications
 
@@ -195,6 +195,8 @@ Not all data sources support all integration runtime types. You can read more in
 
 ## Task 6: Monitoring (optional)
 
+> Microsoft Purview Solution: Data Map
+
 Each scan you configure in Microsoft Purview Data Governance has an associated Run ID, which uniquely identifies it. You can view an all-up scan status via the Data Map's Monitoring tab and drill deeper into each category to discover more details.
 
 ![Data Map Monitoring](./assets/data-map-monitoring.png)
@@ -213,7 +215,7 @@ Additional information (including logs) are available.
 
 ---
 
-**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rulesets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
+**⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rule sets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
 
 What does this all mean? You are now ready to build on top of this foundation and start to map data into business domains.
 
@@ -221,6 +223,6 @@ Each time a data source is onboarded, you will (roughly) follow these steps:
 
 ![Data Source Onboarding Process](./assets/data-source-onboarding-process.png)
 
-Before you leave, review this section again to understand what is required as your organization onboards new data sources or scales Purview across the enterprise.
+Before you leave, review this section again to understand what is required as your organization connects new data sources or scales Purview across the enterprise.
 
 👉 [Continue: Lab 4](./Lab-04%20-%20Business%20Domains%20and%20Terms.md)

@@ -4,6 +4,8 @@
 
 ## Task 1: Curating Data Assets
 
+> Microsoft Purview Solution: Data Catalog
+
 **⏰ Duration:** 20 minutes
 
 **🎯 Outcome:** At the end of this task, you will have curated data assets from scans configured in [Lab 3](/Lab-03.md) and make these discoverable with descriptions, tags, classifications, and more.
@@ -28,7 +30,7 @@ With basic curation, the asset can be transformed into something much more usefu
 
 ### Exercise: Curating Data Assets
 
-**✍️ Do in Purview:** [15 minutes] Navigate to a data asset in the catalog (via search / filters) to expand its data asset overview page. Spend a minute to familiarise yourself with the page and, as a team, begin to 'Edit' (curate) the asset.
+**✍️ Do in Purview:** [15 minutes] Navigate to a data asset in the catalog (via search / filters) to expand its data asset overview page. Spend a minute to familiarize yourself with the page and, as a team, begin to 'Edit' (curate) the asset.
 
 - Is the name of the asset meaningful to business users?
 - Can you add a rich text description to inform business users about the data asset and its potential use cases?

@@ -4,9 +4,11 @@
 
 ## Task 1: Creating Business Domains
 
+> Microsoft Purview Solution: Data Catalog
+
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have conceptualised and created business domains in Purview.
+**🎯 Outcome:** At the end of this task, you will have conceptualized and created business domains in Purview.
 
 ### Understanding Business Domains
 
@@ -27,7 +29,7 @@ In essence, business domains utilize existing business context to ensure data is
 
 ![Sample Business Domains](./assets/sample-business-domains.png)
 
-### Excersise: Creating Business Domains
+### Exercise: Creating Business Domains
 
 **🫂 Team Activity:** [20 minutes] Organize yourselves into smaller teams. As a team, discuss and organize business 'domains' within your organization. These may refer to departments / organizational units or other breakdowns of the company.
 
@@ -48,6 +50,8 @@ You will expand on this master diagram as you continue through this course
 
 ## Task 2: Map Business Domains to Data Map Collections
 
+> Microsoft Purview Solution: Data Catalog
+
 **🎯 Outcome:** At the end of this task, you will have scoped your business domains to a subset of collections from your Data Map.
 
 ### Understanding the relationship between Business Domains and Data Map Collections
@@ -65,15 +69,17 @@ This link (mapping to Data Map collections) is crucial for ensuring that data as
 
 ## Task 3: Create Business Domain Terms (Glossary Terms)
 
+> Microsoft Purview Solution: Data Catalog
+
 **⏰ Duration:** 10 minutes
 
 **🎯 Outcome:** At the end of this task, you will have defined one or more Business Domain Terms (glossary terms / vocabulary) for your newly created business domains.
 
-### Understanging Business Domain Terms
+### Understanding Business Domain Terms
 
 Business domain terms, or glossary terms, are crucial for managing, governing, and making data discoverable. These terms are more than just a vocabulary for business users; they are related to data assets, categorized. and provide context - greatly simplifying technical jargon associated with your data or industry. Terms play a key role in data governance, helping data stewards to apply policies and scale data governance as the data estate expands.
 
-Data Governance Scalability is achieved by transforming previously static glossary terms (in prior versions of Azure Purivew) into active terms containing policies going forward. This change allows automatic application of associated policies every time the term is applied to a data product, hence ensuring security and discoverability while offloading the burden from data stewards.
+Data Governance Scalability is achieved by transforming previously static glossary terms (in prior versions of Azure Purview) into active terms containing policies going forward. This change allows automatic application of associated policies every time the term is applied to a data product, hence ensuring security and discoverability while offloading the burden from data stewards.
 
 **Key Facts**
 
@@ -89,7 +95,7 @@ Data Governance Scalability is achieved by transforming previously static glossa
 
 - **Related Terms** provide better business context and can be managed from the glossary term page. They can be added as a synonym or a related term and can be removed when necessary.
 
-### Excersise: Creating Business Domains Terms
+### Exercise: Creating Business Domains Terms
 
 **🫂 Team Activity:** [5 minutes] Discuss how your organization handles acronyms and word dictionaries today.
 

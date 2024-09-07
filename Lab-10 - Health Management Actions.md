@@ -14,10 +14,10 @@ The data estate health actions tool in Purview allows you to define and track th
 
 **Permission Requirement:**
 
-- You need data health reader permissions to be able to view Health Management Actions.
-- You need data health owner permissions to be able to update Health Management Actions.
+- You need Data Health Reader permissions to be able to view Health Management Actions.
+- You need Data Health Owner permissions to be able to update Health Management Actions.
 
-## Task 1: Understand the Health  Management Dashboard
+## Task 1: Understand the Health Management Dashboard
 
 > Microsoft Purview Solution: Data Data Catalog
 
@@ -27,14 +27,13 @@ The data estate health actions tool in Purview allows you to define and track th
 
 ### How are health actions determined?
 
-Health actions are created when the health control rules are not met. Based on each specific health control rule, a health action is created to address the issue. The severity of the health action is determined by the severity of the health control rule as configured in the severity configration as discussed in the previous lab.
+Health actions are created when the health control rules are not met. Based on each specific health control rule, a health action is created to address the issue. The severity of the health action is determined by the severity of the health control rule as configured in the severity configuration as discussed in the previous lab.
 
 ### The Health Actions Dashboard
 
 The Health actions dashboard gives you an overview of the health actions that have been created based on the health control rules that have been defined. By default health actions are assigned not assigned to anyone and needs to be assigned to a user to be actioned.
 
-
-The Healt actions dashboard shows 4 tabs:
+The Health Actions Dashboard shows 4 tabs:
 
 - Active: This shows new actions and actions which are currently in progress.
 - In Progress: A list of actions of which the status has been changed to in progress.
@@ -52,20 +51,16 @@ Health actions can be filtered by the following criteria:
 - Finding type, name and subtype
 - Target entity type ie. Business domain , data product, data asset etc.
 
-![Health actions dashboard](./assets/health-actions-dashboard.png)
+![Health Actions Dashboard](./assets/health-actions-dashboard.png)
 
 1. Click on the Active tab to view the active health actions. This may vary slightly depending on how the findings are grouped. In this case the findings are grouped by finding type.
 2. To change the grouping of the findings click on the Group by dropdown and select the grouping you would like to use. ![Action Group by](./assets/action-grouping.png)
 
-
-
 3. To view the details of an action click on one of the findings in the list.This will bring up the Finding screen which shows the details of the finding.
-![Assign Health Action](./assets/assign-health-action.png)
-4. Assign the health action to a user by clicking in the Assigned to field and selecting a user from the list. 
+   ![Assign Health Action](./assets/assign-health-action.png)
+4. Assign the health action to a user by clicking in the Assigned to field and selecting a user from the list.
 5. Set the status of the health action to in progress by clicking on the status field and selecting "in progress" from the list of options. This is typically not an action you would do if you are assigning the action to someone else, as the person assigned to the action would be responsible for updating the status.
 6. Click on the Save button to complete the assignment and status update.
-
-
 
 **✨ Pro Tip:** Actions that have been marked as Resolved will be reconciled when the next scan runs. If an action has incorrectly marked as resolved or not correctly mitigated the action will be reset to active.
 

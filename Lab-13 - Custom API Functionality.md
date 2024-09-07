@@ -23,7 +23,7 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 **✍️ Do in Purview:** [10 minutes] Navigate to the Microsoft Purview resource in Azure, then select its Events tab. You can configure a notification and/or a hooks Event Hub. These let Purview either push data out (notify) or consume Apache Kafka messages from external sources.
 
-## Task 2: Utilising APIs and SDKs
+## Task 2: Utilizing APIs and SDKs
 
 **⏰ Duration:** 20 minutes
 

@@ -14,7 +14,7 @@ Most actions in Purview raise notification 'events' that can be pushed to an Azu
 
 For example, Purview detects a scan failed due to a specific reason, this 'scan failed' event is written to the Event Hub along side additional information, from where an Azure Function (external to Purview) picks it up to execute a piece of code or call other APIs that (for example) restart a virtual machine or self-hosted integration runtime.
 
-**🫂 Team Activity:** [10 minutes] Discuss to what extend Purview is considered critical to your business operations. In most cases, an organization wouldn't deem their internal data governance tooling mission critical - but your company's use case, customisation, and level of integration may differ.
+**🫂 Team Activity:** [10 minutes] Discuss to what extend Purview is considered critical to your business operations. In most cases, an organization wouldn't deem their internal data governance tooling mission critical - but your company's use case, customization, and level of integration may differ.
 
 - Have you documented the recovery point/time objectives? What are they?
 - What happens if someone accidentally deletes the Microsoft Purview Azure resource or defaults on your company's Azure subscription payment?

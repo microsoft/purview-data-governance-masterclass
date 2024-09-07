@@ -51,7 +51,7 @@ Microsoft Purview has introduced 'domains' (not to be confused with the Business
 
 > Source: [Manage Domains and Collections](https://learn.microsoft.com/en-us/purview/how-to-create-and-manage-domains-collections)
 
-In the context of Microsoft Purview, collections are a way to organize resources like data sources, scans, and assets within a domain. Each domain, both default and custom, starts with one root collection and can contain multiple subcollections.
+In the context of Microsoft Purview, collections are a way to organize resources like data sources, scans, and assets within a domain. Each domain, both default and custom, starts with one root collection and can contain multiple sub collections.
 
 ![Creating a new Collection](./assets/creating-new-collection.png)
 
@@ -61,7 +61,7 @@ In the context of Microsoft Purview, collections are a way to organize resources
 - Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and more.
 - Resource Management: Resources (data sources, scans, assets) associated with a collection are automatically included when the collection is identified. Depending on the assigned permissions, these resources can be viewed, edited, or deleted.
 - Movement of Resources: Collections allow for movement of registered sources between them and also let you add assets.
-- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its subcollections. This inheritance can be restricted if needed.
+- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance can be restricted if needed.
 
 Remember that, to manage collections, one needs to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
 
@@ -81,13 +81,15 @@ Remember that, to manage collections, one needs to be at least a Domain Admin or
 
 ## Task 3: Create and Extend Sensitivity Labels
 
+> Microsoft Purview Solution: Information Protection
+
 **⏰ Duration:** 30 minutes
 
 **🎯 Outcome:** At the end of this task, you will have created tenant-wide sensitivity labels in the Compliance solution. These can be added manually (or automatically if an E5 Risk & Compliance license is available) to data assets at the time of creation (or labelled later). You will also learn to expand these labels to the Purview Data Map solution for labelling of structured data assets.
 
 ### Understanding Sensitivity Labels
 
-Sensitity Labels are a feature that help you classify and protect organizational data (usually at the time of creation, but can be applied or modified at any time). They help ensure that user productivity and collaboration capabilities remain uncompromised by 'stamping' the data (file, folder etc) with a consistent text and protective properties that follow the data no matter where it is stored.
+Sensitivity Labels are a feature that help you classify and protect organizational data (usually at the time of creation, but can be applied or modified at any time). They help ensure that user productivity and collaboration capabilities remain uncompromised by 'stamping' the data (file, folder etc) with a consistent text and protective properties that follow the data no matter where it is stored.
 
 ![Sensitivity Label Recommendation](./assets/sensitivity-label-recommendation.png)
 
@@ -97,7 +99,7 @@ The label's scope determines the label's settings and its availability to apps a
 
 ![Applying Sensitivity Labels](./assets/applying-sensitivity-labels.png)
 
-Sublabels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label but do inherit their color.
+Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label but do inherit their color.
 
 Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection. These services check the usage rights for the user and allow an extra layer of protection for labeled items.
 
@@ -119,6 +121,8 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 ---
 
 ## Task 4: Adding Lineage Connections
+
+> Microsoft Purview Solution: Data Map
 
 **⏰ Duration:** 10 minutes
 
