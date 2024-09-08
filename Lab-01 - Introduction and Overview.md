@@ -2,7 +2,7 @@
 
 # Lab 1: Introduction & Executive Overview
 
-## 👋 Task 1: Opening Welcome & Introductions
+## Task 1: Opening Welcome & Introductions
 
 **⏰ Duration:** 30 minutes
 
@@ -14,23 +14,26 @@
 2. Facilitator to introduce topic and agenda for the training.
 3. "How did we get here?" - Share in a few words the current state of data governance in your organization and any maturity/readiness/technical challenges you have encountered.
 
-Answer these as part of the introduction, some answers may become clearer as you go through the training:
+To level-set the conversation, attempt to answer the following questions. Some answers may become clearer as you go through the training, but keep them in the back of your mind:
 
-- Do you have a "data steward" in your organization?
-- Is your company subject to compliance obligations that require metadata to be stored in a specific region?
-- Do you have E3/E5 Risk and Compliance policies in place already (Information Protection, Insider Risk Management, Information Barriers etc)?
-- Are there any on-premises services that need to be considered/evaluated as part of the Purview Data Governance / cataloging initiative?
+- Do you have a "data steward" in your organization? Who is it?
+- Do you currently have a data catalog in place? How does it work? Is it effective?
+- Is your organization subject to compliance obligations that require metadata to be stored in a specific region? If you have one, where is your data catalog located today?
+- Do you already have E3/E5 Risk and Compliance policies in place (Information Protection / Sensitivity Labels, Insider Risk Management, Information Barriers etc)?
+- Do you have an AI / Generative AI policy in place? If so, how do you manage data exposure risks?
+- Are there any on-premises systems which should be cataloged as part of the data governance / cataloging initiative?
+- Do you consume any critical third-party (external) data sources / APIs?
 - Given data governance is interdisciplinary, have you considered use cases and identified stakeholders throughout the business?
 - Have you figured out how data governance costs will be apportioned?
-- Have you planned your path to production and do you have dates in mind for a go-live?
+- Have you planned your path to production and do you have dates in mind for a data catalog go-live?
 
 ---
 
-## 📈 Task 2: Executive Overview
+## Task 2: Executive Overview
 
 **⏰ Duration:** 45 minutes
 
-**🎯 Outcome:** Provide an executive overview of the Microsoft Purview Data Governance solution.
+**🎯 Outcome:** The facilitator will provide an executive overview of the industry trends and Microsoft Purview Data Governance product.
 
 - Cover the Industry Challenges & Purview Intro slides
 - Discuss the value proposition of Purview and Federated Data Governance

@@ -52,6 +52,22 @@ At the end of the curation process, switch to the asset's History tab, and revie
 
 ![Asset History Overview](assets/asset-history-overview.png)
 
+## Task 2: Browse and Discover Data Assets
+
+> Microsoft Purview Solution: Data Catalog
+
+**⏰ Duration:** 5 minutes
+
+**🎯 Outcome:** At the end of this task, you have understood the Data Catalog's Data search experience.
+
+### Exercise: Browsing and Discovering Data Assets
+
+With several data assets now curated, it is time to browse and discover these assets in the catalog to understand how they are organized, and to review the first half of the data consumer's experience (part two, Data Product search, will be covered in the next lab).
+
+**✍️ Do in Purview:** [5 minutes] Navigate to the Data Catalog and browse through the curated data assets by heading to **Data search**. Use the search bar to find assets by name, description, or tags. Use the filters to narrow down the search results by classification, glossary terms, and more.
+
+**✨ Pro Tip:** You may see different assets to your colleagues based on your assigned roles and permissions at the Data Map collection into which the data source system scan indexed your assets, or the status of the Governance Domain to which the asset belongs.
+
 ---
 
 **⏸️ Reflection:** Now that you have learned the basics of data asset curation, what are some of the challenges you foresee in getting business units to curate their data assets? How can you overcome these challenges?

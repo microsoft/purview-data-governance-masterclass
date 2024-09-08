@@ -78,7 +78,7 @@ Save and run the scan. After a scan is configured, open the Data Source and note
 
 **⏸️ Wait:** A data source scan will have to complete before you can move on to the next section. You can use the 'Monitoring' tab of the Data Map or the Scan Details to track scan the scan status.
 
-## Task 3: Defining Scan Rule sets
+## Task 3: Defining Scan Rule Sets
 
 > Microsoft Purview Solution: Data Map
 

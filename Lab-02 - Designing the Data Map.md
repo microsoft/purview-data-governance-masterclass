@@ -10,7 +10,7 @@
 
 **🎯 Outcome:** At the end of this task, you will have answered important questions that will form part of the structure of the workshop and help the instructor know where to focus the session.
 
-**🫂 Team Activity:** [30 minutes] Together as a group, Answer the following questions, adding a little detail around each answer to guide you in the following exercises.
+**🫂 Team Activity:** [30 minutes] Together as a group, revisit the questions posed at the start of Lab 1, adding a little detail around each answer to guide you in the following exercises.
 
 - Are you interested in Security, Privacy, and Compliance capabilities too, or just Purview Data Governance over structured data?
 - Have you got the respective Microsoft 365 Enterprise licence to test out the Security/Privacy/Compliance features?

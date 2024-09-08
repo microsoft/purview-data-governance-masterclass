@@ -166,7 +166,7 @@ In this example shown in this screenshot is the rule for "Self-serve access enab
 
 ### Exercise: Update and Create Health Control Rules
 
-Microsoft Purview Solution: Data Catalog Metadata Quality
+> Microsoft Purview Solution: Data Catalog
 
 **⏰ Duration:** 25 minutes
 
@@ -246,6 +246,8 @@ Schedule control refreshes by clicking on the Schedule Refresh button at the top
   ![Schedule Control Refresh](./assets/schedule-control-refresh.png)
 
 **⏸️ Wait:** Wait for the control refresh to run and check the health control dashboard to see the updated health status of the control.
+
+---
 
 **⏸️ Reflection:** The health control rules are a powerful tool to define how the quality of your data estate should be measure. How do you think you can use these rules to improve the quality of your data estate?
 

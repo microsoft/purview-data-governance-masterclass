@@ -39,7 +39,7 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 2. Data Map Foundations
 3. Sensitivity Labels and Lineage Connections
 4. Registering Data Sources
-5. Defining Scans and Scan Rulesets
+5. Defining Scans and Scan Rule sets
 6. Curating Data Assets
 7. Designing for business domains
 8. Considerations for Business Glossaries
@@ -68,7 +68,7 @@ Throughout this masterclass, you will interact with the following Microsoft Purv
 
 ## Icon Legend
 
-Thoughout the labs, you will see the following icons. Take a minute to familiarise yourself with them before starting the labs.
+Throughout the labs, you will see the following icons. Take a minute to familiarize yourself with them before starting the labs.
 
 - 🎯 **Outcome:** Refers to the learning or implementation outcome that is achieved at the end of the task.
 - 🫂 **Team Activity:** Refers to a group activity that will take place, usually a discussion, team breakout or other interaction.
