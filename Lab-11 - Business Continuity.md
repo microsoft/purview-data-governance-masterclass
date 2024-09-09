@@ -8,6 +8,12 @@
 
 **🎯 Outcome:** At the end of this task, you will have understood your backup/restore, and disaster recovery choices and responsibilities.
 
+### What is the SLA for Microsoft Purview?
+
+At the time of writing, Microsoft Purview has a **99.9%** uptime Service Level Agreement (SLA) based on the Monthly Uptime Percentage formula.
+
+If Microsoft fails to meet this guarantee, you may be eligible for service credits. For more information, including the uptime calculation, please refer to the [Microsoft SLA page](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+
 ### A word on BC/DR...
 
 Most actions in Purview raise notification 'events' that can be pushed to an Azure Event Hub for external consumption. A custom-coded Azure Function App could be used to react to new events, then execute any business logic and optionally write data back into Purview.
