@@ -41,7 +41,7 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 4. Registering Data Sources
 5. Defining Scans and Scan Rule sets
 6. Curating Data Assets
-7. Designing for business domains
+7. Designing for governance domains
 8. Considerations for Business Glossaries
 9. Managing Glossary Terms
 10. Articulating OKRs
