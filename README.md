@@ -35,26 +35,27 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 
 ## 📃 Agenda
 
-1. Exec Overview & Introduction
+The following is a suggested agenda for an action-packed 1 or 3-day workshop:
+
+1. Executive Overview & Introduction
 2. Data Map Foundations
 3. Sensitivity Labels and Lineage Connections
 4. Registering Data Sources
-5. Defining Scans and Scan Rule sets
-6. Curating Data Assets
-7. Designing for governance domains
-8. Considerations for Business Glossaries
-9. Managing Glossary Terms
-10. Articulating OKRs
-11. Data Products
-12. Data Quality
-13. Self-Service Workflows
-14. Data Access Requests
-15. Bridging Purview Compliance portal to the Data Map
-16. Custom Classifications
-17. Data Estate Health
-18. Asset Auditing and History
-19. Custom functionality with APIs and SDKs
-20. Business Continuity and Disaster Recovery
+5. Defining Scans and Scan Rule Sets
+6. Custom Data Classifications
+7. Curating Data Assets
+8. Designing for Governance Domains
+9. Managing an Enterprise Glossary
+10. Bundling Assets into Data Products
+11. Self-Service Access Requests
+12. Articulating Business OKRs
+13. Defining Health Management Controls
+14. Tracking Data Quality
+15. Taking Action on Data Health Alerts
+16. Asset Auditing and History
+17. Custom functionality with APIs and SDKs
+18. Business Continuity and Disaster Recovery
+19. 🔜 Pricing and Licensing
 
 ## 🗃️ Microsoft Purview Solutions
 
