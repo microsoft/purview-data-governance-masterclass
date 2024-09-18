@@ -33,8 +33,6 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 ---
 
-## Congratulations, that's a wrap!
+**⏸️ Reflection:** You now have a better understanding of the Purview APIs available to your organization to build, extend and automate aspects of Microsoft Purview Data Governance. Lastly, let's review the pricing and licensing for Microsoft Purview.
 
-**⏸️ Reflection:** Great job! You now have a better understanding of the Purview APIs available to your organization to build, extend and automate aspects of Microsoft Purview Data Governance.
-
-🏁 [Complete: Back to Overview](./README.md)
+👉 [Continue: Lab 13](./Lab-13%20-%20Pricing%20and%20Licensing.md)
