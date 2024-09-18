@@ -35,7 +35,7 @@ To level-set the conversation, attempt to answer the following questions. Some a
 
 **🎯 Outcome:** The facilitator will provide an executive overview of the industry trends and Microsoft Purview Data Governance product.
 
-- Cover the Industry Challenges & Purview Intro slides
+- Cover the Industry Challenges and an Introduction to Microsoft Purview
 - Discuss the value proposition of Purview and Federated Data Governance
 - Discuss Responsible Data Value Creation and Data Democratization
 - Discuss the previously separate services that Purview now brings together

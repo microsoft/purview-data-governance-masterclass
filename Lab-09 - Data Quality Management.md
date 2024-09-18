@@ -46,7 +46,7 @@ Before you can start using Microsoft Purview Data Quality, you need to ensure th
 
 Step 1: Data assets have been scanned into the Purview Data Map [Review Lab 3: Managing Data Sources](./Lab-03%20-%20Managing%20Data%20Sources.md)
 
-Step 2: The relevant governance domains have been defined [Review Lab 4: Business Domains and Terms](./Lab-04%20-%20Business%20Domains%20and%20Terms.md)
+Step 2: The relevant governance domains have been defined [Review Lab 4: Governance Domains and Terms](./Lab-04%20-%20Governance%20Domains%20and%20Terms.md)
 
 Step 3: Data products have been created [Review Lab 5: Data Products](./Lab-05%20-%20Data%20Products.md)
 
@@ -85,7 +85,7 @@ Step 6: Create a Data Quality Scan Connection
 To configure the data source connections for Data Quality, follow the steps below:
 
 1. Select the Data Quality sub-menu under Health management from the left hand menu in the Purview Studio.
-2. Select the Business domain that you want to configure the data source connections for.
+2. Select the Governance domain that you want to configure the data source connections for.
 3. Click on the Manage button and select Connections from the drop down menu. This will open the Connections screen.
 4. Click on the New button to open the Create connection panel.
 5. Add a display name

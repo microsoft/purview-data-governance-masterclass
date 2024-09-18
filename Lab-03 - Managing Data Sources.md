@@ -14,7 +14,9 @@
 
 Microsoft Purview lets you to register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data.
 
-To register a source, you require the role of a Data Source Admin alongside another Microsoft Purview Data Map role. The process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. Note that most data sources have additional specific information and prerequisites for registration and scanning.
+To register a source, you require the role of a Data Source Admin. The process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. Note that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules).
+
+As such, data sources are typically registered once by a central IT team or using infrastructure as code (IaC) tools like Terraform or ARM templates. This ensures that the data source is registered consistently across the organization and that the necessary prerequisites are met.
 
 ### Exercise: Adding Data Sources
 
@@ -23,6 +25,7 @@ To register a source, you require the role of a Data Source Admin alongside anot
 - What are the common data sources throughout your organization?
 - Is the data source in Azure, another cloud provider, or on premises?
 - Do you have any data sources that are not on the supported list? We caution against bespoke integrations.
+- Are you looking for a roadmap of upcoming features, including data sources? [Check the roadmap](https://learn.microsoft.com/en-us/purview/whats-new#whats-planned-for-microsoft-purview).
 
 **✍️ Do in Purview:** [15 minutes] Using the Data Map solution, 'Register' a data source by following the wizard. Be sure to select the domain and collection name into which this data source should be registered. You should be confident on your collection hierarchy before continuing.
 
@@ -33,7 +36,7 @@ Once registered, your data map should be populated. Next:
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
 
-**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across business domains, it may make sense to lift it into a parent collection shared by both business domains. More best practices can be found in the Purview documentation.
+**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across governance domains, it may make sense to lift it into a parent collection shared by both governance domains. More best practices can be found in the Purview documentation.
 
 After registering your source, you can move it to another collection within the same domain to which you have access. However, it's important to note that when a source moves to a new collection, its scans move with it, but its assets will not appear in the new collection until the next scan is performed.
 
@@ -60,7 +63,7 @@ After registering your source, you can move it to another collection within the 
 - Which collection should the assets be scanned into? This may be different from the collection in which the physical data source itself is registered.
 - Should scans be full scans or incremental scans?
 
-**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly continue before a scan is executed.. leading to cost blowouts.
+**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly continue before a scan is executed.. leading to cost blowouts or latency.
 
 **✍️ Do in Purview:** [10 minutes] Transfer your discussion into practice by configuring a data source scan for the selected data source.
 
@@ -217,7 +220,7 @@ Additional information (including logs) are available.
 
 **⏸️ Reflection:** You have now registered data sources, configured scans, and defined scan rule sets in Microsoft Purview. You learned about the concept of classifications and how to create your own classifications for bespoke content. Furthermore, you learned about integration runtimes and how they can be used to connect to data sources.
 
-What does this all mean? You are now ready to build on top of this foundation and start to map data into business domains.
+What does this all mean? You are now ready to build on top of this foundation and start to map data into governance domains.
 
 Each time a data source is onboarded, you will (roughly) follow these steps:
 
@@ -225,4 +228,4 @@ Each time a data source is onboarded, you will (roughly) follow these steps:
 
 Before you leave, review this section again to understand what is required as your organization connects new data sources or scales Purview across the enterprise.
 
-👉 [Continue: Lab 4](./Lab-04%20-%20Business%20Domains%20and%20Terms.md)
+👉 [Continue: Lab 4](./Lab-04%20-%20Governance%20Domains%20and%20Terms.md)

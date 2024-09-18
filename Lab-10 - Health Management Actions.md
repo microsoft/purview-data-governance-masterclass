@@ -45,11 +45,11 @@ The Health Actions Dashboard shows 4 tabs:
 Health actions can be filtered by the following criteria:
 
 - Assigned user
-- Business domain
+- Governance domain
 - Severity
 - Days its been open
 - Finding type, name and subtype
-- Target entity type ie. Business domain , data product, data asset etc.
+- Target entity type ie. Governance domain , data product, data asset etc.
 
 ![Health Actions Dashboard](./assets/health-actions-dashboard.png)
 

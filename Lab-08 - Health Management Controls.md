@@ -78,11 +78,11 @@ Here you will see a summary of the health controls and the number of controls th
 - Healthy: The number of controls which are considered healthy based on the health status rules that have been defined.
 - Expired: A control would be expired when it is not being evaluated or is no longer needed because it is always green, which would be rare.  The control can be set to not active which will make it expired.  This happens in the health control edit panel by flipping the active switch at the top.  This requires data health owner permissions.
 
-Clicking on the arrow next to a control group, expands the list of controls within that group. Click on a control name to view the details of the control. This will show you a graph of the recent score, the control description, the health status, the owner, the business domain,the target value and when the control was created.
+Clicking on the arrow next to a control group, expands the list of controls within that group. Click on a control name to view the details of the control. This will show you a graph of the recent score, the control description, the health status, the owner, the governance domain,the target value and when the control was created.
 
 ![Health Control Details](./assets/health-control-details.png)
 
-**✨ Pro Tip:** The Health controls dashboard allows you to view your data estate health at a glance as a grid, a tree view or a chart view. You can also filter the controls by health status, Business domain, owner or keyword.
+**✨ Pro Tip:** The Health controls dashboard allows you to view your data estate health at a glance as a grid, a tree view or a chart view. You can also filter the controls by health status, Governance domain, owner or keyword.
 
 ---
 
@@ -106,7 +106,7 @@ Clicking on the arrow next to a control group, expands the list of controls with
 
 3. Update the description of the control.
 
-4. Select the business domains that the control is applicable to.
+4. Select the governance domains that the control is applicable to.
 
 5. Decide if the control is active or not.
 

@@ -36,14 +36,14 @@ If you were unable to answer many of these questions, lets aim to get clarity at
 
 > Source: [Domains](https://learn.microsoft.com/en-us/purview/concept-domains)
 
-Microsoft Purview has introduced 'domains' (not to be confused with the Business Domains concept) as a structure within the Microsoft Purview Data Map. Domains, which can only be used by Microsoft Purview accounts operating on a tenant-level account, are designed to distribute organizational responsibility, create hard logical separations, ensure consistent management across assets and glossaries, and replace multiple accounts within a tenant to multiple domains within a single Microsoft Purview resource.
+Microsoft Purview has introduced 'domains' (not to be confused with the Governance Domains concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create hard logical separations, ensure consistent management across assets and glossaries, and replace multiple accounts within a tenant (the classic Azure Purview approach) with multiple domains within a single Microsoft Purview resource.
 
 **Key Facts:**
 
 - Every Microsoft Purview Data Map starts with a default domain. This domain is the primary account's root collection when an account is upgraded to the new experience.
 - Up to 4 additional custom domains can be created for better organization and governance.
-- A new role, the domain admin, can be assigned. They will have the ability to assign permissions within a domain and manage its resources.
-- In the future, you will be able to merge tenants with multiple Microsoft Purview accounts into the new experience using domains.
+- A new role, the Domain Admin, can be assigned. They will have the ability to assign permissions within a domain and manage its resources.
+- You will be able to merge exiting (classic) Azure Purview accounts within your tenant into the new Microsoft Purview experience using domains.
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
 
@@ -61,17 +61,19 @@ In the context of Microsoft Purview, collections are a way to organize resources
 - Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and more.
 - Resource Management: Resources (data sources, scans, assets) associated with a collection are automatically included when the collection is identified. Depending on the assigned permissions, these resources can be viewed, edited, or deleted.
 - Movement of Resources: Collections allow for movement of registered sources between them and also let you add assets.
-- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance can be restricted if needed.
+- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance is enabled by default and can be restricted/disabled as needed.
 
-Remember that, to manage collections, one needs to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
+Remember, to manage collections, one needs to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
 
 ### Exercise: Create Domains and Collections
 
-**🫂 Team Activity:** [5 minutes] As a group, identify whether there is a need to create multiple platform domains in Purview? These allow you to separate data sources into isolated domains such as dev/prod.
+**🫂 Team Activity:** [5 minutes] As a group, identify whether there is a need to create multiple platform domains in Purview (limit is 4)? These allow you to separate data sources into isolated domains or merge existing (classic) Azure Purview accounts into one.
 
 - Is there a requirement to create a dev/prod type of setup (bearing in mind that a data source can only be registered in one place at a time)?
 - Can you use one platform domain (prod) and rely on the ability to change the status of non-curated assets instead of doing so in multiple domains?
 - Does your organization have parent/child company setups where you need to consider how to represent the child company under the same Purview Data Map?
+
+> **Does your tenant fall into any of these categories?** Government, Health Department, Education? If so, you may need to be guided by your Microsoft contact or partner regarding the optimal setup, given only 4 custom domains can be created.
 
 **✍️ Do in Purview:** [5 minutes] Navigate to the Data Map and create a new platform/technical domain if required. If not required, continue on.. you will be working inside the default domain.
 

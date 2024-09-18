@@ -8,7 +8,7 @@
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05.md) to OKRs in your business domains to associate metrics that matter with data products that drive them.
+**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05.md) to OKRs in your governance domains to associate metrics that matter with data products that drive them.
 
 ### Understanding Objectives and Key Results (OKRs)
 
@@ -24,7 +24,7 @@ Here is an example of a Human Resources Objective with four Key Results. One Dat
 
 ### Exercise: Creating an OKR
 
-**🫂 Team Activity:** [10 minutes] Choose a business domain and discuss what this business unit is measured on, what they "care" about.
+**🫂 Team Activity:** [10 minutes] Choose a governance domain and discuss what this business unit is measured on, what they "care" about.
 
 - Are there any executive mandates or strategic initiatives that are top of mind?
 - Can you identify any metrics that are tracked to measure success in this domain?
@@ -33,12 +33,12 @@ Here is an example of a Human Resources Objective with four Key Results. One Dat
 
 **✍️ Do in Purview:** [5 minutes]
 
-- Using the 'New OKR' option in a business domain of your choice, add the name, owners, and target date.
+- Using the 'New OKR' option in a governance domain of your choice, add the name, owners, and target date.
 - Once the OKR is created, open it up and add a key result to create the measures that feed this objective.
 - You can also explore the 'Link data product' option if you have data products that you created in the previous Lab which relate to this objective. Data products need to be published before they can be linked.
 - Note the Status option. The objective is in Draft until you select 'Publish'.
 
-The back on the Business Domain's OKR overview page, you can now see the objective and key results that have been created. You can also see the overall progress of the OKR. This is calculated based on the average of the progress of the key results.
+The back on the governance domain's OKR overview page, you can now see the objective and key results that have been created. You can also see the overall progress of the OKR. This is calculated based on the average of the progress of the key results.
 
 ![OKR Overall Progress](./assets/business-domain-okr-list.png)
 
