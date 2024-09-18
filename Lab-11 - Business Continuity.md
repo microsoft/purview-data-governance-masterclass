@@ -38,4 +38,4 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 **⏸️ Reflection:** You just learnt the business continuity and disaster recovery options available to you in Microsoft Purview. Now let's see what you can do with the APIs and SDKs.
 
-👉 [Continue: Lab 13](./Lab-13%20-%20Custom%20API%20Functionality.md)
+👉 [Continue: Lab 12](./Lab-12%20-%20Custom%20API%20Functionality.md)

@@ -46,4 +46,4 @@ The back on the governance domain's OKR overview page, you can now see the objec
 
 **⏸️ Reflection:** Now that you have seen how OKRs can be used to link business objectives to data products, how do you think this will help your organization? What are some of the challenges you foresee in maintaining these links as the business evolves?
 
-👉 [Continue: Lab 8](./Lab-08%20-%20Data%20Quality%20Management.md)
+👉 [Continue: Lab 8](./Lab-08%20-%20Health%20Management%20Controls.md)
