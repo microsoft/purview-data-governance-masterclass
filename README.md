@@ -16,7 +16,7 @@ These labs build on one another. It is recommended to follow them in order.
 
 - **1-Day Workshop (8 hours)**
   Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
-- **3-Day Workshop (24 hours)** Complete all tasks, including those the practical exercises. Ample time is provided for discussion and reflection.
+- **3-Day Workshop (24 hours)** Complete all tasks, including the practical exercises. Ample time is provided for discussion and reflection.
 
 Allow for a 15-minute break at least every 90 minutes (at the facilitator's discretion) and allow for an approximately 1-hour lunch break.
 
