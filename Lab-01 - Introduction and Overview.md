@@ -15,7 +15,7 @@
 3. "How did we get here?" - Share in a few words the current state of data governance in your organization and any maturity/readiness/technical challenges you have encountered.
 
 To level-set the conversation, the facilitator will lead a group conversation which includes the following prompts.
-*NB* - These are targeted questions which will inform the to-be implementation.
+<br>  *NB* - These are targeted questions which will inform the to-be implementation.
 
 Data Governance Maturity
 - Do you have a [Data steward](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/organize-roles-responsibilities#:~:text=Platform%20group%2C%20governance-,Data%20Steward,-Data%20Trustee) in your organization? Who is it?
