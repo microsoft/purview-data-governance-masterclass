@@ -47,11 +47,12 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 - Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
 ![Overview](./assets/data_gov_overview.png)
 
-[source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance)
+[source](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance)
 
 - Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation. 
 - Discuss typical Cx [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
 - Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
+- Briefly cover off the [Reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
 <br>  
 
 Provide a overview of the Cloud Adoption Framework for Data Governance;
