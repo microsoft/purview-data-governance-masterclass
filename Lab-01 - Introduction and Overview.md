@@ -38,26 +38,33 @@ Implementation
 
 ## Task 2: Executive Overview
 
-**⏰ Duration:** 45 minutes
+**⏰ Duration:** 75 minutes
 
 **🎯 Outcome:** The facilitator will provide an executive overview of the Microsoft view of data governance, the industry trends, and the Purview Data Governance application.
 
-Provide a overview of the Cloud Adoption Framework for Data Governance;
+Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) for Data Governance;
+<br>
 - Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
+![Overview](./assets/data_gov_overview.jpg)
+[source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance)
+
+- Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation. 
 - Discuss typical Cx [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
+- Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
+<br>  
 
-(source)[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance]
-
-- Cover the Industry Challenges and an Introduction to Microsoft Purview
-- Discuss the value proposition of Purview and Federated Data Governance
-- Discuss Responsible Data Value Creation and Data Democratization
-- Discuss the previously separate services that Purview now brings together
-- Talk about the high-level architectural overview of Purview Data Governance
-- Mention the personas involved in the data governance process
-- Discuss the Classic Model vs the New Model's concepts
-- Mention the design principles of Purview and key commitments
-- Tie the conversation back to Federated Data Governance
-- Mention the ecosystem piece again and the opportunities that a single instance of Microsoft Purview can bring to organizations
+Provide a overview of the Cloud Adoption Framework for Data Governance;
+<br>
+- Cover the Industry Challenges and an Introduction to Microsoft Purview.
+- Discuss the value proposition of Purview and Federated Data Governance.
+- Discuss Responsible Data Value Creation and Data Democratization.
+- Discuss the previously separate services that Purview now brings together.
+- Talk about the high-level architectural overview of Purview Data Governance.
+- Mention the personas involved in the data governance process.
+- Discuss the Classic Model vs the New Model's concepts.
+- Mention the design principles of Purview and key commitments.
+- Tie the conversation back to Federated Data Governance.
+- Mention the ecosystem piece again and the opportunities that a single instance of Microsoft Purview can bring to organizations.
 
 ---
 
