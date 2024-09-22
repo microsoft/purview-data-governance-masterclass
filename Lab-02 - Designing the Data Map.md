@@ -12,9 +12,9 @@
 
 **🫂 Team Activity:** [30 minutes] Together as a group, revisit the questions posed at the start of Lab 1, adding a little detail around each answer to guide you in the following exercises.
 
-- Are you interested in Security, Privacy, and Compliance capabilities too, or just Purview Data Governance over structured data?
+- Are you interested in Purview's Security, Privacy, and Compliance capabilities too, or just Purview Data Governance over structured data?
 - Have you got the respective Microsoft 365 Enterprise licence to test out the Security/Privacy/Compliance features?
-- Do you have E3/E5 Risk and Compliance policies in place already (Information Protection, Insider Risk Management, Information Barriers etc)?
+- Do you have M365 - E3/E5 Data Security policies in place already (Information Protection, Insider Risk Management, Information Barriers etc)?
 - Are there any on-premises services that need to be considered/evaluated as part of the Purview Data Governance / cataloging initiative?
 - Given data governance is interdisciplinary, have you considered use cases and identified stakeholders throughout the business?
 - Have you figured out how data governance costs will be apportioned?
@@ -30,20 +30,22 @@ If you were unable to answer many of these questions, lets aim to get clarity at
 
 **⏰ Duration:** 10 minutes
 
-**🎯 Outcome:** At the end of this task, you will have implemented your platform domains such that you can confidently divide your Purview Data Map based on environment / isolation requirements.
+**🎯 Outcome:** At the end of this task, you will have implemented platform domains and will be able to divide your Purview Data Map based on environment, isolation, and security requirements.
 
 ### Understanding Platform Domains
 
-> Source: [Domains](https://learn.microsoft.com/en-us/purview/concept-domains)
+> Source: [Domains](https://learn.microsoft.com/purview/concept-domains)
 
-Microsoft Purview has introduced 'domains' (not to be confused with the Governance Domains concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create hard logical separations, ensure consistent management across assets and glossaries, and replace multiple accounts within a tenant (the classic Azure Purview approach) with multiple domains within a single Microsoft Purview resource.
+Microsoft Purview has introduced ['domains'](https://learn.microsoft.com/purview/concept-domains) (not to be confused with the [Governance Domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create hard logical separations, ensure consistent management across assets and glossaries. 
+
+One of the most significant changes in the new experience is the replacement of multiple data governance accounts within a tenant (the classic Azure Purview approach) with multiple domains under an default Purview account for that tenant. 
 
 **Key Facts:**
 
-- Every Microsoft Purview Data Map starts with a default domain. This domain is the primary account's root collection when an account is upgraded to the new experience.
+- Every Microsoft Purview Data Map starts with a [default domain](https://learn.microsoft.com/purview/concept-domains#default-domain). This domain is the primary account's root collection when an account is upgraded to the new experience.
 - Up to 4 additional custom domains can be created for better organization and governance.
-- A new role, the Domain Admin, can be assigned. They will have the ability to assign permissions within a domain and manage its resources.
-- You will be able to merge exiting (classic) Azure Purview accounts within your tenant into the new Microsoft Purview experience using domains.
+- A new role, the [Domain Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=roles%20are%20currently%3A-,Domain%20admin,-(domain%20level)), can be assigned. They will have the ability to assign permissions within a domain and manage its resources.
+- You will be able to [merge](https://learn.microsoft.com/purview/merge-domain?source=docs) exiting (classic) Azure Purview accounts within your tenant into the new Microsoft Purview experience using domains.
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
 
@@ -58,12 +60,12 @@ In the context of Microsoft Purview, collections are a way to organize resources
 **Key Characteristics:**
 
 - Hierarchical Structure: Collections form a tree structure, allowing you to organize your resources into a hierarchy based on access control boundaries.
-- Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and more.
+- Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and [more](https://learn.microsoft.com/purview/how-to-create-and-manage-domains-collections#add-roles-and-restrict-access).
 - Resource Management: Resources (data sources, scans, assets) associated with a collection are automatically included when the collection is identified. Depending on the assigned permissions, these resources can be viewed, edited, or deleted.
 - Movement of Resources: Collections allow for movement of registered sources between them and also let you add assets.
-- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance is enabled by default and can be restricted/disabled as needed.
+- Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance is enabled by default and can be [restricted/disabled](https://learn.microsoft.com/purview/how-to-create-and-manage-domains-collections#restrict-inheritance) as needed.
 
-Remember, to manage collections, one needs to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
+Remember, to manage collections, you need to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
 
 ### Exercise: Create Domains and Collections
 
@@ -77,7 +79,7 @@ Remember, to manage collections, one needs to be at least a Domain Admin or Coll
 
 **✍️ Do in Purview:** [5 minutes] Navigate to the Data Map and create a new platform/technical domain if required. If not required, continue on.. you will be working inside the default domain.
 
-- Assign the respective platform domain admin(s).
+- [Assign](https://learn.microsoft.com/purview/governance-roles-permissions#add-role-assignments) the respective platform domain admin(s).
 
 ---
 
@@ -95,13 +97,13 @@ Sensitivity Labels are a feature that help you classify and protect organization
 
 ![Sensitivity Label Recommendation](./assets/sensitivity-label-recommendation.png)
 
-Sensitivity labels can be used to control access to content using encryption, add watermarks or headers to content, apply access policies automatically, protect content in Teams, Groups, and SharePoint sites, protect chat and meeting data, extend to Power BI and Microsoft Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
+Sensitivity labels can be used to control access to content using encryption, add watermarks or headers to content, apply access policies automatically, protect content in Teams, Groups, and SharePoint sites, protect chat and meeting data. Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI and Microsoft Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
 
 The label's scope determines the label's settings and its availability to apps and services. The label's order in the list also sets its priority (with labels appearing lower on the list having a higher order number and thus higher priority).
 
 ![Applying Sensitivity Labels](./assets/applying-sensitivity-labels.png)
 
-Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label but do inherit their color.
+Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label but do inherit their colour.
 
 Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection. These services check the usage rights for the user and allow an extra layer of protection for labeled items.
 
