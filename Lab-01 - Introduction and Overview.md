@@ -18,7 +18,7 @@ To level-set the conversation, attempt to answer the following questions. Some a
 
 - Do you have a "data steward" in your organization? Who is it?
 - Do you currently have a data catalog in place? How does it work? Is it effective?
-- Is your organization subject to compliance obligations that require metadata to be stored in a specific region? If you do, where is your data catalog located today?
+- Is your organization subject to compliance obligations that require metadata to be stored in a specific region? If you have one, where is your data catalog located today?
 - Do you already have E3/E5 Risk and Compliance policies in place (Information Protection / Sensitivity Labels, Insider Risk Management, Information Barriers etc)?
 - Do you have an AI / Generative AI policy in place? If so, how do you manage data exposure risks?
 - Are there any on-premises systems which should be cataloged as part of the data governance / cataloging initiative?
