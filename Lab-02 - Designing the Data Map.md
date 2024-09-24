@@ -8,7 +8,7 @@
 
 **⏰ Duration:** 30 minutes
 
-**🎯 Outcome:** At the end of this task, you will have answered important questions that will form part of the structure of the workshop and help the instructor know where to focus the session.
+**🎯 Outcome:** At the end of this task, you will have answered important questions that will form part of the structure of the workshop and help to focus the session.
 
 **🫂 Team Activity:** [30 minutes] Together as a group, revisit the questions posed at the start of Lab 1, adding a little detail around each answer to guide you in the following exercises.
 
@@ -30,24 +30,26 @@ If you were unable to answer many of these questions, lets aim to get clarity at
 
 **⏰ Duration:** 10 minutes
 
-**🎯 Outcome:** At the end of this task, you will have implemented platform domains and will be able to divide your Purview Data Map based on environment, isolation, and security requirements.
+**🎯 Outcome:** At the end of this task, you will have implemented a platform domain and will be able to divide your Purview Data Map based on environment, isolation, and security requirements.
 
 ### Understanding Platform Domains
 
 > Source: [Domains](https://learn.microsoft.com/purview/concept-domains)
 
-Microsoft Purview has introduced ['domains'](https://learn.microsoft.com/purview/concept-domains) (not to be confused with the [Governance Domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create hard logical separations, ensure consistent management across assets and glossaries. 
+Microsoft Purview has introduced ['domains'](https://learn.microsoft.com/purview/concept-domains) (not to be confused with the [Governance Domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create logical separation, ensuring consistent management across assets and glossaries. 
 
 One of the most significant changes in the new experience is the replacement of multiple data governance accounts within a tenant (the classic Azure Purview approach) with multiple domains under an default Purview account for that tenant. 
 
 **Key Facts:**
 
-- Every Microsoft Purview Data Map starts with a [default domain](https://learn.microsoft.com/purview/concept-domains#default-domain). This domain is the primary account's root collection when an account is upgraded to the new experience.
-- Up to 4 additional custom domains can be created for better organization and governance.
-- A new role, the [Domain Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=roles%20are%20currently%3A-,Domain%20admin,-(domain%20level)), can be assigned. They will have the ability to assign permissions within a domain and manage its resources.
+- Every Microsoft Purview Data Map starts with a [default domain](https://learn.microsoft.com/purview/concept-domains#default-domain). This domain is the primary account's root collection when an account is upgraded to the new experience.</br>
+    - Up to 4 additional custom domains can be created for better organization and governance.</br>
+- A new role, the [Domain Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=roles%20are%20currently%3A-,Domain%20admin,-(domain%20level)), can be assigned. They will have the ability to assign permissions within that domain and manage its resources.
 - You will be able to [merge](https://learn.microsoft.com/purview/merge-domain?source=docs) exiting (classic) Azure Purview accounts within your tenant into the new Microsoft Purview experience using domains.
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
+
+ - Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/en-us/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of depth.
 
 ### Understanding Collections inside Domains
 
@@ -59,7 +61,7 @@ In the context of Microsoft Purview, collections are a way to organize resources
 
 **Key Characteristics:**
 
-- Hierarchical Structure: Collections form a tree structure, allowing you to organize your resources into a hierarchy based on access control boundaries.
+- Hierarchical Structure: Collections form a tree structure (one-to-many), allowing you to organize your resources into a hierarchy based on access control boundaries.
 - Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and [more](https://learn.microsoft.com/purview/how-to-create-and-manage-domains-collections#add-roles-and-restrict-access).
 - Resource Management: Resources (data sources, scans, assets) associated with a collection are automatically included when the collection is identified. Depending on the assigned permissions, these resources can be viewed, edited, or deleted.
 - Movement of Resources: Collections allow for movement of registered sources between them and also let you add assets.
@@ -89,7 +91,7 @@ Remember, to manage collections, you need to be at least a Domain Admin or Colle
 
 **⏰ Duration:** 30 minutes
 
-**🎯 Outcome:** At the end of this task, you will have created tenant-wide sensitivity labels in the Compliance solution. These can be added manually (or automatically if an E5 Risk & Compliance license is available) to data assets at the time of creation (or labelled later). You will also learn to expand these labels to the Purview Data Map solution for labelling of structured data assets.
+**🎯 Outcome:** At the end of this task, you will have created tenant-wide sensitivity labels in the Compliance solution. These can be added manually (or automatically if an E5 Risk & Compliance license is available) to data assets at the time of creation (or labelled later). You will also learn how to expand these labels to the Purview Data Map solution for labelling of structured data assets.
 
 ### Understanding Sensitivity Labels
 
@@ -97,15 +99,15 @@ Sensitivity Labels are a feature that help you classify and protect organization
 
 ![Sensitivity Label Recommendation](./assets/sensitivity-label-recommendation.png)
 
-Sensitivity labels can be used to control access to content using encryption, add watermarks or headers to content, apply access policies automatically, protect content in Teams, Groups, and SharePoint sites, protect chat and meeting data. Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI and Microsoft Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
+Sensitivity labels can be used to control access to content using encryption, add watermarks or headers to content, apply access policies automatically, protect content in Teams, Groups, and SharePoint sites, protect chat and meeting data. Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI, the Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
 
-The label's scope determines the label's settings and its availability to apps and services. The label's order in the list also sets its priority (with labels appearing lower on the list having a higher order number and thus higher priority).
+The label's scope determines the label's settings and its availability to other apps and services. The label's order in the list also sets its priority (with labels appearing lower on the list having a higher order number and thus higher priority).
 
 ![Applying Sensitivity Labels](./assets/applying-sensitivity-labels.png)
 
-Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label but do inherit their colour.
+Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label, but do inherit their colour.
 
-Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection. These services check the usage rights for the user and allow an extra layer of protection for labeled items.
+Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection. These services check the usage rights for the individual user at runtime, enabling an extra layer of protection for labeled items.
 
 ### Exercise: Implement Sensitivity Labels
 
@@ -130,13 +132,13 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 
 **⏰ Duration:** 10 minutes
 
-**🎯 Outcome:** At the end of this task, you will have linked an Azure Data Factory and Azure Data Share account to the Data Catalog. This ensures that transformations inside of ETL processes (e.g. at the column level) are accurately captured in the overall lineage once we start registering data sources.
+**🎯 Outcome:** At the end of this task, you will have connected an Azure Data Factory and Azure Data Share account to the Data Map. This ensures that ETL processes (e.g. at the column level) performed by that component are accurately captured as lineage, once we registering and scan the data sources it is connected too.
 
 ### Understanding Data Lineage
 
 Data Lineage represents the lifecycle of an organization's data, tracing its origin and movement across the data estate. This data could include raw data from various platforms, transformed and prepared data, and data utilized by visualization platforms.
 
-Knowing the lineage of data assets is important for troubleshooting, root cause tracing in data pipelines, debugging, data quality analysis, compliance, and impact analysis. It helps in representing data that moves from source to destination, including how the data was transformed.
+Understanding the lineage of data assets is important for troubleshooting data pipelines, data quality analysis, compliance, and impact analysis. It illustrates how data moves from source to destination, including the transformations and business rules applied.
 
 <!-- TODO: Update with latest lineage UI -->
 
@@ -149,7 +151,7 @@ Knowing the lineage of data assets is important for troubleshooting, root cause 
 
 ### Exercise: Adding Lineage Connections (optional)
 
-**✍️ Do in Purview:** [5 minutes] Navigate to the Data Map solution's Source Management, and enter the 'Lineage connections' tab. Add one or more Azure Data Factory resources.
+**✍️ Do in Purview:** [5 minutes] Navigate to the Data Map solution's 'Source Management', and enter the 'Lineage connections' tab. Add one or more Azure Data Factory resources.
 
 ![Adding Data Factory Lineage Connections](./assets/data-factory-lineage-connection.png)
 
@@ -165,6 +167,6 @@ After registration, the Status should appear as: `Connected`
 
 **⏸️ Reflection:** At this point you have understood the need for multiple platform domains and the collection hierarchy within each. You also learned about the types of roles a Purview administrator may assign at the top-most levels of the Data Map. You experimented with Sensitivity Labels and extended them to the Purview Data Map for automatic labeling in the next lab.
 
-Lastly, you learned about the benefit of data lineage and how common ETL tools like Azure Data Factory and data sharing services like Azure Data Share can be connected to Microsoft Purview to inform transformation and external content sharing lineage.
+Lastly, you learned about the benefit of data lineage, how ETL tools like Azure Data Factory and data sharing services like Azure Data Share. can be connected to Purview to provide lineage information.
 
 👉 [Continue: Lab 3](./Lab-03%20-%20Managing%20Data%20Sources.md)
