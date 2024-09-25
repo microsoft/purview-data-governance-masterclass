@@ -12,31 +12,38 @@
 
 ### Why register Data Sources?
 
-Microsoft Purview lets you to register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data.
+Purview - Data Governance lets you register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data. 
 
-To register a source, you require the role of a Data Source Admin. The process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. Note that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules).
+[Registering](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#register-source-to-a-collection) is a requirement for Purview to scan that source and read out the technical metadata and lineage ([connector](https://learn.microsoft.com/purview/microsoft-purview-connector-overview#microsoft-purview-data-map-available-data-sources) dependant). 
+
+To register a data source, you require the role of a [Data Source Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=and%20glossary%20terms.-,Data%20source%20administrator,-%2D%20a%20role%20that) and individual access to that data source. The process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. 
+
+***NB*** - that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules).
 
 As such, data sources are typically registered once by a central IT team or using infrastructure as code (IaC) tools like Terraform or ARM templates. This ensures that the data source is registered consistently across the organization and that the necessary prerequisites are met.
 
 ### Exercise: Adding Data Sources
 
-**🫂 Team Activity:** [15 minutes] Review the [supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) and discuss which data sources you would like to onboard first. Start with something that minimizes admin overhead or extensive configuration (think: Azure SQL Database or Azure Data Lake Storage).
+**🫂 Team Activity:** [15 minutes] Review the [supported data sources](https://learn.microsoft.com/purview/microsoft-purview-connector-overview) and discuss which data sources you would like to onboard first. Start with something that minimizes admin overhead or extensive configuration (think: Azure SQL Database or Azure Data Lake Storage).
 
 - What are the common data sources throughout your organization?
-- Is the data source in Azure, another cloud provider, or on premises?
-- Do you have any data sources that are not on the supported list? We caution against bespoke integrations.
-- Are you looking for a roadmap of upcoming features, including data sources? [Check the roadmap](https://learn.microsoft.com/en-us/purview/whats-new#whats-planned-for-microsoft-purview).
+- Where are these data sources? Azure? another cloud provider? or on premises?
+- What are the key data assets that you should target which provide the most benefit to the business?
+- Do you have any data sources that are not on the supported list? </br>
+***NB*** - We caution against custom/bespoke integrations, due to the Product Manager responsbilities this creates across the full product lifecycle for customers. 
+
+**✨ Pro Tip:** - Purview regularly updates its published [roadmap](https://learn.microsoft.com/purview/whats-new#whats-planned-for-microsoft-purview), which includes data source connectors. 
 
 **✍️ Do in Purview:** [15 minutes] Using the Data Map solution, 'Register' a data source by following the wizard. Be sure to select the domain and collection name into which this data source should be registered. You should be confident on your collection hierarchy before continuing.
 
 ![Register data source button](./assets/register-datasource-button.png)
 
-Once registered, your data map should be populated. Next:
+Once registered, your data map needs to be populated with information. This done via the 'scanning' process. Next:
 
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
 
-**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across governance domains, it may make sense to lift it into a parent collection shared by both governance domains. More best practices can be found in the Purview documentation.
+**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Data Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift it into a parent collection shared by both governance domains. More best practices can be found in the Purview documentation.
 
 After registering your source, you can move it to another collection within the same domain to which you have access. However, it's important to note that when a source moves to a new collection, its scans move with it, but its assets will not appear in the new collection until the next scan is performed.
 
