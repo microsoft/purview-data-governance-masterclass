@@ -13,7 +13,7 @@
 **🫂 Team Activity:** [30 minutes] Together as a group, revisit the questions posed at the start of Lab 1, adding a little detail around each answer to guide you in the following exercises.
 
 - Are you interested in Purview's Security, Privacy, and Compliance capabilities too, or just Purview Data Governance over structured data?
-- Have you got the respective Microsoft 365 Enterprise licence to test out the Security/Privacy/Compliance features?
+- Have you got the respective Microsoft 365 Enterprise license to test out the Security/Privacy/Compliance features?
 - Do you have M365 - E3/E5 Data Security policies in place already (Information Protection, Insider Risk Management, Information Barriers etc)?
 - Are there any on-premises services that need to be considered/evaluated as part of the Purview Data Governance / cataloging initiative?
 - Given data governance is interdisciplinary, have you considered use cases and identified stakeholders throughout the business?
@@ -47,7 +47,7 @@ One of the most significant changes in the new experience is the replacement of 
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
 
- - Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of nested depth.
+- Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of nested depth.
 
 ### Understanding Collections inside Domains
 
@@ -95,7 +95,7 @@ Sensitivity Labels are a feature that help you classify and protect organization
 
 ![Sensitivity Label Recommendation](./assets/sensitivity-label-recommendation.png)
 
-Sensitivity labels can be used to control access to content using encryption, add watermarks, and apply access policies automatically. This enables the consistent protection of content in Teams, SharePoint sites, chat and meeting data. 
+Sensitivity labels can be used to control access to content using encryption, add watermarks, and apply access policies automatically. This enables the consistent protection of content in Teams, SharePoint sites, chat and meeting data.
 
 Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI, the Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
 
@@ -121,7 +121,7 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 - Define Auto-labeling policies as required by your organization.
 - Define Trainable Classifiers and Sensitive Information Types as applicable.
 - Enable the option to 'Extend Sensitivity Labels to the Purview Data Map'.</br>
-    - New scans and supported data sources can now be labelled (automatically) with the sensitivity label.
+  - New scans and supported data sources can now be labelled (automatically) with the sensitivity label.
 
 ## Task 4: Adding Lineage Connections
 
@@ -158,7 +158,7 @@ After registration, the Status should appear as: `Connected`
 
 **✍️ Do in Purview:** [5 minutes] Navigate to the Data Map solution's Source Management, and enter the 'Lineage connections' tab. Add one or more Azure Data Share resources.
 
-**✨ Pro Tip:** Each Data Factory or Azure Data Share instance can only be connected to one Purview account. A single instance cant be shared across accounts. 
+**✨ Pro Tip:** Each Data Factory or Azure Data Share instance can only be connected to one Purview account. A single instance cant be shared across accounts.
 
 ---
 
