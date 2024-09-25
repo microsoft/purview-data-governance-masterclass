@@ -22,7 +22,7 @@ Data Governance Maturity
 - Do you currently have a [data catalog](https://learn.microsoft.com/purview/what-is-data-catalog#:~:text=Data%20Catalog%20experience%20allows%20you%20to%20explore%20and%20understand%20your%20data) in place? How does it work? Is it effective?
 
 Requirements
-- Is your organization subject to [compliance](https://learn.microsoft.com/azure/compliance/) obligations that require metadata to be stored in a specific region? If you have one, where is your data catalog located today?
+- Is your organization subject to [compliance](https://learn.microsoft.com/azure/compliance/) obligations that require metadata to be stored in a specific region? If you do, where is your data catalog located today?
 - Do you already have M365 - Enterprise [Data Security](https://learn.microsoft.com/purview/purview?view=o365-worldwide#data-security) policies in place (Information Protection / Sensitivity Labels, Insider Risk Management, Information Barriers etc)?
 - Do you have an AI / Generative [AI policy](https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/responsible-ai#the-responsible-ai-principles) in place? If so, how do you manage data exposure risks?
 - Are there any on-premises systems which should be cataloged as part of the data governance / cataloging initiative?
@@ -44,11 +44,11 @@ Implementation
 
 Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) for Data Governance;
 <br>
-- Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
 ![Overview](./assets/data_gov_overview.png)
 
 [source](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance)
 
+- Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
 - Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation. 
 - Discuss typical Cx [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
 - Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
@@ -58,7 +58,7 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 Next cover the Industry Challenges and an Introduction to Microsoft Purview.
 
 At a summary level - Purview – Data Governance contains two main components:
-- The Data Map – technical metadata and lineage from source are ingested and structured via logical constructs of domains & collections. 
+- The Data Map – technical metadata and lineage from source are ingested and structured via the logical constructs of Domains & Collections. 
 - The Data Catalogue - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map. 
 
 ![Purview Overview](./assets/purview_summary.png)
