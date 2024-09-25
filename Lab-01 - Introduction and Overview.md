@@ -24,7 +24,7 @@ _Note:_ These are targeted questions which will inform the to-be implementation.
 
 **Requirements**
 
-- Is your organization subject to [compliance](https://learn.microsoft.com/azure/compliance/) obligations that require metadata to be stored in a specific region? If you have one, where is your data catalog located today?
+- Is your organization subject to [compliance](https://learn.microsoft.com/azure/compliance/) obligations that require metadata to be stored in a specific region? If you do, where is your data catalog located today?
 - Do you already have M365 - Enterprise [Data Security](https://learn.microsoft.com/purview/purview?view=o365-worldwide#data-security) policies in place (Information Protection / Sensitivity Labels, Insider Risk Management, Information Barriers etc)?
 - Do you have an AI / Generative [AI policy](https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/responsible-ai#the-responsible-ai-principles) in place? If so, how do you manage data exposure risks?
 - Are there any on-premises systems which should be cataloged as part of the data governance / cataloging initiative?
@@ -43,18 +43,26 @@ _Note:_ These are targeted questions which will inform the to-be implementation.
 
 **🎯 Outcome:** The facilitator will provide an executive overview of the Microsoft view of data governance, the industry trends, and the Purview Data Governance application.
 
-_Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) for Data Governance:_
+Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) for Data Governance;
 
-- Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value. [Learn more](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements#summary-of-what-is-needed-for-end-to-end-data-governance)
-  ![Overview](./assets/data_gov_overview.png)
-- Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organization.
-- Discuss typical [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
-- Discuss typical [data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
-- Briefly cover off the [reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
+![Overview](./assets/data_gov_overview.png)
 
+- Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
+- Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation. 
+- Discuss typical Cx [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
+- Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
+- Briefly cover off the [Reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
+
+Next cover the Industry Challenges and an Introduction to Microsoft Purview.
+
+At a summary level - Purview Data Governance contains two main components:
+- The Data Map – technical metadata and lineage from source are ingested and structured via the logical constructs of Domains & Collections. 
+- The Data Catalog - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map. 
+
+![Purview Overview](./assets/purview_summary.png)
+  
 _Provide a overview of the Cloud Adoption Framework for Data Governance:_
 
-- Cover the Industry Challenges and an Introduction to Microsoft Purview.
 - Discuss the value proposition of Purview and Federated Data Governance.
 - Discuss Responsible Data Value Creation and Data Democratization.
 - Discuss the previously separate services that Purview now brings together.
