@@ -12,7 +12,9 @@
 
 ### Why register Data Sources?
 
-Purview - Data Governance lets you register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data. 
+> Source: [Managing Data Sources](https://learn.microsoft.com/en-us/purview/manage-data-sources)
+
+Purview Data Governance lets you register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data. 
 
 [Registering](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#register-source-to-a-collection) is a requirement for Purview to scan that source and read out the technical metadata and lineage ([connector](https://learn.microsoft.com/purview/microsoft-purview-connector-overview#microsoft-purview-data-map-available-data-sources) dependant). 
 
@@ -130,6 +132,8 @@ As scans consume compute resources, it's important to ensure that your rule sets
 **🎯 Outcome:** At the end of this task, you will have a better understanding of system and custom classifications in Purview Data Governance, including how to configure them.
 
 ### Understanding Classifications
+
+> Source: [Classifications](https://learn.microsoft.com/en-us/purview/concept-classification)
 
 Classifications are applied at the time of scanning and are used to categorize and label data assets. Purview Data Governance comes with several international system classifications that are scanned for by default, but you can also create custom classifications to more accurately detect and tag data throughout your organization.
 

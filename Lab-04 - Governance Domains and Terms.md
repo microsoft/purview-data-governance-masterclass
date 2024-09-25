@@ -23,7 +23,6 @@ In Microsoft Purview, a 'governance domain' is a concept introduced to provide c
 - A governance domain has a name, description, domain owner(s), data products, glossary terms, Objectives and Key Results (OKRs) and critical data elements among others.
 - Through defining overarching categories for assets, governance domains enable users to narrow down their search for relevant data. They further allow governance domain owners to align data governance to their specific business areas.
 - Governance domains aid in managing an expanding catalog of data assets, ensuring effective governance as the data estate grows. Glossary terms defined within a governance domain can be applied to any data product within that governance domain, helping data owners and stewards govern a growing number of assets effectively.
-<!-- - Glossary terms now also carry access policies, which get automatically applied when the term is attached to a data product. This means governance domain owners and stewards only need to devise governance practices once, which can then be applied consistently across the data estate. -->
 
 In essence, governance domains utilize existing business context to ensure data is not only more discoverable but also well governed as it expands.
 
@@ -86,15 +85,10 @@ Data Governance Scalability is achieved by transforming previously static glossa
 **Key Facts**
 
 - **Terms** are grouped under their respective Governance Domains as to provide context for each segment of your company, hence aiding the team to differentiate between the meanings if ever a term is shared across different domains.
-
 - **Policies** attached to the terms provide specific business health goals, data governance requirements, and terms of use to any data product that the term is applied to.
-
 - **Custom Attributes** can be added to the glossary terms to provide more information, and they can be edited, updated or removed as per business requirements.
-
 - **Publishing** a Term makes it visible to all users, this step needs to be performed once the term is ready to be used within the Governance domain.
-
 - **Linking Data Products** to Terms is a feature that allows glossary terms to become more contextual and accurate to their governance domain.
-
 - **Related Terms** provide better business context and can be managed from the glossary term page. They can be added as a synonym or a related term and can be removed when necessary.
 
 ### Exercise: Creating Governance Domains Terms
