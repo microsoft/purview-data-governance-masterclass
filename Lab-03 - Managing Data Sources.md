@@ -12,6 +12,8 @@
 
 ### Why register Data Sources?
 
+> Source: [Managing Data Sources](https://learn.microsoft.com/en-us/purview/manage-data-sources)
+
 Microsoft Purview lets you to register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data.
 
 To register a source, you require the role of a Data Source Admin. The process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. Note that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules).
@@ -122,6 +124,8 @@ As scans consume compute resources, it's important to ensure that your rule sets
 **🎯 Outcome:** At the end of this task, you will have a better understanding of system and custom classifications in Purview Data Governance, including how to configure them.
 
 ### Understanding Classifications
+
+> Source: [Classifications](https://learn.microsoft.com/en-us/purview/concept-classification)
 
 As previously explained, Classifications are applied at the time of scanning, and are used to categorize and label data assets. Microsoft Purview comes with several international system classifications that are scanned for by default, but you can also create custom classifications to more accurately detect and tag data throughout your organization.
 
