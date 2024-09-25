@@ -55,9 +55,14 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 - Briefly cover off the [Reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
 <br>  
 
-Provide a overview of the Cloud Adoption Framework for Data Governance;
-<br>
-- Cover the Industry Challenges and an Introduction to Microsoft Purview.
+Next cover the Industry Challenges and an Introduction to Microsoft Purview.
+
+At a summary level - Purview – Data Governance contains two main components:
+- The Data Map – technical metadata and lineage from source are ingested and structured via logical constructs of domains & collections. 
+- The Data Catalogue - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map. 
+
+![Purview Overview](./assets/purview_summary.png)
+  
 - Discuss the value proposition of Purview and Federated Data Governance.
 - Discuss Responsible Data Value Creation and Data Democratization.
 - Discuss the previously separate services that Purview now brings together.
