@@ -49,25 +49,25 @@ One of the most significant changes in the new experience is the replacement of 
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
 
- - Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/en-us/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of depth.
+ - Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of nested depth.
 
 ### Understanding Collections inside Domains
 
 > Source: [Manage Domains and Collections](https://learn.microsoft.com/en-us/purview/how-to-create-and-manage-domains-collections)
 
-In the context of Microsoft Purview, collections are a way to organize resources like data sources, scans, and assets within a domain. Each domain, both default and custom, starts with one root collection and can contain multiple sub collections.
+In the context of Microsoft Purview, collections are a way to organize resources like data sources, scans, and assets within a domain. Each domain (both default and custom) starts with one root collection and can contain multiple sub collections.
 
 ![Creating a new Collection](./assets/creating-new-collection.png)
 
 **Key Characteristics:**
 
-- Hierarchical Structure: Collections form a tree structure (one-to-many), allowing you to organize your resources into a hierarchy based on access control boundaries.
+- Hierarchical Structure: Collections form a tree structure (one-to-many), allowing you to organize your resources into a hierarchy with [access control boundaries](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#add-roles-and-restrict-access-through-collections).
 - Role Assignments: Collections support role assignments, allowing you to manage access and permissions at a granular level. These roles could include Domain admins, Collection admins, Data curators, and [more](https://learn.microsoft.com/purview/how-to-create-and-manage-domains-collections#add-roles-and-restrict-access).
 - Resource Management: Resources (data sources, scans, assets) associated with a collection are automatically included when the collection is identified. Depending on the assigned permissions, these resources can be viewed, edited, or deleted.
-- Movement of Resources: Collections allow for movement of registered sources between them and also let you add assets.
+- Movement of Resources: Collections allow for movement of [registered](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#register-source-to-a-collection) sources between them and also let you add assets.
 - Inheritance: In Purview, permissions are inherited automatically from the parent collection to its sub collections. This inheritance is enabled by default and can be [restricted/disabled](https://learn.microsoft.com/purview/how-to-create-and-manage-domains-collections#restrict-inheritance) as needed.
 
-Remember, to manage collections, you need to be at least a Domain Admin or Collection Admin within the Microsoft Purview governance portal.
+Remember, to manage collections, you need to be at least a Domain Admin or Collection Admin within the [Purview governance portal](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions).
 
 ### Exercise: Create Domains and Collections
 
@@ -79,7 +79,7 @@ Remember, to manage collections, you need to be at least a Domain Admin or Colle
 
 > **Does your tenant fall into any of these categories?** Government, Health Department, Education? If so, you may need to be guided by your Microsoft contact or partner regarding the optimal setup, given only 4 custom domains can be created.
 
-**✍️ Do in Purview:** [5 minutes] Navigate to the Data Map and create a new platform/technical domain if required. If not required, continue on.. you will be working inside the default domain.
+**✍️ Do in Purview:** [5 minutes] Navigate to the Data Map and create a new platform/technical domain if required. If not required, continue on. You will be working inside the default domain.
 
 - [Assign](https://learn.microsoft.com/purview/governance-roles-permissions#add-role-assignments) the respective platform domain admin(s).
 
@@ -99,22 +99,24 @@ Sensitivity Labels are a feature that help you classify and protect organization
 
 ![Sensitivity Label Recommendation](./assets/sensitivity-label-recommendation.png)
 
-Sensitivity labels can be used to control access to content using encryption, add watermarks or headers to content, apply access policies automatically, protect content in Teams, Groups, and SharePoint sites, protect chat and meeting data. Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI, the Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
+Sensitivity labels can be used to control access to content using encryption, add watermarks, and apply access policies automatically. This enables the consistent protection of content in Teams, SharePoint sites, chat and meeting data. 
 
-The label's scope determines the label's settings and its availability to other apps and services. The label's order in the list also sets its priority (with labels appearing lower on the list having a higher order number and thus higher priority).
+Sensitivity labels are created and maintained in Purview - Information Protection and extend to Power BI, the Purview Data Map, and even integrate with third-party applications. [Supported data sources](https://learn.microsoft.com/en-us/purview/microsoft-purview-connector-overview) (see 'labeling' column).
+
+The label's scope determines the label's settings and its availability to other apps and services. The label's order in the list also sets its priority (with labels appearing lower on the list having a higher order number and thus, higher priority).
 
 ![Applying Sensitivity Labels](./assets/applying-sensitivity-labels.png)
 
 Sub labels, or 'child' labels beneath a 'parent' label, present labels to users in logical groups. They do not inherit the protection settings of their parent label, but do inherit their colour.
 
-Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection. These services check the usage rights for the individual user at runtime, enabling an extra layer of protection for labeled items.
+Sensitivity labels are also recognized and used by Microsoft services like Microsoft Copilot for Microsoft 365 and Azure Information Protection, etc. These services check the usage rights for the individual user at runtime, enabling an extra layer of protection for labeled items.
 
 ### Exercise: Implement Sensitivity Labels
 
 **🫂 Team Activity:** [5 minutes] Discuss whether your organization has an E3/E5 licence today and whether sensitivity labels are set up in your business already.
 
 - Are you using sensitivity labels today and do these get automatically or manually applied to unstructured data assets like Microsoft 365 apps to protect new business data at the time of creation?
-- Are sensitivity labels enforced for all users in the business (recommended) or targeted selectively?
+- Are sensitivity labels enforced for all users in the business (the recommended approach) or targeted selectively?
 
 **✍️ Do in Purview:** [5 minutes] Open the Information Protection solution:
 
@@ -122,7 +124,8 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
   ![Sensitivity Labels Overview in Microsoft Purview](./assets/sensitivity-labels-overview.png)
 - Define Auto-labeling policies as required by your organization.
 - Define Trainable Classifiers and Sensitive Information Types as applicable.
-- Enable the option to 'Extend Sensitivity Labels to the Purview Data Map'. New scans and supported data sources can now be labelled (automatically) with the sensitivity label.
+- Enable the option to 'Extend Sensitivity Labels to the Purview Data Map'.</br>
+    - New scans and supported data sources can now be labelled (automatically) with the sensitivity label.
 
 ---
 
@@ -132,7 +135,7 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 
 **⏰ Duration:** 10 minutes
 
-**🎯 Outcome:** At the end of this task, you will have connected an Azure Data Factory and Azure Data Share account to the Data Map. This ensures that ETL processes (e.g. at the column level) performed by that component are accurately captured as lineage, once we registering and scan the data sources it is connected too.
+**🎯 Outcome:** At the end of this task, you will have connected an Azure Data Factory instance and a Azure Data Share account to the Data Map. This ensures that ETL processes (e.g. at the column level) performed by that component are accurately captured as lineage, once we registering and scan the data sources it is connected too.
 
 ### Understanding Data Lineage
 
@@ -146,8 +149,8 @@ Understanding the lineage of data assets is important for troubleshooting data p
 
 **Types of Lineage:**
 
-- **Entity (or asset) Lineage:** Lineage is typically represented as a graph showing source and target entities, linked by a process invoked by a compute system, assisting in making the lineage human-readable.
-- **Column-level (or attribute) lineage:** It identifies columns of a source entity that are used to create or derive columns in the target entity, assisting in tracking column-level changes from the source to the target.
+- **Entity (or asset) Lineage:** As the name suggested, this is lineage at the coarse grain of the entity or object level. Lineage is typically represented as a graph showing source and target entities, linked by a process invoked by a compute system, assisting in making the lineage human-readable.
+- **Column-level (or attribute) lineage:** This is lineage at a finer grain, i.e. columns within that entity. It identifies columns of a source entity that are used to create or derive columns in the target entity, assisting in tracking column-level changes from the source to the target.
 
 ### Exercise: Adding Lineage Connections (optional)
 
@@ -161,7 +164,7 @@ After registration, the Status should appear as: `Connected`
 
 **✍️ Do in Purview:** [5 minutes] Navigate to the Data Map solution's Source Management, and enter the 'Lineage connections' tab. Add one or more Azure Data Share resources.
 
-**✨ Pro Tip:** Each Data Factory or Azure Data Share can only be connected to one Purview account.
+**✨ Pro Tip:** Each Data Factory or Azure Data Share instance can only be connected to one Purview account. A single instance cant be shared across accounts. 
 
 ---
 
