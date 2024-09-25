@@ -22,8 +22,6 @@
 
 If you were unable to answer many of these questions, lets aim to get clarity at the end of the session/workshop - once capabilities become clearer to you.
 
----
-
 ## Task 2: Create your Platform Domains
 
 > Microsoft Purview Solution: Data Map
@@ -36,20 +34,20 @@ If you were unable to answer many of these questions, lets aim to get clarity at
 
 > Source: [Domains](https://learn.microsoft.com/purview/concept-domains)
 
-Microsoft Purview has introduced ['domains'](https://learn.microsoft.com/purview/concept-domains) (not to be confused with the [Governance Domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create logical separation, ensuring consistent management across assets and glossaries. 
+Microsoft Purview has introduced ['domains'](https://learn.microsoft.com/purview/concept-domains) (not to be confused with the [Governance Domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) concept) as a structure within the Microsoft Purview Data Map. Domains are designed to distribute organizational responsibility, create logical separation, ensuring consistent management across assets and glossaries.
 
-One of the most significant changes in the new experience is the replacement of multiple data governance accounts within a tenant (the classic Azure Purview approach) with multiple domains under an default Purview account for that tenant. 
+One of the most significant changes in the new experience is the replacement of multiple data governance accounts within a tenant (the classic Azure Purview approach) with multiple domains under an default Purview account for that tenant.
 
 **Key Facts:**
 
 - Every Microsoft Purview Data Map starts with a [default domain](https://learn.microsoft.com/purview/concept-domains#default-domain). This domain is the primary account's root collection when an account is upgraded to the new experience.</br>
-    - Up to 4 additional custom domains can be created for better organization and governance.</br>
-- A new role, the [Domain Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=roles%20are%20currently%3A-,Domain%20admin,-(domain%20level)), can be assigned. They will have the ability to assign permissions within that domain and manage its resources.
+  - Up to 4 additional custom domains can be created for better organization and governance.</br>
+- A new role, the [Domain Admin](<https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=roles%20are%20currently%3A-,Domain%20admin,-(domain%20level)>), can be assigned. They will have the ability to assign permissions within that domain and manage its resources.
 - You will be able to [merge](https://learn.microsoft.com/purview/merge-domain?source=docs) exiting (classic) Azure Purview accounts within your tenant into the new Microsoft Purview experience using domains.
 
 ![A tenant contains multiple domains, each domain enclosing collections and glossaries](./assets/tenant-with-domains.png)
 
- - Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/en-us/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of depth.
+- Each Data Map has 1-5 Domains. Each Domain can have up to [256 collections](https://learn.microsoft.com/en-us/purview/concept-best-practices-collections#:~:text=A%20collections%20hierarchy%20in%20a%20Microsoft%20Purview%20can%20support%20as%20many%20as%20256%20collections%2C%20with%20a%20maximum%20of%20eight%20levels%20of%20depth.), with a maximum of eight levels of depth.
 
 ### Understanding Collections inside Domains
 
@@ -82,8 +80,6 @@ Remember, to manage collections, you need to be at least a Domain Admin or Colle
 **✍️ Do in Purview:** [5 minutes] Navigate to the Data Map and create a new platform/technical domain if required. If not required, continue on.. you will be working inside the default domain.
 
 - [Assign](https://learn.microsoft.com/purview/governance-roles-permissions#add-role-assignments) the respective platform domain admin(s).
-
----
 
 ## Task 3: Create and Extend Sensitivity Labels
 
@@ -123,8 +119,6 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 - Define Auto-labeling policies as required by your organization.
 - Define Trainable Classifiers and Sensitive Information Types as applicable.
 - Enable the option to 'Extend Sensitivity Labels to the Purview Data Map'. New scans and supported data sources can now be labelled (automatically) with the sensitivity label.
-
----
 
 ## Task 4: Adding Lineage Connections
 
