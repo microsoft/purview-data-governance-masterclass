@@ -73,7 +73,7 @@ After registering your source, you can move it to another collection within the 
 - Which collection should the assets be scanned into? This may be different from the collection in which the physical data source itself is registered.
 - Should scans be full scans or incremental scans?
 
-**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly cycle before a scan is executed, leading to potentail cost blowouts or latency.
+**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly cycle before a scan is executed, leading to potential cost blowouts or latency.
 
 **✍️ Do in Purview:** [10 minutes] Transfer your discussion into practice by configuring a data source scan for a selected data source.
 
