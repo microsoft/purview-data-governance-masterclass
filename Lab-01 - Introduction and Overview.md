@@ -48,7 +48,7 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 ![Overview](./assets/data_gov_overview.png)
 
 - Define [Data Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics#govern-your-analytics-estate) and its value.
-- Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation. 
+- Discuss the [Data governance maturity model](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern#data-governance-maturity-model) and invite the group to assess their organisation.
 - Discuss typical Cx [requirements for data governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements).
 - Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
 - Briefly cover off the [Reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
@@ -56,11 +56,12 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 Next cover the Industry Challenges and an Introduction to Microsoft Purview.
 
 At a summary level - Purview Data Governance contains two main components:
-- The Data Map – technical metadata and lineage from source are ingested and structured via the logical constructs of Domains & Collections. 
-- The Data Catalog - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map. 
+
+- The Data Map – technical metadata and lineage from source are ingested and structured via the logical constructs of Domains & Collections.
+- The Data Catalog - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map.
 
 ![Purview Overview](./assets/purview_summary.png)
-  
+
 _Provide a overview of the Cloud Adoption Framework for Data Governance:_
 
 - Discuss the value proposition of Purview and Federated Data Governance.

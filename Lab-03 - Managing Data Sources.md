@@ -8,19 +8,19 @@
 
 **⏰ Duration:** 30 minutes
 
-**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Data Catalogue. 
+**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Data Catalogue.
 
 ### Why register Data Sources?
 
 > Source: [Managing Data Sources](https://learn.microsoft.com/en-us/purview/manage-data-sources)
 
-Purview Data Governance lets you register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data. 
+Purview Data Governance lets you register, manage, and move data sources in your organization's data map. This aids in the organized categorization and systematic access control of your data.
 
-[Registering](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#register-source-to-a-collection) is a requirement for Purview to scan that source and read out the technical metadata and lineage ([connector](https://learn.microsoft.com/purview/microsoft-purview-connector-overview#microsoft-purview-data-map-available-data-sources) dependant). 
+[Registering](https://learn.microsoft.com/purview/how-to-create-and-manage-collections#register-source-to-a-collection) is a requirement for Purview to scan that source and read out the technical metadata and lineage ([connector](https://learn.microsoft.com/purview/microsoft-purview-connector-overview#microsoft-purview-data-map-available-data-sources) dependent).
 
-To register a data source, you will require the role of a [Data Source Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=and%20glossary%20terms.-,Data%20source%20administrator,-%2D%20a%20role%20that) and individual access to that data source. The Registeration process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page. 
+To register a data source, you will require the role of a [Data Source Admin](https://learn.microsoft.com/purview/governance-roles-permissions#domain-and-collection-permissions:~:text=and%20glossary%20terms.-,Data%20source%20administrator,-%2D%20a%20role%20that) and individual access to that data source. The Registration process involves selecting 'Data sources' in the Microsoft Purview Data Map, choosing a source type, and filling out the form on the 'Register sources' page.
 
-***NB*** - that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules), enabling the Purview identity to have 'read' access of the source, etc. These topics are out-of-scope for this masterclass series. 
+**_NB_** - that most data sources have additional specific information and prerequisites for registration and scanning. This may include but is not limited to the configuration of networking-related settings (private endpoints/firewall rules), enabling the Purview identity to have 'read' access of the source, etc. These topics are out-of-scope for this masterclass series.
 
 As such, data sources are typically registered once by a central IT team or using infrastructure as code (IaC) tools like Terraform or ARM templates, under elevated change privileges. This ensures that the data source is registered consistently across the organization and that the necessary prerequisites are met.
 
@@ -32,9 +32,9 @@ As such, data sources are typically registered once by a central IT team or usin
 - Where are these data sources? Azure? another cloud provider? or on premises?
 - What are the key data assets that you should target which provide the most benefit to the business?
 - Do you have any data sources that are not on the supported list? </br>
-***NB*** - We caution against custom/bespoke integrations, due to the Product Manager responsibilities this creates across the full product lifecycle for customers. 
+  **_NB_** - We caution against custom/bespoke integrations, due to the Product Manager responsibilities this creates across the full product lifecycle for customers.
 
-**✨ Pro Tip:** - Purview regularly updates its published [roadmap](https://learn.microsoft.com/purview/whats-new#whats-planned-for-microsoft-purview), which includes the planned data source connector work. 
+**✨ Pro Tip:** - Purview regularly updates its published [roadmap](https://learn.microsoft.com/purview/whats-new#whats-planned-for-microsoft-purview), which includes the planned data source connector work.
 
 **✍️ Do in Purview:** [15 minutes] Using the Data Map solution, 'Register' a data source by following the wizard. Be sure to select the domain and collection name into which this data source should be registered. You should be confident on your collection hierarchy before continuing.
 
@@ -45,10 +45,11 @@ Once registered, your data map needs to be populated with information. This done
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
 
-**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Data Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains. 
+**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Data Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains.
+
 - More [best practices](https://learn.microsoft.com/purview/concept-best-practices-domains-and-gov-domains) can be found in the Purview documentation.
 
-After registering your source, you can move it to another collection within the same domain, assuming you have the required access and privileges. However, it's important to note that when a source is moved to a new collection, its scans move with it, but its assets ***will not appear*** in the new collection until the next scan is performed.
+After registering your source, you can move it to another collection within the same domain, assuming you have the required access and privileges. However, it's important to note that when a source is moved to a new collection, its scans move with it, but its assets **_will not appear_** in the new collection until the next scan is performed.
 
 ---
 
@@ -145,7 +146,7 @@ Classifications are applied at the time of scanning and are used to categorize a
 
 #### Custom Classifications
 
-If a bespoke classification does not exist out of the box, you may decide to create a "custom" classification. These may either be regular expression patterns or dictionary lookups. You also define the percentage of sampled rows that must match the regular expression or dictionary lookup to apply the classification. The lower percentage, the higher the hit-rate and increased risk of false positives. 
+If a bespoke classification does not exist out of the box, you may decide to create a "custom" classification. These may either be regular expression patterns or dictionary lookups. You also define the percentage of sampled rows that must match the regular expression or dictionary lookup to apply the classification. The lower percentage, the higher the hit-rate and increased risk of false positives.
 
 An example of a custom classification would be a specifically formatted Invoice ID (e.g. INV-123-XYZ) which comes from a specific source system, or an X (formerly Twitter) handle (e.g. @username).
 
@@ -170,8 +171,9 @@ An example of a custom classification would be a specifically formatted Invoice 
 
    - Specify the Data Pattern.
    - Set the Minimum Match Threshold (the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.)
-     
+
      **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled, and the value will be fixed at 60%.</br>
+
    - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
    - Click 'Create' to confirm your classification rule.
 
@@ -189,9 +191,9 @@ You may decide to revise the Scan Rule Sets from task 3 to include your new cust
 
 > Source: [Choose the right integration runtime](https://learn.microsoft.com/en-us/purview/choose-the-right-integration-runtime-configuration)
 
-Purview uses integration runtimes (IR) to connect to data sources and provide the compute to run the scans. Not all data sources support all integration runtime types and vice a versa. 
+Purview uses integration runtimes (IR) to connect to data sources and provide the compute to run the scans. Not all data sources support all integration runtime types and vice a versa.
 
-These runtimes can be auto-resolved by Azure or self-hosted (SHIR) by your organization. The choice of integration runtime depends on the data source you are connecting to and the network configuration of your organization. 
+These runtimes can be auto-resolved by Azure or self-hosted (SHIR) by your organization. The choice of integration runtime depends on the data source you are connecting to and the network configuration of your organization.
 
 You can choose between:
 
@@ -204,7 +206,6 @@ You can choose between:
 - **Kubernetes supported Self-Hosted Integration Runtime (Preview):** This runtime is used to connect to on-premises data sources. It requires additional configuration to connect to your data source.
 
 - **AWS Integration Runtime:** This runtime is used to connect to AWS data sources.
-
 
 **✨ Pro Tip:** When choosing an integration runtime, consider the network configuration of your organization and the data source you are connecting to. If you are connecting to an on-premises data source, you must use a self-hosted integration runtime.
 
