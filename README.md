@@ -52,10 +52,11 @@ The following is a suggested agenda for an action-packed 1 or 3-day workshop:
 13. Defining Health Management Controls
 14. Tracking Data Quality
 15. Taking Action on Data Health Alerts
-16. Asset Auditing and History
-17. Custom functionality with APIs and SDKs
-18. Business Continuity and Disaster Recovery
-19. 🔜 Pricing and Licensing
+16. 🔜 Data Health Reports & Insights
+17. Asset Auditing and History
+18. Custom functionality with APIs and SDKs
+19. Business Continuity and Disaster Recovery
+20. 🔜 Pricing and Licensing
 
 ## 🗃️ Microsoft Purview Solutions
 
