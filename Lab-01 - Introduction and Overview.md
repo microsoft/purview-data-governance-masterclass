@@ -53,6 +53,8 @@ Provide a overview of the [Cloud Adoption Framework](https://learn.microsoft.com
 - Discuss typical [Data governance processes](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components).
 - Briefly cover off the [Reference model for planning](https://learn.microsoft.com/purview/data-catalog-get-started?view=o365-worldwide#reference-model-for-planning) guidance.
 
+Discuss the [recommendations for data classification](https://learn.microsoft.com/azure/well-architected/security/data-classification) from the Azure [Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/), noting that many organisations will have defined data classification policies to work from, but are still on the jounery to a fully formed taxonomy. 
+
 Next cover the Industry Challenges and an Introduction to Microsoft Purview.
 
 At a summary level - Purview Data Governance contains two main components:
