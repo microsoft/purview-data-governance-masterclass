@@ -12,7 +12,7 @@
 
 ### Understanding Governance Domains
 
-In Purview, a 'governance domain' is an abstract concept introduced to provide business context to technical data assets and enable more effective scaling of data governance practices. 
+In Purview, a 'governance domain' is an abstract concept introduced to provide business context to technical data assets and enable more effective scaling of data governance practices.
 
 Principally focused on improving data ownership management, a [governance domain](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) can be seen as a logical boundary enabling consistent governance, ownership, and discovery of data products and assets by end-users.
 
@@ -22,7 +22,7 @@ Principally focused on improving data ownership management, a [governance domain
 
 - A Governance domain could represent functional business units, line of business, data domains, regulatory, or project domains for example.
   - Refer to the [Best Practices](https://learn.microsoft.com/purview/data-catalog-best-practices#create-governance-domains) to decide on the best approach.
-- Governance Domains can also be hierarchical, they can be nested inside parent governance domains. </br>
+- Governance Domains can also be hierarchical, they can be nested inside parent governance domains.
   - For example: A hypothetical `Customer` domain may contain the `Customer Delivery` and the `Customer Experience` child domains.
 - A Governance domain has a name, description, domain owner(s), [data products](https://learn.microsoft.com/purview/what-is-data-catalog#data-products), [glossary terms](https://learn.microsoft.com/purview/what-is-data-catalog#glossary-terms), Objectives and Key Results ([OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs)) and [critical data elements](https://learn.microsoft.com/en-us/purview/what-is-data-catalog#critical-data-elements) among others.
 - Through defining overarching categories for assets, Governance domains enable users to narrow down their search for relevant data. They further allow Governance domain owners to align data governance to their specific [business areas](https://learn.microsoft.com/purview/data-catalog-best-practices#build-domain-specific-standards).
@@ -82,7 +82,7 @@ This link (mapping to Data Map - Collections) is crucial for ensuring that data 
 
 ### Understanding Governance Domain Terms
 
-Governance domain terms, or glossary terms, are crucial for managing, governing, and making data discoverable. These Terms are more than just a vocabulary for business users; they are related to data assets, categorized, and provide context. Consistent and standardised terms, greatly simplify the technical jargon associated with your data or industry driving great business understanding. 
+Governance domain terms, or glossary terms, are crucial for managing, governing, and making data discoverable. These Terms are more than just a vocabulary for business users; they are related to data assets, categorized, and provide context. Consistent and standardised terms, greatly simplify the technical jargon associated with your data or industry driving great business understanding.
 
 Terms play a key role in data governance, helping data stewards to apply policies and scale data governance as the data estate expands.
 
@@ -92,7 +92,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 
 - **Terms** are grouped under their respective Governance domains as to provide context for each segment of your company, hence aiding the team to differentiate between the meanings if ever a term is shared across different domains.
 - **Policies** attached to the terms provide specific business [health controls](https://learn.microsoft.com/purview/section6-deh-controls#evaluate-your-data-governance-with-data-estate-health), data governance requirements, and terms of use to any data product that the term is applied to.
-- **Custom Attributes** can be added to the glossary terms to provide more information and conetxt. They can be edited, updated or removed as per business requirements.
+- **Custom Attributes** can be added to the glossary terms to provide more information and context. They can be edited, updated or removed as per business requirements.
 - **Publishing** a Term makes it visible to all users. This [workflow](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#publish) step is performed, once a term has been discovered, validated and is ready to be used within a Governance domain.
 - **[Linking](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#manage-data-product-links) Data Products** to Terms is a feature that allows glossary terms to become more contextual and accurate to their governance domain.
 - **Related Terms** provide better business context and can be managed from the glossary term page. They can be added as a synonym or a [related term](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#manage-related-terms), and can be removed when necessary.

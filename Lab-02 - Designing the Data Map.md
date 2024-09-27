@@ -109,7 +109,7 @@ Sensitivity labels are also recognized and used by Microsoft services like Micro
 
 ### Exercise: Implement Sensitivity Labels
 
-**🫂 Team Activity:** [5 minutes] Discuss whether your organization has an E3/E5 licence today and whether sensitivity labels are set up in your business already.
+**🫂 Team Activity:** [5 minutes] Discuss whether your organization has an E3/E5 license today and whether sensitivity labels are set up in your business already.
 
 - Are you using sensitivity labels today and do these get automatically or manually applied to unstructured data assets like Microsoft 365 apps to protect new business data at the time of creation?
 - Are sensitivity labels enforced for all users in the business (the recommended approach) or targeted selectively?
