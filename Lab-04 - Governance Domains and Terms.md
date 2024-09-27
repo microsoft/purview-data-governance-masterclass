@@ -122,7 +122,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 
 ### Exercise: Browsing the Enterprise Glossary
 
-Now that you have created Governance domains and Terms, it's time to explore the [Enterprise Glossary](https://learn.microsoft.com/purview/enterprise-glossary). This is the experience presented to business users to help them discover and understand the terms you just created.
+Now that you have created Governance domains and Terms, it's time to explore the [Enterprise Glossary](https://learn.microsoft.com/purview/enterprise-glossary). This is the experience presented to end users to help them discover and understand the terms you just created.
 
 Please note that in order for a term to be visible to business users via the Enterprise Glossary, both the term and the Governance domain its attached too, must be published.
 
