@@ -22,7 +22,8 @@ Finally, Data products can be secured with [access policies](https://learn.micro
 
 **🫂 Team Activity:** [10 minutes] Identify a business unit (governance domain) and then [on a whiteboard] map out their data assets into groups that can easily be packaged together for specific use cases. It may be that transaction information and customer details that can be grouped into an Open Banking data product for example.
 
-**✨ Pro Tip:** If lost, just use the 'Sales' example from above.  
+**✨ Pro Tip:** If lost, just use the 'Sales' example from above.
+
 While its tempting to create a one-to-one mapping between data assets and Data products, it is important to note that a individual data asset can belong to zero-to-many Data products. i.e. the enterprise product hierarchy table, used across numerous reporting and downstream solutions. Carefully consider the trade-offs when deciding on the approach, especially across the entire data lifecycle, and when governance grows across the data estate.
 
 **✨ Pro Tip:** Create a Key-Design-Decision (KDD) which articulates the rationale, considerations, and implications for whichever approach you decide. This will create transparency and an audit trail for this decision.
