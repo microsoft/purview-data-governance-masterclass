@@ -13,7 +13,7 @@
 - the importance of data quality in data governance,
 - the Purview Data quality life cycle.
 
-### Importance of data quality in data governance
+### Importance of Data Quality in Data Governance
 
 In the context of data governance, data quality is the foundation of data management. It ensures that data is accurate, complete, and reliable. Data quality is essential for making informed decisions, ensuring compliance with regulations, and driving business value.
 
@@ -34,7 +34,7 @@ Leveraging the shortcuts to reference data in OneLake, Purview Data Quality can 
 
 In this section we will look at the process for setting up Microsoft Purview Data Quality scans, creating and managing data quality rules, and monitoring and improving data quality on an ongoing basis.
 
-### The data quality checklist
+### The Data Quality Checklist
 
 This is a checklist of all the tasks that need to be done to get the data quality process up and running. More in depth details of each task will be covered in the following sections.
 
@@ -72,7 +72,7 @@ To assign permissions to a user or group, follow these steps:
 
 **🎯 Outcome:** At the end of this task, you will have configured a data quality scan connection.
 
-#### Configuring data quality scan connections
+#### Configuring Data Quality Scan Connections
 
 The data source connections for Data Quality will be configured at a Governance domain level. This is a separate configuration to the data source connections for the Data Map, because unlike the Data Map scans, the Data Quality will perform a deep scan which means that it will scan all the selected data in the data source and not just the metadata or a sample of the data.
 
@@ -103,7 +103,7 @@ To configure the data source connections for Data Quality, follow the steps belo
 12. Click Submit to save the connection.
     ![Create DQ Scan Connection](./assets/create-dq-scan-connection.jpg)
 
-## Task 3: Configure and run profiling (Step 7)
+## Task 3: Configure and Run Profiling (Step 7)
 
 > Microsoft Purview Solution: Data Catalog
 
@@ -111,7 +111,7 @@ To configure the data source connections for Data Quality, follow the steps belo
 
 **🎯 Outcome:** At the end of this task you would have configured and run data profiling.
 
-### Purpose of profiling
+### Purpose of Profiling
 
 Before creating data quality rules it is helpful to get an indication of the quality of the data. Profiling is the process of analyzing data to identify patterns, anomalies, and inconsistencies. Profiling helps to understand the structure and quality of the data, which is essential for creating data quality rules.
 
@@ -140,7 +140,7 @@ Follow the steps in the following tutorial to configure and run profiling: [Conf
 - View and/or created No-code/low-code data quality rules
 - Run a data quality scan once
 
-### Different types of data quality rules
+### Different Types of Data Quality Rules
 
 Microsoft Purview currently supports the following types of data quality rules:
 
