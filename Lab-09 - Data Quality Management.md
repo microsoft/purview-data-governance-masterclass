@@ -101,7 +101,7 @@ To configure the data source connections for Data Quality, follow the steps belo
 10. Enable a managed V-Net if required. This will require you to select a compute or prompt you to create one.
 11. MSI (Managed Service Identity) is currently the only supported authentication method. You will need to ensure that the MSI has the required permissions to access the data source. Follow these instructions to [grant permissions to the MSI](https://learn.microsoft.com/en-us/purview/register-scan-adls-gen2?tabs=MI#using-a-system-or-user-assigned-managed-identity-for-scanning.)
 12. Click Submit to save the connection.
-    ![Create DQ Scan Connection](./assets/Create-DQ-Scan-Connection.jpg)
+    ![Create DQ Scan Connection](./assets/create-dq-scan-connection.jpg)
 
 ## Task 3: Configure and run profiling (Step 7)
 
@@ -125,7 +125,7 @@ Basic data quality metrics are returned as part of the profiling process. These 
 
 **✍️ Do in Purview:**
 
-![Profile Data](./assets/Profile-Data.jpg)
+![Profile Data](./assets/profile-data.jpg)
 Follow the steps in the following tutorial to configure and run profiling: [Configure and run profiling](https://learn.microsoft.com/en-us/purview/how-to-configure-and-run-data-profiling#steps-to-configure-data-profiling-job)
 
 ## Task 4: Creating and Managing Data Quality Rules (Step 8 to 10)
@@ -165,7 +165,7 @@ Microsoft Purview currently supports the following types of data quality rules:
 Data quality rules are configured at the asset level to include one or more columns.
 Purview has an AI powered rule recommendation engine that will suggest rules based on the data profile. You can get suggestions for rules by clicking on the Suggest rules button.
 
-![Suggest Rules](./assets/Suggest_rules.jpg)
+![Suggest Rules](./assets/suggest_rules.jpg)
 
 **✨ Pro Tip:**
 Carefully review rules suggested by the Copilot and ensure that they are relevant to the data asset, data quality scans are a compute intensive process and you don't want to run unnecessary scans.
