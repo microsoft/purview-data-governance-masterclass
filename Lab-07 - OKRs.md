@@ -21,7 +21,7 @@ Purview's OKRs have several attributes:
 
 - Target date - when you expect to achieve your goal.
 - Key results - these are the measurable, time-bound metrics associated with your objective, and should be how you track progress toward your objective.
-  - A good metric for goals/objectives is SMART = **S**pecific, **M**easurable, **A**chievable, **R**ealistic, and **T**imebound. </br>
+  - A good metric is SMART = **S**pecific, **M**easurable, **A**chievable, **R**ealistic, and **T**imebound. </br>
 <br>
 
 **Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. 
