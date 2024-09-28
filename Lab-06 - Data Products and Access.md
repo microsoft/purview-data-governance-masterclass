@@ -6,13 +6,13 @@
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have created one or more [Data products](https://learn.microsoft.com/purview/what-is-data-catalog#data-products) based on data assets curated in [Lab 5](/Lab-05%20-%20Curating%20Data%20Assets.md), and them available to end users, via through [access policies](https://learn.microsoft.com/purview/how-to-manage-data-catalog-access-policies).
+**🎯 Outcome:** At the end of this task, you will have created one or more [Data products](https://learn.microsoft.com/purview/what-is-data-catalog#data-products) based on data assets curated in [Lab 5](/Lab-05%20-%20Curating%20Data%20Assets.md), and made them available to end users, via [access policies](https://learn.microsoft.com/purview/how-to-manage-data-catalog-access-policies).
 
 ### Data Products vs Data Assets
 
-Individual Data assets by themselves have limited value. They typically need to be packaged together with relationships, and context provided to be more useful. For example, a single fact table of 'Sales' likely requires 'Customers', 'Sales Representatives', and 'Regions' dimension tables to make the sales data more useful for analysis or reporting.
+Individual Data assets by themselves have limited value. They typically need to be packaged together with relationships, and have context provided to be more useful. For example, a single fact table of 'Sales' likely requires 'Customers', 'Sales Representatives', and 'Regions' dimension tables to make the sales data more useful for analysis or reporting.
 
-This is where Data products come in. Within Purview, a [Data product](https://learn.microsoft.com/purview/concept-data-products#whats-a-data-product) is a logical abstraction which represents a business concept with a name, description, owners, and most importantly a list of associated data assets. A successful data product makes it easy for data consumers to recognize valuable data using their day-to-day language, and at the same time streamlines ownership responsibilities for those data assets.
+This is where Data products come in. Within Purview, a [Data product](https://learn.microsoft.com/purview/concept-data-products#whats-a-data-product) is a logical abstraction which represents a business concept with a name, description, owners, and most importantly a list of associated data assets. A successful Data product makes it easy for data consumers to recognize valuable data using their day-to-day language, and at the same time streamlines ownership responsibilities for those data assets.
 
 Data products can be published for consumption by end users throughout the organization. They can be associated with [governance domain](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), business [glossary terms](https://learn.microsoft.com/purview/what-is-data-catalog#glossary-terms), and objectives and key results ([OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs)) to provide context and alignment with business goals (more on this in the next lab).
 
@@ -20,7 +20,7 @@ Finally, Data products can be secured with [access policies](https://learn.micro
 
 ### Exercise: Create Data Products
 
-**🫂 Team Activity:** [10 minutes] Identify a business unit (governance domain) and then [on a whiteboard] map out their data assets into groups that can easily be packaged together for specific use cases. It may be that transaction information and customer details that can be grouped into an Open Banking data product for example.
+**🫂 Team Activity:** [10 minutes] Identify a business unit (governance domain) and then on a whiteboard map out their data assets into groups that can easily be packaged together for a couple of specific use cases. It may be that transaction information and customer details that can be grouped into an Open Banking data product for example.
 
 **✨ Pro Tip:** If lost, just use the 'Sales' example from above.
 
