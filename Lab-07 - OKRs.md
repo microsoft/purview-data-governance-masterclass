@@ -21,16 +21,18 @@ Purview's OKRs have several attributes:
 
 - Target date - when you expect to achieve your goal.
 - Key results - these are the measurable, time-bound metrics associated with your objective, and should be how you track progress toward your objective.
-  - A good metric for goals/objectives is SMART = **S**pecific, **M**easureable, **A**chievable, **R**ealistic, and **T**imebound. </br>
+  - A good metric for goals/objectives is SMART = **S**pecific, **M**easurable, **A**chievable, **R**ealistic, and **T**imebound. </br>
 <br>
 
-**Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. You likely have little or no idea which domain-specific data assets are available, because you don't usually interact with the sales team and even less so, have an understanding of the key business processes or which data sets support these.
+**Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. 
 
-That's where OKRs shine! By linking Data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective. This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments. 
+You likely have little or no idea which domain-specific data assets are available, because you don't usually interact with the sales team and even less so, have an understanding of the key business processes or which data sets support these. That's where OKRs shine! By linking Data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective. 
 
-When used with the Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)) experience, the additional context OKRs and linked Data Products provide, can greatly improve the search experience for business users.
+This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments. 
 
-Here is an example of a Human Resources Objective with four Key Results. One Data Product has been linked to the Objective:
+**✨ Pro Tip:** When used with the Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)) experience, the additional context which OKRs and linked Data Products provide, can greatly improve the search experience for end users.
+
+Here is an example of a OKR for a Human Resources Data product. Note, the ubiquitous business language used, and the four linked, measurable objectives, and the visual progress indicator against each metric. 
 
 ![Example OKR](/assets/okr-overview.png)
 
@@ -41,7 +43,7 @@ Here is an example of a Human Resources Objective with four Key Results. One Dat
 - Are there any executive mandates or strategic initiatives that are top of mind?
 - Can you identify any metrics that are tracked to measure success in this domain?
 - What are the key results that would indicate success in this domain?
-- Who owns the objectives that the business unit is working towards?
+- Who owns the objectives that the business area is working towards?
 
 **✍️ Do in Purview:** [5 minutes]
 
@@ -56,6 +58,6 @@ The back on the governance domain's OKR overview page, you can now see the objec
 
 ---
 
-**⏸️ Reflection:** Now that you have seen how OKRs can be used to link business objectives to data products, how do you think this will help your organization? What are some of the challenges you foresee in maintaining these links as the business evolves?
+**⏸️ Reflection:** Now that you have seen how Purview's implementation of OKRs can be used to link business objectives to Data products. How do you think this will help your organization? What are some of the challenges you foresee in maintaining these links as the business evolves?
 
 👉 [Continue: Lab 8](./Lab-08%20-%20Health%20Management%20Controls.md)
