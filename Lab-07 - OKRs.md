@@ -8,15 +8,27 @@
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05.md) to OKRs in your governance domains to associate metrics that matter with data products that drive them.
+**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05.md) to [OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs) in your [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains). This will attach trackable business-focused metrics to those domains and the Data products attached.
 
 ### Understanding Objectives and Key Results (OKRs)
 
-Objectives and Key Results (OKRs) provide a broadly adopted strategy for setting and communicating goals and results within an organization. The purpose of OKRs is to connect the objectives of a company or team to measurable results.
+Within Purview, Objectives and Key Results ([OKRs](https://learn.microsoft.com/purview/concept-okr)) is the goal or desired outcome of a Governance domain. The purpose of OKRs is to connect the objectives of a company or team to measurable business outcome. i.e. a 10% raise in sales, or a 3% reduction in support cases.
 
-**Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. You likely have little or no idea which expert data assets are available because you don't usually interact with the sales team and even less so, have an understanding which data sets will help you complete the task.
+Purview's OKRs have several attributes:
+- Owners - the users responsible for maintenance of the objective. These are typically Business leaders with an understanding of how the business functions and where it's headed
+- Definition - An overarching description of your objective, which can be as broad as “empower every person and every organization on the planet to achieve more”, or as specific as "use marketing campaigns to increase sales in the first quarter."
+  - ***NB*** - Good objectives are specific and achievable in a time frame.
 
-That's where OKRs shine! By linking data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective. This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments. When used with the Microsoft Purview Copilot experience, the additional context OKRs and linked Data Products provide, can greatly improve the search experience for business users.
+- Target date - when you expect to achieve your goal.
+- Key results - these are the measurable, time-bound metrics associated with your objective, and should be how you track progress toward your objective.
+  - A good metric for goals/objectives is SMART = **S**pecific, **M**easureable, **A**chievable, **R**ealistic, and **T**imebound. </br>
+<br>
+
+**Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. You likely have little or no idea which domain-specific data assets are available, because you don't usually interact with the sales team and even less so, have an understanding of the key business processes or which data sets support these.
+
+That's where OKRs shine! By linking Data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective. This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments. 
+
+When used with the Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)) experience, the additional context OKRs and linked Data Products provide, can greatly improve the search experience for business users.
 
 Here is an example of a Human Resources Objective with four Key Results. One Data Product has been linked to the Objective:
 
