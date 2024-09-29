@@ -16,7 +16,7 @@ Classic Purview Data Governance reflected the [Apache Atlas](https://atlas.apach
 
 For Purview's New Data Governance experience, the [Data Map APIs](https://learn.microsoft.com/rest/api/purview/), remain as they were for Classic. New API's covering the New Experience feature set are planned to have a stable release in H1/2025.  
 
-✨ **Pro Tip**: While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.  
+✨ **Pro Tip:** While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.  
 
 ### Capturing Microsoft Purview Events
 
@@ -24,7 +24,7 @@ Most actions in Purview raise notification 'events' that can be pushed to an [Az
 
 For example, Purview detects a scan failed due to a specific reason, this 'scan failed' event is written to the Event Hub alongside additional information, from where an Azure Function (external to Purview) picks it up to execute a piece of code or call other APIs that (for example) restart a virtual machine or self-hosted integration runtime.
 
-❗- By creating custom processes as above, carefully consider the trade-off between the desired functionality and the Product ownership roles this introduces across the full SDLC lifecycle. i.e. patching, updates when services are updated, validation/updates when Azure changes, etc. If you do decide to customise a process, create a Key-Design-Decision (KDD) which articulates the rationale, considerations, and implications. This will create transparency and an audit trail for this decision.
+❗**Callout:** By creating custom processes as above, carefully consider the trade-off between the desired functionality and the Product ownership roles this introduces across the full SDLC lifecycle. i.e. patching, updates when services are updated, validation/updates when Azure changes, etc. If you do decide to customise a process, create a Key-Design-Decision (KDD) which articulates the rationale, considerations, and implications. This will create transparency and an audit trail for this decision.
 
 **🫂 Team Activity:** [10 minutes] As a team, discuss whether you foresee a need to implement custom integrations and automation using the API.
 
