@@ -24,7 +24,7 @@ A sub-component of Business continuity is Disaster Recovery (DR), which Microsof
 
 **✨ Pro Tip:** Microsoft provides strong guidance for [designing a disaster recovery strategy](https://learn.microsoft.com/azure/well-architected/reliability/disaster-recovery), along with a detailed example for an [Azure Data Platform](https://learn.microsoft.com/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-overview).
 
-Classic Purview Data Governance has limited [DR capabilities](https://learn.microsoft.com/purview/disaster-recovery), requiring a second deployment, supported by customised API development, and [acknowlegded limitations](https://learn.microsoft.com/purview/disaster-recovery#limitations-and-considerations). 
+Classic Purview Data Governance has limited [DR capabilities](https://learn.microsoft.com/purview/disaster-recovery), requiring a second deployment, supported by customised API development, and [acknowledged limitations](https://learn.microsoft.com/purview/disaster-recovery#limitations-and-considerations). 
 
 As at Oct 2024, the DR capability for the New Experience SaaS offering is yet to be defined. The expectation is that it will follow the Microsoft - [Shared responsibility model](https://learn.microsoft.com/azure/reliability/business-continuity-management-program#shared-responsibility-model), for which the customer retains the responsibility to ensure the accounts, identities, and data is correct/up-to-date. 
 
