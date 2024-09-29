@@ -11,17 +11,24 @@
 ### What is the SLA for Microsoft Purview?
 
 At the time of writing, Microsoft Purview as a [SaaS](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas/?msockid=2114a70960fe65991122b5c4618d6462) service, has a **99.9%** uptime Service Level Agreement (SLA). This SLA is based on the Monthly Uptime Percentage formula.
+
 **✨ Pro Tip:** This is a financial guarantee of service. 99.9% (three nines) equates to no more than ~8.76 hours of downtime per year.   
 
 If Microsoft fails to meet this guarantee, you may be eligible for service credits. For more information, including the uptime calculation, please refer to the [Microsoft SLA page](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ### A word on Business Continuity and Disaster Recovery (BCDR)...
 
-Most actions in Purview raise notification 'events' that can be pushed to an [Azure Event](https://learn.microsoft.com/azure/event-hubs/event-hubs-about) Hub for external-to-purview consumption. A custom-coded [Azure Function](https://learn.microsoft.com/azure/azure-functions/functions-overview?pivots=programming-language-csharp) App could be used to react to new events, then execute any business logic and optionally write data back into Purview.
+Business continuity refers to the processes and strategies implemented to ensure that a solution continues to function effectively in the event of disruptions, such as system failures, natural disasters, or other unexpected incidents. The goal is to minimize downtime, maintain critical business operations, and reduce the impact on the organization's productivity and revenue.
 
-For example, Purview detects a scan failed due to a specific reason, this 'scan failed' event is written to the Event Hub alongside additional information, from where an Azure Function (external to Purview) picks it up to execute a piece of code or call other APIs that (for example) restart a virtual machine or self-hosted integration runtime.
+A sub-component of Business continuity is Disaster Recovery (DR), which Microsoft defines as "recovering from high-impact events, such as natural disasters or failed deployments, that result in downtime and data loss." - [source](https://learn.microsoft.com/azure/reliability/disaster-recovery-overview). 
 
-❗- By creating custom processes as above, carefully consider the trade-off between the desired functionality and the Product ownership roles this introduces across the full SDLC lifecycle. i.e. patching, updates when services are updated, validation/updates when Azure changes, etc. If you do decide to customise a process, create a Key-Design-Decision (KDD) which articulates the rationale, considerations, and implications. This will create transparency and an audit trail for this decision.
+**✨ Pro Tip:** Microsoft provides strong guidance for [designing a disaster recovery strategy](https://learn.microsoft.com/azure/well-architected/reliability/disaster-recovery), along with a detailed example for an [Azure Data Platform](https://learn.microsoft.com/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-overview).
+
+Classic Purview Data Governance has limited [DR capabilities](https://learn.microsoft.com/purview/disaster-recovery), requiring a second deployment, supported by customised API development, and [acknowlegded limitations](https://learn.microsoft.com/purview/disaster-recovery#limitations-and-considerations). 
+
+As at Oct 2024, the DR capability for the New Experience SaaS offering is yet to be defined. The expectation is that it will follow the Microsoft - [Shared responsibility model](https://learn.microsoft.com/azure/reliability/business-continuity-management-program#shared-responsibility-model), for which the customer retains the responsibility to ensure the accounts, identities, and data is correct/up-to-date. 
+
+![Shared responsibility mode](./assets/shared_responsibility_model.png)
 
 **🫂 Team Activity:** [10 minutes] Discuss to what extend Purview is considered critical to your business operations. i.e. if purview is offline, what business processes are impacted?
 
