@@ -15,7 +15,8 @@ Azure and its services are programmatically addressable via [REST APIs](https://
 Classic Purview Data Governance reflected the [Apache Atlas](https://atlas.apache.org/#/) API set and many organisations used these to extend upon the classic out-of-the-box feature set. 
 
 For Purview's New Data Governance experience, the [Data Map APIs](https://learn.microsoft.com/rest/api/purview/), remain as they were for Classic. New API's covering the New Experience feature set are planned to have a stable release in H1/2025.  
-✨ Pro Tip: While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.  
+
+✨ **Pro Tip**: While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.  
 
 ### Capturing Microsoft Purview Events
 
