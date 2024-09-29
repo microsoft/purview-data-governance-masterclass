@@ -38,7 +38,7 @@ Each Health Action has a severity classification assigned, based upon Health Con
 
 The Health Actions dashboard gives you an overview of the Health Actions that have been created based on the Health Control rules that have been defined. 
 
-❗- By default, Health Actions are not assigned to anyone. They must be assigned to a user/group, so that can be actioned. If left, they simply remain in the system and visible on the dashboard, unresolved. 
+❗**Callout:** By default, Health Actions are not assigned to anyone. They must be assigned to a user/group, so that can be actioned. If left, they simply remain in the system and visible on the dashboard, unresolved. 
 
 The Health Actions Dashboard shows four tabs:
 
