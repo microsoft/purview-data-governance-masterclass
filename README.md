@@ -6,7 +6,7 @@
 
 ## 🤷🏼 Purpose
 
-This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. It assumes attendees know nothing about the Purview or its functionality but have defined a set of data governance requirements.
+This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. It assumes attendees know nothing about Purview or its functionality, but have defined a set of data governance requirements.
 
 This masterclass is split into multiple labs, each with its own objectives. At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
 
@@ -15,11 +15,10 @@ This masterclass is split into multiple labs, each with its own objectives. At t
 These labs build on one another. It is recommended to follow them in order.
 
 - **1-Day Workshop (8 hours)**
-❗**Callout:** Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
-  
+  ❗**Callout:** Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
 - **3-Day Workshop (24 hours)** Complete all tasks, including the practical exercises. Ample time is provided for discussion and reflection.
-❗**Callout:** to complete the **✍️ Do in Purview** exercises, the audience will need access to their own Purview Data Governance instance. Currently, there is no lab environment available to support this requirement.
-  - If their organisation has created a new Purview instance to support this workshop, then that instance will become the [primary Purview account for that tenancy](https://learn.microsoft.com/purview/new-portal-faq#what-does-this-mean-for-my-existing-microsoft-purview-governance-portal-accounts). Currently, customers cannot change this, once created. If they need to it will require to a service request to Microsoft support services.  
+  ❗**Callout:** to complete the **✍️ Do in Purview** exercises, the audience will need access to their own Purview Data Governance instance. Currently, there is no lab environment available to support this requirement.
+  - If their organisation has created a new Purview instance to support this workshop, then that instance will become the [primary Purview account for that tenancy](https://learn.microsoft.com/purview/new-portal-faq#what-does-this-mean-for-my-existing-microsoft-purview-governance-portal-accounts). Currently, customers cannot change this, once created. If they need to it will require to a service request to Microsoft support services.
 
 Allow for a 15-minute break at least every 90 minutes (at the facilitator's discretion) and allow for an approximately 1-hour lunch break.
 
@@ -80,7 +79,7 @@ Throughout the labs, you will see the following icons. Take a minute to familiar
 - ✍️ **Do in Purview:** Refers to an activity to completed in the Purview portal to implement Microsoft Purview functionality.
 - ✨ **Pro Tip:** Refers to a takeaway or key best practice from the instructor.
 - ⏸️ **Wait:** Refers to short pause or reflection period to await results, for example, waiting for a data source scan to complete.
-- ❗**Callout:** An important point to bring to the audience attention.
+- ❗**Callout:** An important point to bring to the audience's attention.
 
 ## Ready to Start?
 
