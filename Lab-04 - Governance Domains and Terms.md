@@ -108,7 +108,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 
 **✍️ Do in Purview:** [5 minutes] Create new terms for Governance Domains of your choosing and note the 'steward' and 'expert' fields where you can assign a respective colleague.
 
-**✨ Pro Tip:** Try out the new Copilot integration to generate industry-relevant terms.  
+**✨ Pro Tip:** Try out the new Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)) integration to generate industry-relevant terms.  
 **✨ Pro Tip:** Try out the new Term Policies features.  
 **✨ Pro Tip:** You may like to use a free third-party tool like [Macula Purview Automate](https://www.maculasys.com/microsoft-purview) to load existing spreadsheets of terms into Purview in bulk. Seek advice from your Microsoft contact or partner for more information.
 

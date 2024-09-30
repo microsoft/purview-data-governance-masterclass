@@ -6,7 +6,7 @@
 
 ## 🤷🏼 Purpose
 
-This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. Assuming attendees know nothing about the service or functionality but have defined a set of data governance evaluation or implementation criteria.
+This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. It assumes attendees know nothing about Purview or its functionality, but have defined a set of data governance requirements.
 
 This masterclass is split into multiple labs, each with its own objectives. At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
 
@@ -15,8 +15,10 @@ This masterclass is split into multiple labs, each with its own objectives. At t
 These labs build on one another. It is recommended to follow them in order.
 
 - **1-Day Workshop (8 hours)**
-  Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
+  ❗**Callout:** Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
 - **3-Day Workshop (24 hours)** Complete all tasks, including the practical exercises. Ample time is provided for discussion and reflection.
+  ❗**Callout:** to complete the **✍️ Do in Purview** exercises, the audience will need access to their own Purview Data Governance instance. Currently, there is no lab environment available to support this requirement.
+  - If their organisation has created a new Purview instance to support this workshop, then that instance will become the [primary Purview account for that tenancy](https://learn.microsoft.com/purview/new-portal-faq#what-does-this-mean-for-my-existing-microsoft-purview-governance-portal-accounts). Currently, customers cannot change this, once created. If they need to it will require to a service request to Microsoft support services.
 
 Allow for a 15-minute break at least every 90 minutes (at the facilitator's discretion) and allow for an approximately 1-hour lunch break.
 
@@ -37,26 +39,26 @@ In addition to being a Purview expert, the facilitator's role is to facilitate a
 
 The following is a suggested agenda for an action-packed 1 or 3-day workshop:
 
-1. Executive Overview & Introduction
-2. Data Map Foundations
-3. Sensitivity Labels and Lineage Connections
-4. Registering Data Sources
-5. Defining Scans and Scan Rule Sets
-6. Custom Data Classifications
-7. Curating Data Assets
-8. Designing for Governance Domains
-9. Managing an Enterprise Glossary
-10. Bundling Assets into Data Products
-11. Self-Service Access Requests
-12. Articulating Business OKRs
-13. Defining Health Management Controls
-14. Tracking Data Quality
-15. Taking Action on Data Health Alerts
-16. 🔜 Data Health Reports & Insights
-17. Asset Auditing and History
-18. Custom functionality with APIs and SDKs
-19. Business Continuity and Disaster Recovery
-20. 🔜 Pricing and Licensing
+1. Executive Overview & Introduction.
+2. Data Map Foundations.
+3. Sensitivity Labels and Lineage Connections.
+4. Registering Data Sources.
+5. Defining Scans and Scan Rule Sets.
+6. Custom Data Classifications.
+7. Curating Data Assets.
+8. Designing for Governance Domains.
+9. Managing an Enterprise Glossary.
+10. Bundling Assets into Data Products.
+11. Self-Service Access Requests.
+12. Articulating Business OKRs.
+13. Defining Health Management Controls.
+14. Tracking Data Quality.
+15. Taking Action on Data Health Alerts.
+16. 🔜 Data Health Reports & Insights.
+17. Asset Auditing and History.
+18. Custom functionality with APIs and SDKs.
+19. Business Continuity and Disaster Recovery.
+20. 🔜 Pricing and Licensing.
 
 ## 🗃️ Microsoft Purview Solutions
 
@@ -76,7 +78,8 @@ Throughout the labs, you will see the following icons. Take a minute to familiar
 - 🫂 **Team Activity:** Refers to a group activity that will take place, usually a discussion, team breakout or other interaction.
 - ✍️ **Do in Purview:** Refers to an activity to completed in the Purview portal to implement Microsoft Purview functionality.
 - ✨ **Pro Tip:** Refers to a takeaway or key best practice from the instructor.
-- ⏸️ **Wait:** Refers to short pause or reflection period to await results, for example, waiting for a data source scan to complete
+- ⏸️ **Wait:** Refers to short pause or reflection period to await results, for example, waiting for a data source scan to complete.
+- ❗**Callout:** An important point to bring to the audience's attention.
 
 ## Ready to Start?
 
