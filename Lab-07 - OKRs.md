@@ -8,31 +8,32 @@
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05.md) to [OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs) in your [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains). This will attach trackable business-focused metrics to those domains and the Data products attached.
+**🎯 Outcome:** At the end of this task, you will have linked data products created in [Lab 5](/Lab-05%20-%20Curating%20Data%20Assets.md) to [OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs) in your [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains). This will attach trackable business-focused metrics to those domains and the Data products attached.
 
 ### Understanding Objectives and Key Results (OKRs)
 
-Within Purview, Objectives and Key Results ([OKRs](https://learn.microsoft.com/purview/concept-okr)) is the goal or desired outcome of a Governance domain. The purpose of OKRs is to connect the objectives of a company or team to measurable business outcome. i.e. a 10% raise in sales, or a 3% reduction in support cases.
+Within Purview, Objectives and Key Results ([OKRs](https://learn.microsoft.com/purview/concept-okr)) is the goal or desired outcome of a Governance domain. The purpose of OKRs is to connect the objectives of a company or team to measurable business outcomes. e.g. a 10% raise in sales, or a 3% reduction in support cases.
 
-Purview's OKRs have several attributes:
-- Owners - the users responsible for maintenance of the objective. These are typically Business leaders with an understanding of how the business functions and where it's headed
-- Definition - An overarching description of your objective, which can be as broad as “empower every person and every organization on the planet to achieve more”, or as specific as "use marketing campaigns to increase sales in the first quarter."
-  - ***NB*** - Good objectives are specific and achievable in a time frame.
+Microsoft Purview's OKRs have several attributes:
 
-- Target date - when you expect to achieve your goal.
-- Key results - these are the measurable, time-bound metrics associated with your objective, and should be how you track progress toward your objective.
-  - A good metric is SMART = **S**pecific, **M**easurable, **A**chievable, **R**ealistic, and **T**imebound. </br>
-<br>
+- **Owners** - The users responsible for maintenance of the objective. These are typically Business leaders with an understanding of how the business functions and where it's headed.
+- **Definition** - An overarching description of your objective, which can be as broad as ?"empower every person and every organization on the planet to achieve more", or as specific as "use marketing campaigns to increase sales in the first quarter."
+  - **✨ Pro Tip:** Good objectives are specific and achievable in a time frame.
+- **Target date** - When you expect to achieve your goal.
+- **Key results** - These are the measurable, time-bound metrics associated with your objective, and should be how you track progress toward your objective.
+  - **✨ Pro Tip:** A good metric is **SMART** = **S**pecific, **M**easurable, **A**chievable, **R**ealistic, and **T**imebound.
 
-**Why do we bring OKRs into a Data Governance Solution?** Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate. 
+### Why do we bring OKRs into a Data Governance Solution?
 
-You likely have little or no idea which domain-specific data assets are available, because you don't usually interact with the sales team and even less so, have an understanding of the key business processes or which data sets support these. That's where OKRs shine! By linking Data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective. 
+Imagine you're a data scientist in an IT division, tasked with helping the sales unit improve its customer retention rate.
 
-This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments. 
+You likely have little or no idea which domain-specific data assets are available, because you don't usually interact with the sales team and even less so, have an understanding of the key business processes or which data sets support these. That's where OKRs shine! By linking Data products to objectives, you empower users to easily find the data sets that directly influence or are most relevant to the business objective.
+
+This is especially useful in large organizations where data assets are spread across multiple business units and teams may be required to collaborate across departments.
 
 **✨ Pro Tip:** When used with the Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)) experience, the additional context which OKRs and linked Data Products provide, can greatly improve the search experience for end users.
 
-Here is an example of a OKR for a Human Resources Data product. Note, the ubiquitous business language used, and the four linked, measurable objectives, and the visual progress indicator against each metric. 
+Here is an example of an OKR for a Human Resources Data product. Note, the ubiquitous business language used, the four Key results linked, measurable objectives, and the visual progress indicator against each metric.
 
 ![Example OKR](/assets/okr-overview.png)
 

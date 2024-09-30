@@ -10,17 +10,17 @@
 
 ### Context
 
-Azure and its services are programmatically addressable via [REST APIs](https://learn.microsoft.com/rest/api/azure/). Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This enables the interoperability between services, the creational of customised solutions/UI's, integration with 3rd party process and tooling, etc. 
+Azure and its services are programmatically addressable via [REST APIs](https://learn.microsoft.com/rest/api/azure). Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This enables the interoperability between services, the creation of customised solutions/UI's, integration with 3rd party process and tooling, etc.
 
-Classic Purview Data Governance reflected the [Apache Atlas](https://atlas.apache.org/#/) API set and many organisations used these to extend upon the classic out-of-the-box feature set. 
+Classic Purview Data Governance reflected the [Apache Atlas](https://atlas.apache.org) API set and many organisations used these to extend upon the classic out-of-the-box feature set.
 
-For Purview's New Data Governance experience, the [Data Map APIs](https://learn.microsoft.com/rest/api/purview/), remain as they were for Classic. New API's covering the New Experience feature set are planned to have a stable release in H1/2025.  
+For Purview's New Data Governance experience, the [Data Map APIs](https://learn.microsoft.com/rest/api/purview), remain as they were for Classic. New API's covering the New Experience feature set are planned to have a stable release in H1/2025.
 
-✨ **Pro Tip:** While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.  
+✨ **Pro Tip:** While some of the new API's are currently available, they should be treated as Public Preview (PP). As per Microsoft's [Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/?msockid=2114a70960fe65991122b5c4618d6462), features can change and there is no guarantee that a feature appearing in PP will make it to General Availability (GA). Therefore, [Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor) applies.
 
 ### Capturing Microsoft Purview Events
 
-Most actions in Purview raise notification 'events' that can be pushed to an [Azure Event](https://learn.microsoft.com/azure/event-hubs/event-hubs-about) Hub for external-to-purview consumption. A custom-coded [Azure Function](https://learn.microsoft.com/azure/azure-functions/functions-overview?pivots=programming-language-csharp) App could be used to react to new events, then execute any business logic and optionally write data back into Purview.
+Most actions in Purview raise notification 'events' that can be pushed to an [Azure Event Hub](https://learn.microsoft.com/azure/event-hubs/event-hubs-about) for external-to-purview consumption. A custom-coded [Azure Function](https://learn.microsoft.com/azure/azure-functions/functions-overview) App could be used to react to new events, then execute any business logic and optionally write data back into Purview.
 
 For example, Purview detects a scan failed due to a specific reason, this 'scan failed' event is written to the Event Hub alongside additional information, from where an Azure Function (external to Purview) picks it up to execute a piece of code or call other APIs that (for example) restart a virtual machine or self-hosted integration runtime.
 
