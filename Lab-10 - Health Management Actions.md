@@ -8,10 +8,9 @@
 
 ## Introduction
 
-In the section on Health Management Controls and Data Quality Management, we looked at how to configure the rules that determine the quality score of each of your health controls. In this section we will focus on the Data Estate Health Actions and how to use these to improve the overall health score of your data estate.
+In the sections on Health Management Controls (covered in [Lab 08](./Lab-08%20-%20Health%20Management%20Controls.md)) and Data Quality Management (covered in [Lab 09](./Lab-09%20-%20Data%20Quality%20Management.md)), we looked at how to configure the rules that determine the quality score of each of your health controls. In this section we will focus on the Data Estate Health Actions and how to use these to improve the overall health score of your data estate.
 
-Purview's Health Actions correspond to the checks made to calculate a data product's Health Control score. Addressing these actions raises your health score and promotes an overall more useable and discoverable data catalog. 
-   - Health Controls were covered off in [Lab 08](./Lab-08%20-%20Health%20Management%20Controls.md).
+Purview's Health Actions correspond to the checks made to calculate a data product's Health Control score. Addressing these actions raises your health score and promotes an overall more useable and discoverable data catalog.
 
 Actions can be assigned to individuals or teams and tracked to completion.
 
@@ -30,22 +29,22 @@ Actions can be assigned to individuals or teams and tracked to completion.
 
 ### How are health actions determined?
 
-Health Actions are automatically created when a scheduled Health Control executes and it's rule thresholds are not met. 
+Health Actions are automatically created when a scheduled Health Control executes and it's rule thresholds are not met.
 
-Each Health Action has a severity classification assigned, based upon Health Control rule configuration. The available severity values are High, Medium, and Low. 
+Each Health Action has a severity classification assigned, based upon Health Control rule configuration. The available severity values are: High, Medium, and Low.
 
 ### The Health Actions Dashboard
 
-The Health Actions dashboard gives you an overview of the Health Actions that have been created based on the Health Control rules that have been defined. 
+The Health Actions dashboard gives you an overview of the Health Actions that have been created based on the Health Control rules that have been defined.
 
-❗**Callout:** By default, Health Actions are not assigned to anyone. They must be assigned to a user/group, so that can be actioned. If left, they simply remain in the system and visible on the dashboard, unresolved. 
+❗**Callout:** By default, Health Actions are not assigned to anyone. They must be assigned to a user/group, so that can be actioned. If left, they simply remain in the system and visible on the dashboard, unresolved.
 
 The Health Actions Dashboard shows four tabs:
 
-- Active: This shows new actions and actions which are currently in progress.
-- In Progress: A list of actions with a status of In Progress.
-- Resolved: A list of actions that have been resolved.
-- My Items: Items assigned to you.
+- **Active**: This shows new actions and actions which are currently in progress.
+- **In Progress**: A list of actions with a status of In Progress.
+- **Resolved**: A list of actions that have been resolved.
+- **My Items**: Items assigned to you.
 
 **✍️ Do in Purview:** [15 minutes] Using the Health Actions tool, review the active Health Actions, assign an action to a user and update the action's status to In Progress.
 
@@ -67,10 +66,10 @@ Health actions can be filtered by the following criteria:
    ![Assign Health Action](./assets/assign-health-action.png)
 4. Assign the Health Action to a user by clicking in the 'Assigned to' field and selecting a user from the list.
 5. Set the status of the Health Action to In progress by clicking on the 'Status' field, and selecting "in progress" from the list of options.
-   - ***NB*** - This is typically not an action you would do if you were assigning the action to someone else, as the action assignee would be responsible for updating the status.
-7. Click on the Save button to complete the assignment and status update.
+   - **_NB_** - This is typically not an action you would do if you were assigning the action to someone else, as the action assignee would be responsible for updating the status.
+6. Click on the Save button to complete the assignment and status update.
 
-**✨ Pro Tip:** Actions that have been marked as Resolved will be reconciled when the next scan runs. If an action has incorrectly marked as resolved or not correctly mitigated the action will be reset too active.
+**✨ Pro Tip:** Actions that have been marked as _Resolved_ will be reconciled when the next scan runs. If an action has been incorrectly marked as resolved or not correctly mitigated, the action will be reset to active.
 
 ---
 

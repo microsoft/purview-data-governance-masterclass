@@ -27,8 +27,8 @@ Purview's Data Quality capability supports a well-defined process to ensure data
 
 Purview's Data Quality capability allows you to manage, and monitor data quality across multi-cloud data sources, via the [Shortcuts](https://learn.microsoft.com/fabric/onelake/onelake-shortcuts#what-are-shortcuts) feature of [OneLake](https://learn.microsoft.com/fabric/onelake/onelake-overview), accessible via [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview).
 
-OneLake serves as a single, unified data lake for the entire organization, allowing data from various sources to be processed without duplication. Shortcuts are objects in OneLake that point to other storage locations. The location can be internal or external to OneLake. For external sources, no data is moved into the OneLake. 
-***NB*** - This is different to [Fabric Mirroring](https://learn.microsoft.com/fabric/database/mirrored-database/overview) which replicates data into the OneLake.
+OneLake serves as a single, unified data lake for the entire organization, allowing data from various sources to be processed without duplication. Shortcuts are objects in OneLake that point to other storage locations. The location can be internal or external to OneLake. For external sources, no data is moved into the OneLake.
+**_NB_** - This is different to [Fabric Mirroring](https://learn.microsoft.com/fabric/database/mirrored-database/overview) which replicates data into the OneLake.
 
 Shortcuts appear as folders in OneLake and any workload or service that has access to OneLake can use them. i.e. Purview Data Governance. If you can create a Shortcut to that [service](https://learn.microsoft.com/fabric/onelake/onelake-shortcuts#types-of-shortcuts), then Purview Data Quality can process it. This allows you to monitor data quality across multi-cloud data sources without the need to move data into a single location.
 
@@ -44,23 +44,23 @@ This is a checklist of all the tasks that need to be done to get the data qualit
 
 Before you can start using Purview's Data Quality capability, you need to ensure that the following pre-requisites have been met:
 
-Step 1: The source data assets have been scanned into the Purview Data Map. - [Review Lab 3: Managing Data Sources](./Lab-03%20-%20Managing%20Data%20Sources.md)
+**Step 1**: The source data assets have been scanned into the Purview Data Map. - [Review Lab 3: Managing Data Sources](./Lab-03%20-%20Managing%20Data%20Sources.md)
 
-Step 2: The relevant Governance domains have been defined. - [Review Lab 4: Governance Domains and Terms](./Lab-04%20-%20Governance%20Domains%20and%20Terms.md)
+**Step 2**: The relevant Governance domains have been defined. - [Review Lab 4: Governance Domains and Terms](./Lab-04%20-%20Governance%20Domains%20and%20Terms.md)
 
-Step 3: Data products have been created, linked to the source data assets. - [Review Lab 5: Data Products](./Lab-05%20-%20Data%20Products.md)
+**Step 3**: Data products have been created, linked to the source data assets. - [Review Lab 5: Data Products](./Lab-05%20-%20Data%20Products.md)
 
-Step 4: Required access has been granted at the Governance domain level:
+**Step 4**: Required access has been granted at the Governance domain level:
 
 ![Data quality permissions](./assets/DQ-permissions.jpg)
 
 To assign permissions to a user or group, follow these steps:
 
 - Under Catalog management in the Purview Studio, select the Governance domains sub-menu.
-- Select the domain that you want to assign permissions to.
+- Select the Governance domain that you want to assign permissions to.
 - Click on the Roles tab.
 - Find the relevant role and click on the Add button.
-- Enter the user or group name and click save.
+- Enter the user or group name and click Save.
 
 ![Assign Permissions](./assets/add-dq-permissions.jpg)
 
@@ -76,10 +76,10 @@ To assign permissions to a user or group, follow these steps:
 
 The data source connections for Data Quality are configured at a Governance domain level. This is a separate configuration to the data source connections used by the Data Map, because unlike the Data Map scans, the Data Quality will scan all the selected data in the data source and not just the metadata or a sample of the data.
 
-Step 5: Grant access to the Purview Managed Identity to the data source
+**Step 5**: Grant access to the Purview Managed Identity to the data source
 Data Quality scanning currently only supports Managed Identity (MI) authentication, with System-assigned (SAMI) recommended. You will need to ensure that the SAMI has the required permissions to access the data source. Follow these instructions to [grant permissions to the SAMI](https://learn.microsoft.com/purview/register-scan-adls-gen2?tabs=MI#authentication-for-a-scan).
 
-Step 6: Create a Data Quality Scan Connection
+**Step 6**: Create a Data Quality Scan Connection
 
 **✍️ Do in Purview:**
 To configure the data source connections for Data Quality, follow the steps below:
@@ -91,19 +91,18 @@ To configure the data source connections for Data Quality, follow the steps belo
 5. Add a display name.
 6. Add a description.
 7. Select the data source type from the drop-down list.
+
    - See a list of supported data sources [here](https://learn.microsoft.com/purview/how-to-configure-and-run-data-quality-scan#supported-data-source-types).
 
 8. Choose how you will add the data source. You can choose to add the data source from:
    - Your Azure subscription.
    - From the Data Map.
    - Manually.
-     
 9. Enter the relevant details for the selected data source type.
    - If you selected Fabric as the data source type, you will need to provide your Fabric Tenant ID. This will allow you to run data quality scans via Shortcuts to other cloud sources.
-     
-11. Enable a managed V-Net if required. This will require you to select a compute or prompt you to create one.
-12. Ensure the Purview MI has the required permissions to access the data source. Follow these instructions to [grant permissions to the SAMI](https://learn.microsoft.com/purview/register-scan-adls-gen2?tabs=MI#using-a-system-or-user-assigned-managed-identity-for-scanning.)
-13. Click Submit to save the connection.
+10. Enable a managed V-Net if required. This will require you to select a compute or prompt you to create one.
+11. Ensure the Purview MI has the required permissions to access the data source. Follow these instructions to [grant permissions to the SAMI](https://learn.microsoft.com/purview/register-scan-adls-gen2?tabs=MI#using-a-system-or-user-assigned-managed-identity-for-scanning.)
+12. Click Submit to save the connection.
     ![Create DQ Scan Connection](./assets/create-dq-scan-connection.jpg)
 
 ## Task 3: Configure and Run Profiling (Step 7)
@@ -125,7 +124,7 @@ Basic data quality metrics are returned as part of the profiling process. These 
 - Unique values.
 - Empty/Blank values.
 - Duplicate values.
-- Value range and skew. 
+- Value range and skew.
 
 **✍️ Do in Purview:**
 
@@ -138,33 +137,33 @@ Follow the steps in the following tutorial to configure and run profiling: [Conf
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have...
+**🎯 Outcome:** At the end of this task, you will have:
 
 - Understood the different types of data quality rules available in Purview.
-- View and/or created No-code/low-code data quality rules.
+- View and/or created no-code/low-code data quality rules.
 - Run a data quality scan.
 
 ### Different Types of Data Quality Rules
 
 Purview currently supports the following types of data quality rules:
 
-- [Freshness](https://learn.microsoft.com/purview/concepts-data-quality-rules#freshness)
+- [**Freshness**](https://learn.microsoft.com/purview/concepts-data-quality-rules#freshness)
   This type of rule determines if a data asset has been updated within a specified time frame. Freshness rules are useful for monitoring data that needs to be updated regularly, such as sales data or financial reports. Freshness rules will have a score of either 100 (pass) or 0 (fail).
 
-- [Uniqueness](https://learn.microsoft.com/purview/concepts-data-quality-rules#unique-values)
+- [**Uniqueness**](https://learn.microsoft.com/purview/concepts-data-quality-rules#unique-values)
   This checks if a specified record is unique or not and will have a score of either 100 (pass) or 0 (fail).
 
-- [String format match](https://learn.microsoft.com/purview/concepts-data-quality-rules#string-format-match) This rule checks if the value in the column matches a pre-defined string format. See the [understanding data quality scores](https://learn.microsoft.com/en-us/purview/how-to-view-data-quality-scan-results) webpage to understand how the score is calculated.
+- [**String format match**](https://learn.microsoft.com/purview/concepts-data-quality-rules#string-format-match) This rule checks if the value in the column matches a pre-defined string format. See the [understanding data quality scores](https://learn.microsoft.com/en-us/purview/how-to-view-data-quality-scan-results) webpage to understand how the score is calculated.
 
-- [Data type match](https://learn.microsoft.com/purview/concepts-data-quality-rules#data-type-match) This rule checks if the data type of the column matches the expected data type. 
+- [**Data type match**](https://learn.microsoft.com/purview/concepts-data-quality-rules#data-type-match) This rule checks if the data type of the column matches the expected data type.
 
-- [Duplicate rows](https://learn.microsoft.com/purview/concepts-data-quality-rules#duplicate-rows) This rule checks if there are rows with the same values across the specified columns.
+- [**Duplicate rows**](https://learn.microsoft.com/purview/concepts-data-quality-rules#duplicate-rows) This rule checks if there are rows with the same values across the specified columns.
 
-- [Empty/blank fields](https://learn.microsoft.com/purview/concepts-data-quality-rules#emptyblank-fields) This rule checks if there are any empty, blank or null value fields in the specified column.
+- [**Empty/blank fields**](https://learn.microsoft.com/purview/concepts-data-quality-rules#emptyblank-fields) This rule checks if there are any empty, blank or null value fields in the specified column.
 
-- [Table lookup](https://learn.microsoft.com/purview/concepts-data-quality-rules#table-lookup) This rule checks if the value in the column exists in a lookup table. The lookup table can be any other scanned data asset.
+- [**Table lookup**](https://learn.microsoft.com/purview/concepts-data-quality-rules#table-lookup) This rule checks if the value in the column exists in a lookup table. The lookup table can be any other scanned data asset.
 
-- [Custom rules](https://learn.microsoft.com/purview/concepts-data-quality-rules#custom-rules) Custom rules are defined using Azure Data Factory [expression language](https://learn.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder).
+- [**Custom rules**](https://learn.microsoft.com/purview/concepts-data-quality-rules#custom-rules) Custom rules are defined using Azure Data Factory [expression language](https://learn.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder).
 
 Data quality rules are configured at the asset level, and can include one or more columns.
 Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot-in-purview-overview)), offers an AI powered rule recommendation engine that will suggest rules based on the data profile. You can get suggestions for rules by clicking on the Suggest rules button.
@@ -186,7 +185,7 @@ Go ahead and create a couple of data quality rules using the instructions in the
 **🎯 Outcome:** At the end of this task, you will know how to schedule a data quality scan to run on a regular basis.
 
 Scans can be scheduled to run at regular intervals, this will allow you to build up a history of the data quality of the asset over time.
-A data sources needs to have been registered for data quality scanning as covered in Task 2 and 3, as above.
+A data sources needs to have been registered for data quality scanning as covered in Task 2 and 3 above.
 
 The scan schedule is created at a Governance domain level and can be scoped to run for any or all Data products within the domain. Be sure to have configured the Data quality rules before scheduling the scan, scans without rules will simply be skipped.
 
@@ -200,8 +199,8 @@ Follow the steps in the following tutorial to schedule a data quality scan: [Sch
 
 **⏰ Duration:** 10 minutes
 
-**🎯 Outcome:** At the end of this task, you will know how to monitor data quality scans.
-You will be able to monitor the status of any data quality or profiling scans processes.
+**🎯 Outcome:** At the end of this task, you will know how to monitor Data quality scans.
+You will be able to monitor the status of any Data quality or profiling scans processes.
 
 To do this, you will need to navigate to the Data Quality sub-menu under Health management in the Purview Studio.
 
@@ -211,9 +210,9 @@ To do this, you will need to navigate to the Data Quality sub-menu under Health 
 
 ![Monitoring Scans](./assets/data-quality-scan-monitoring.jpg)
 
-This screen defaults to the Governance domain you clicked on but provides a drop down for you to easily switch to other domains you have access to.
+This screen defaults to the Governance domain you clicked on but provides a drop down for you to easily switch to other Governance domains you have access to.
 
-**✨ Pro Tip:** The Data quality scanning has functionality to check if there has been any changes since the last scan. If no changes has been detected, then scan will be skipped. Skipped merely means there has been no changes in the data since last run. Skipped does not mean the job failed!
+**✨ Pro Tip:** The Data quality scanning has functionality to check if there have been any changes since the last scan. If no changes has been detected, then scan will be skipped. Skipped merely means there has seen no changes in the data since last run. Skipped does not mean the job has failed!
 
 ## Task 7: Improve Data Quality (Step 13 to 15)
 
@@ -254,9 +253,9 @@ To assign a Data Quality action to a user or group, follow these steps:
 
 ![Assign Action](./assets/assign-dq-action.jpg)
 
-To see actions that are assigned to you, click on the My item tab in the actions list. This will show you all the actions that are assigned to you. You can then click on the action to view the details and take the necessary steps to remediate the issue.
+To see actions that are assigned to you, click on the My Items tab in the actions list. This will show you all the actions that are assigned to you. You can then click on the action to view the details and take the necessary steps to remediate the issue. You will learn this in [Lab 10: Health Management Actions](./Lab-10%20-%20Health%20Management%20Actions.md).
 
-**✨ Pro Tip:** Data Quality actions are not the same as [Health actions](https://learn.microsoft.com/purview/data-estate-health-actions). Health actions and Data Quality actions are two separate lists of actions which requires different permissions to view and manage. Health actions where covered in [Lab 11: Data Estate Health Actions](./Lab-11%20-%20Data%20Estate%20Health%20Actions.md).
+**✨ Pro Tip:** Data Quality actions are not the same as [Health actions](https://learn.microsoft.com/purview/data-estate-health-actions). Health actions and Data Quality actions are two separate lists of actions which requires different permissions to view and manage. Health actions will be covered in [Lab 10: Health Management Actions](./Lab-10%20-%20Health%20Management%20Actions.md).
 
 ### Step 15: Set up Data Quality Alerts
 
@@ -265,5 +264,15 @@ Data quality alerts can be configured to notify you when the quality of the data
 **✍️ Do in Purview:**
 
 Follow the steps in this tutorial to set up a data quality alert: [Set up a data quality alert](https://learn.microsoft.com/purview/how-to-data-quality-notifications#set-data-quality-alerts).
+
+---
+
+**⏸️ Reflection:** This was a long lab with a lot of detailed information to take in and put into practice. Take a moment to review the Data Quality Checklist from the start of this lab and discuss with the group:
+
+- How do you think the Data Quality capability in Purview will help your organization?
+- What are some of the challenges you foresee in maintaining data quality as the business evolves?
+- Do you have an existing process for reviewing and remediating data quality issues?
+
+The next lab will focus on Health Management Actions; reviewing, and remediating Data quality issues and Data estate health issues.
 
 👉 [Continue: Lab 10](./Lab-10%20-%20Health%20Management%20Actions.md)
