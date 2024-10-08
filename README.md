@@ -15,10 +15,8 @@ This masterclass is split into multiple labs, each with its own objectives. At t
 These labs build on one another. It is recommended to follow them in order.
 
 - **1-Day Workshop (8 hours)**
-  ❗**Callout:** Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
-- **3-Day Workshop (24 hours)** Complete all tasks, including the practical exercises. Ample time is provided for discussion and reflection.
-  ❗**Callout:** to complete the **✍️ Do in Purview** exercises, the audience will need access to their own Purview Data Governance instance. Currently, there is no lab environment available to support this requirement.
-  - If their organisation has created a new Purview instance to support this workshop, then that instance will become the [primary Purview account for that tenancy](https://learn.microsoft.com/purview/new-portal-faq#what-does-this-mean-for-my-existing-microsoft-purview-governance-portal-accounts). Currently, customers cannot change this, once created. If they need to it will require to a service request to Microsoft support services.
+  Please _ignore_ the **✍️ Do in Purview** exercises and focus on the discussion-based tasks instead.
+- **3-Day Workshop (24 hours)** Complete all tasks, including the practical exercises (see Attendee Pre-requisites below). Ample time is provided for discussion and reflection.
 
 Allow for a 15-minute break at least every 90 minutes (at the facilitator's discretion) and allow for an approximately 1-hour lunch break.
 
@@ -30,6 +28,14 @@ This masterclass is designed for: Data Stewards, Data Governance Managers, Domai
 
 Each attendee should have access to the Purview portal at [purview.microsoft.com](https://purview.microsoft.com) and be granted permission to administer the Data Catalog (either temporarily or permanently) for the purpose of this workshop.
 If interested in loading existing business glossaries, the attendee should bring their business glossaries in an Excel spreadsheet to be loaded into Purview.
+
+### Pre-reqs and Implications of Practical Exercises
+
+Completing the **✍️ Do in Purview** practical exercises attendees to access the Purview Data Governance instance. Currently, there is no lab environment available to support this requirement.
+
+- If the organisation has created a new Purview instance to support this workshop, then that instance will become the [primary Purview account for that tenancy](https://learn.microsoft.com/purview/new-portal-faq#what-does-this-mean-for-my-existing-microsoft-purview-governance-portal-accounts). Currently, customers cannot change this, once created. If they need to request a change, it will require a service request to Microsoft support services.
+- Beware that changes made to the Microsoft Purview account may thus directly impact the production environment.
+- Some artifacts, when created cannot be deleted. For example, a Data Product cannot be deleted if it has an active subscriber. It can only be renamed or 'expired'. This is by design to ensure data integrity.
 
 ## 🧑🏼‍🏫 Facilitator's Role
 
