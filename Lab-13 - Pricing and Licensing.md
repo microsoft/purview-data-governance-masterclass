@@ -46,15 +46,6 @@ In other words, you can scan metadata into Microsoft Purview's Data Map (Multi-c
 | ------------ | -------- | ---------------------------------------------- |
 | Data Catalog | Standard | $0.0165 per asset per day or ~ $0.50 per month |
 
-<!-- #### Governed Asset Cost Estimation
-
-| Dimension                          | Input                 |
-| ---------------------------------- | --------------------- |
-| (A) # of Data Assets               | From Data Estate Scan |
-| (B) % of Governed Assets           | Your Input            |
-| (C) $ per Governed Asset per Month | $0.50                 |
-| **Monthly Governed Asset Bill**    | **(B \* A) \* C**     | -->
-
 #### Examples in Practice
 
 - **Example 1**: A SQL table is referenced within a data product. The same SQL table is used in five other data products. The SQL table is counted one time only, once a day.
