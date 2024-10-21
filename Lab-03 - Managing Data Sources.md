@@ -74,7 +74,7 @@ After registering your source, you can move it to another collection within the 
 - Which collection should the assets be scanned into? This may be different from the collection in which the physical data source itself is registered.
 - Should scans be full scans or incremental scans?
 
-**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly cycle before a scan is executed, leading to potential cost blowouts or latency.
+**✨ Pro Tip:** Don't scan folders of data sources where data is created faster than a data scan can execute (think: files in a raw zone that are created every second). As there is a potential for the data discovery process to endlessly cycle before a scan is executed, leading to potential latency.
 
 **✍️ Do in Purview:** [10 minutes] Transfer your discussion into practice by configuring a data source scan for a selected data source.
 
@@ -98,7 +98,7 @@ Select 'Run Once', save and run the scan. After a scan is configured, open the D
 
 **⏰ Duration:** 20 minutes
 
-**🎯 Outcome:** At the end of this task, you will have a better understanding of scan rules sets, how to implement them, and when to use them to optimize data source scanning and reduce cost.
+**🎯 Outcome:** At the end of this task, you will have a better understanding of scan rules sets, how to implement them, and when to use them to optimize data source scanning.
 
 ### Understanding Scan Rule sets
 
@@ -110,7 +110,7 @@ Microsoft Purview comes with a default Scan Rule set for each data source type. 
 
 The default rule set for each data source is a good starting point, but you may want to create custom rule sets to better suit your organization's needs as you learn about your data. For example, you may want to exclude certain file types from a scan or you may want to apply a specific classification to a certain type of data.
 
-As scans consume compute resources, it's important to ensure that your rule sets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to reduce costs and improve the performance of your scans. In a practical sense, there is no point analyzing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
+As scans consume compute resources, it's important to ensure that your rule sets are optimized to scan only the data that is necessary and only apply the classifications you expect. This will help to improve the performance of your scans. In a practical sense, there is no point analyzing the data source to detect `Argentina National Identity (DNI) Number` if you know for a fact that your data source does not contain information of this type.
 
 **✨ Pro Tip:** You can only use the scan rule set in the domain where you created it.
 
