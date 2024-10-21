@@ -171,7 +171,7 @@ Purview Copilot ([licence dependant](https://learn.microsoft.com/purview/copilot
 ![Suggest Rules](./assets/suggest_rules.jpg)
 
 **✨ Pro Tip:**
-Carefully review rules suggested by the Copilot and ensure that they are relevant to the data asset. Data quality scans are a compute intensive process and cost money, so you don't want to run unnecessary scans.
+Carefully review rules suggested by the Copilot and ensure that they are relevant to the data asset. Data quality scans are a compute intensive process and cost money (more on this in the pricing lab), so you don't want to run unnecessary scans.
 
 **✍️ Do in Purview:**
 Go ahead and create a couple of data quality rules using the instructions in the links above for each rule type.

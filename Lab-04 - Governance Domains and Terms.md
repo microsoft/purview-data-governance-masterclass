@@ -22,7 +22,7 @@ Principally focused on improving data ownership management, a [governance domain
 
 - A Governance domain could represent functional business units, line of business, data domains, regulatory, or project domains for example.
   - Refer to the [Best Practices](https://learn.microsoft.com/purview/data-catalog-best-practices#create-governance-domains) to decide on the best approach.
-- Governance Domains can also be hierarchical, they can be nested inside parent governance domains.
+- Governance Domains can also be hierarchical, they can be nested inside parent governance domains (up to five levels of depth).
   - For example: A hypothetical `Customer` domain may contain the `Customer Delivery` and the `Customer Experience` child domains.
 - A Governance domain has a name, description, domain owner(s), [data products](https://learn.microsoft.com/purview/what-is-data-catalog#data-products), [glossary terms](https://learn.microsoft.com/purview/what-is-data-catalog#glossary-terms), Objectives and Key Results ([OKRs](https://learn.microsoft.com/purview/what-is-data-catalog#okrs)) and [critical data elements](https://learn.microsoft.com/en-us/purview/what-is-data-catalog#critical-data-elements) among others.
 - Through defining overarching categories for assets, Governance domains enable users to narrow down their search for relevant data. They further allow Governance domain owners to align data governance to their specific [business areas](https://learn.microsoft.com/purview/data-catalog-best-practices#build-domain-specific-standards).
