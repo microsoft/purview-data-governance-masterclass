@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 11: Business Continuity and Disaster Recovery
+# Lab 12: Business Continuity and Disaster Recovery
 
 ## Task 1: Understand your Responsibilities
 
@@ -50,4 +50,4 @@ In most cases, an organization wouldn't deem their internal data governance tool
 
 **⏸️ Reflection:** You just learnt the business continuity and disaster recovery options available to you in Microsoft Purview. Now let's see what you can do with the APIs and SDKs.
 
-👉 [Continue: Lab 12](./Lab-12%20-%20Custom%20API%20Functionality.md)
+👉 [Continue: Lab 13](./Lab-13%20-%20Custom%20API%20Functionality.md)
