@@ -31,26 +31,33 @@ Of these 8 reports, 6 are legacy reports which have been prefixed with the word 
 ![Reports](./assets/reports.png)
 
 The reports are as follows:
-- Classic assets
-The Classic assets report provides an aggregated view of the assets in your data estate. It includes the number of assets(total, new , deleted), the number of assets with classifications, and the number of assets with sensitivity labels grouped by collection or source type. Drill-through capabilities are available to view the details of the assets.
+- **Classic assets**
 
-- Classic catalog adoption
-The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Data Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
+   The Classic assets report provides an aggregated view of the assets in your data estate. It includes the number of assets(total, new , deleted), the number of assets with classifications, and the number of assets with sensitivity labels grouped by collection or source type. Drill-through capabilities are available to view the details of the assets.
 
-- Classic classifications
-This report helps identify and track the types of data classified within the data estate, such as financial or government data, and shows trends over time. It includes information on the number of classified sources, files, and tables, as well as the top classifications applied accross the datamap. 
+- **Classic catalog adoption**
 
-- Classic data stewardship
-The purpose of the Data Stewardship Report in Microsoft Purview is to provide administrators with insights into the activities and effectiveness of data stewards within their organization. This report tracks the actions taken by data stewards, such as data classification, curation, completeness of the meta data.
+   The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Data Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
 
-- Classic glossary
-This report includes key performance indicators such as the total number of terms, the status of terms (e.g., draft, approved, expired), and the distribution of roles by users. It helps administrators understand the completeness of glossary terms by highlighting missing information, such as definitions, experts, or stewards, and provides a detailed view of terms attached to assets, aiding in effective data governance and management. This only takes into consideration the terms that are part of the classic glossary.
+- **Classic classifications**
 
-- Classic sensitivity labels
-This report tracks the number of labeled items, the types of sensitivity labels applied, and the trends over time. It helps administrators understand how data is being classified in terms of sensitivity, ensuring that sensitive information is properly protected and compliance requirements are met.
+   This report helps identify and track the types of data classified within the data estate, such as financial or government data, and shows trends over time. It includes information on the number of classified sources, files, and tables, as well as the top classifications applied accross the datamap. 
 
-- Data governance (preview)
-The new Data Governance Report in Microsoft Purview provides a data governance overview with insights into the health of your data estate based on the controls configured for:  
+- **Classic data stewardship**
+
+   The purpose of the Data Stewardship Report in Microsoft Purview is to provide administrators with insights into the activities and effectiveness of data stewards within their organization. This report tracks the actions taken by data stewards, such as data classification, curation, completeness of the meta data.
+
+- **Classic glossary**
+
+   This report includes key performance indicators such as the total number of terms, the status of terms (e.g., draft, approved, expired), and the distribution of roles by users. It helps administrators understand the completeness of glossary terms by highlighting missing information, such as definitions, experts, or stewards, and provides a detailed view of terms attached to assets, aiding in effective data governance and management. This only takes into consideration the terms that are part of the classic glossary.
+
+- **Classic sensitivity labels**
+
+   This report tracks the number of labeled items, the types of sensitivity labels applied, and the trends over time. It helps administrators understand how data is being classified in terms of sensitivity, ensuring that sensitive information is properly protected and compliance requirements are met.
+
+- **Data governance (preview)**
+
+   The new Data Governance Report in Microsoft Purview provides a data governance overview with insights into the health of your data estate based on the controls configured for:  
    - Access and use
    - Discoverability
    - Estate curation
@@ -60,8 +67,9 @@ The new Data Governance Report in Microsoft Purview provides a data governance o
    as well as deeper dive into the health of your data at from a  data product perspective looking at percentages of data products which have classifications, data assets, self-service access ,policies and glossary terms, owners and descriptions attached.
 
 
-- DQ health report (preview)
-The new Data Quality Health Report in Microsoft Purview provides insights into the health of your data estate based on the data quality rules configured for your data estate. 
+- **DQ health report (preview)**
+
+   The new Data Quality Health Report in Microsoft Purview provides insights into the health of your data estate based on the data quality rules configured for your data estate. 
 
    The overview page shows a quick snapshot of the Overall score, the accusracy, completeness, conformity, uniqueness, consistency and timeliness and uniqueness scores. The Details page provides a more detailed view of the data quality rule results and the data assets that are failing the rules.
 
@@ -100,7 +108,7 @@ Understanding which check have failed will allow you to take action to improve t
 
 
 ## Task 3: Utilizing Data Quality Health Report
-**⏰ Duration:** 30 minutes
+**⏰ Duration:** 15 minutes
 
 **🎯 Outcome:**  At the end of this session you would be able to effectively use the Data Quality Health Report to monitor and improve data quality. 
 
@@ -110,13 +118,27 @@ Understanding which check have failed will allow you to take action to improve t
 
 The Data Quality Health Report Overview page provides a snapshot of the health of your data estate based on the data quality rules configured for your data estate. At a glance you will be able to see the Overall score, the accusracy, completeness, conformity, uniqueness, consistency and timeliness and uniqueness scores.
 
+This can be filtered by the following:
+- Governance Domain
+- Data Product
+- Data Product Status (Pblished or Draft)
+
 ![Data Quality Health Report Overview](./assets/data-quality-health-report-overview.png)
 
-The data quality health report overview page contains the 4 visuals: 
-- Pass/fail quality ration by data product
+The data quality health report overview page contains the following 4 visuals: 
+- Pass/fail quality ratio by data product
+
+   In the image above you can see that all data products which have a rule for accuracy have failed this check. While all products which have been checked for consistency have passed.
+
+   **✨ Pro Tip:**  Hovering over the data points will provide more information about the number of data products and their pass/fail status.
 - Data quality status by dimension
+
+   This shows the data quality dimension scores for each governance domain.
 - Data quality rule hierarchy
-- Count of data assets by data assets, rute type
+
+This allows you to view the breakdown of Pass/Fail rates by domain, data product, data asset and rule type.
+
+- Count of data assets by data assets, rule type
 
 ### Understand the key metrics and insights provided in the Data Quality Health Report Details
 
@@ -124,7 +146,14 @@ The Data Quality Health Report Details page provides a more detailed view of the
 
 ![Data Quality Health Report Details](./assets/data-quality-health-report-details.png)
 
+The data quality health report details page contains 2 visuals:
+- Data quality rule results
 
+   This table shows the number of records which passed or failed each rule type for each data asset. 
+
+- Pass and fail record count by rule type
+   
+   The total number of records that have passed or failed each rule type.
 
 **⏸️ Reflection:** 
 - How have these reports improved your understanding of your data's health?
