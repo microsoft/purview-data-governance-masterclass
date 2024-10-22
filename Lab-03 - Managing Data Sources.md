@@ -165,6 +165,8 @@ An example of a custom classification would be a specifically formatted Invoice 
    - Leave the state as 'Enabled'.
    - Select the type, we will leave it at Regular Expression.
 
+   ![Create Classification Rule](/assets/new-classification-rule.png)
+
    Select 'Continue'.
 
 3. Now we can go ahead and configure our regular expression. Either do so by following the prompt to upload sample data or supplying your own regex pattern.
@@ -175,9 +177,16 @@ An example of a custom classification would be a specifically formatted Invoice 
      **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled, and the value will be fixed at 60%.</br>
 
    - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
-   - Click 'Create' to confirm your classification rule.
+
+   ![Test Classification Rule](assets/test-classification-rule.png)
+
+   Click 'Create' to confirm your classification rule.
 
 You may decide to revise the Scan Rule Sets from task 3 to include your new custom classification.
+
+**✨ Pro Tip:** If you delete a classification rule in the future, you have options to determine what should happen in areas throughout your data catalog where this classification is currently applied.
+
+![Delete Classification Rule](assets/delete-classification-rule.png)
 
 ## Task 5: Understanding Integration Runtimes (optional)
 
