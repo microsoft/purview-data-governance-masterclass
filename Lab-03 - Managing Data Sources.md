@@ -188,7 +188,7 @@ You may decide to revise the Scan Rule Sets from task 3 to include your new cust
 
 ![Delete Classification Rule](assets/delete-classification-rule.png)
 
-## Task 5: Understanding Integration Runtimes (optional)
+## Task 5: Understanding Integration Runtimes
 
 > Microsoft Purview Solution: Data Map
 
@@ -220,7 +220,7 @@ You can choose between:
 
 **🫂 Team Activity:** [10 minutes] Review the integration runtimes available in Purview and discuss which runtimes are best suited to your organization's needs.
 
-## Task 6: Monitoring (optional)
+## Task 6: Monitoring
 
 > Microsoft Purview Solution: Data Map
 
