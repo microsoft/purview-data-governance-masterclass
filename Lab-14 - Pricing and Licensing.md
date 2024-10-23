@@ -1,6 +1,6 @@
 ![Banner](./assets/banner.png)
 
-# Lab 13: Pricing and Licensing
+# Lab 14: Pricing and Licensing
 
 ## Task 1: Understanding Operational Costs
 
