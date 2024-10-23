@@ -16,7 +16,7 @@ In Purview, a 'governance domain' is an abstract concept introduced to provide b
 
 Principally focused on improving data ownership management, a [governance domain](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains) can be seen as a logical boundary enabling consistent governance, ownership, and discovery of data products and assets by end-users.
 
-![Governance Domain Overview](./assets/business-domain-overview.png)
+![Sample Governance Domains](./assets/governance-domain-overview.png)
 
 **Key Facts**
 
@@ -29,8 +29,6 @@ Principally focused on improving data ownership management, a [governance domain
 - Governance domains aid in managing an expanding catalog of data assets, ensuring effective governance as the data estate grows. Glossary terms defined within a Governance domain can be applied to any data product within that Governance domain, helping data owners and stewards govern a growing number of assets effectively.
 
 In essence, Governance domains utilize existing business context to ensure data is not only more discoverable but also well governed as it grows.
-
-![Sample Governance Domains](./assets/sample-business-domains.png)
 
 ### Exercise: Creating Governance Domains
 
@@ -52,6 +50,8 @@ Each team will briefly present their design back to the group. Once all teams ha
 You will expand on this master diagram as you continue through this course.
 
 **✍️ Do in Purview:** [10 minutes] Using your master diagram, transfer your governance domains, descriptions, owners etc into the Data Catalog solution. You will build on these going forward. You can mark them as '[draft](https://learn.microsoft.com/purview/how-to-create-manage-governance-domains#:~:text=governance%20domain%20until%20its%20status%20is%20set%20to%20Published)' to avoid them being visible to business users until you are ready to publish.
+
+![Create Governance Domain](assets/create-governance-domain.png)
 
 ## Task 2: Map Governance Domains to Data Map Collections
 
