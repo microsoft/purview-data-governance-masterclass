@@ -73,6 +73,6 @@ Health actions can be filtered by the following criteria:
 
 ---
 
-**⏸️ Reflection:** You just learnt how to use the Health Actions tool to manage the actions required to improve the health of your data estate. Now let's have a word about Business Continuity and Disaster Recovery.
+**⏸️ Reflection:** You just learnt how to use the Health Actions tool to manage the actions required to improve the health of your data estate. Now let's see what you can do with the Health Management Reports.
 
 👉 [Continue: Lab 11](./Lab-11%20-%20Health%20Management%20Reports.md)
