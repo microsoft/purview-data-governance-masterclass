@@ -24,6 +24,8 @@ Most actions in Purview raise notification 'events' that can be pushed to an [Az
 
 For example, Purview detects a scan failed due to a specific reason, this 'scan failed' event is written to the Event Hub alongside additional information, from where an Azure Function (external to Purview) picks it up to execute a piece of code or call other APIs that (for example) restart a virtual machine or self-hosted integration runtime.
 
+![Configure Kafka Event Hub](./assets/configure-kafka-eventhub.png)
+
 ❗**Callout:** By creating custom processes as above, carefully consider the trade-off between the desired functionality and the Product ownership roles this introduces across the full SDLC lifecycle. i.e. patching, updates when services are updated, validation/updates when Azure changes, etc. If you do decide to customise a process, create a Key-Design-Decision (KDD) which articulates the rationale, considerations, and implications. This will create transparency and an audit trail for this decision.
 
 **🫂 Team Activity:** [10 minutes] As a team, discuss whether you foresee a need to implement custom integrations and automation using the API.
@@ -41,7 +43,7 @@ For example, Purview detects a scan failed due to a specific reason, this 'scan 
 
 **🎯 Outcome:** At the end of this task, you will have a better understanding of the Purview APIs available to your organization to build, extend and automate aspects of Microsoft Purview Data Governance.
 
-**🫂 Team Activity:** [5 minutes] Review the Microsoft Purview APIs and SDKs available for you to consume in your own applications.
+**🫂 Team Activity:** [5 minutes] Review the [Microsoft Purview APIs](https://learn.microsoft.com/en-us/rest/api/purview) and SDKs available for you to consume in your own applications.
 
 ---
 
