@@ -92,7 +92,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 
 - **Terms** are grouped under their respective Governance domains as to provide context for each segment of your company, hence aiding the team to differentiate between the meanings if ever a term is shared across different domains.
 - **Policies** attached to the terms provide specific business [health controls](https://learn.microsoft.com/purview/section6-deh-controls#evaluate-your-data-governance-with-data-estate-health), data governance requirements, and terms of use to any data product that the term is applied to.
-- **Custom Attributes** can be added to the glossary terms to provide more information and context. They can be edited, updated or removed as per business requirements.
+- **Custom Attributes (preview)** can be added to the glossary terms to provide more information and context. They can be edited, updated or removed as per business requirements.
 - **Publishing** a Term makes it visible to all users. This [workflow](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#publish) step is performed, once a term has been discovered, validated and is ready to be used within a Governance domain.
 - **[Linking](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#manage-data-product-links) Data Products** to Terms is a feature that allows glossary terms to become more contextual and accurate to their governance domain.
 - **Related Terms** provide better business context and can be managed from the glossary term page. They can be added as a synonym or a [related term](https://learn.microsoft.com/purview/how-to-create-manage-glossary-terms#manage-related-terms), and can be removed when necessary.
