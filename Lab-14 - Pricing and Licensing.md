@@ -26,25 +26,25 @@
 
 There are two predictable billing meters that factor into the cost of operating Microsoft Purview. All prices are in US Dollars (USD).
 
-1. **Data Catalog**: A $0.0165 per asset per day or approximately $0.50 per unique [Governed Asset](https://learn.microsoft.com/en-us/purview/ms-purview-dg-pricing-concepts#what-is-a-governed-asset) per month cost. This covers Data Curation, Discovery, and Governed Access Polices.
+1. **Unified Catalog**: A $0.0165 per asset per day or approximately $0.50 per unique [Governed Asset](https://learn.microsoft.com/en-us/purview/ms-purview-dg-pricing-concepts#what-is-a-governed-asset) per month cost. This covers Data Curation, Discovery, and Governed Access Polices.
 2. **Data Management**: A $15 (basic) / $60 (standard) / $240 (advanced) cost per [Data Governance Processing Unit (DGPU)](https://learn.microsoft.com/en-us/purview/ms-purview-dg-pricing-concepts#data-governance-processing-units-explained). This covers Data Quality scanning and Health Controls - calculated on 60-minutes of processing time.
 
 _If you previously operated Azure Purview (classic), note the always-on Data Map / Scanning / API costs have been subsumed and no longer apply in Microsoft Purview Data Governance._
 
 **Security Copilot**: Optionally, you may wish to [integrate the Security Copilot capabilities](https://learn.microsoft.com/en-us/purview/copilot-in-purview-overview?bc=%2Fsecurity-copilot%2Fbreadcrumb%2Ftoc.json&toc=%2Fsecurity-copilot%2Ftoc.json) into Microsoft Purview. Security Copilot is a separate service that provides advanced security and compliance capabilities for Microsoft Purview and broader Microsoft Security products. It is optional and thus priced separately.
 
-### 1. Data Catalog: What is a Governed Asset?
+### 1. Unified Catalog: What is a Governed Asset?
 
-A Data Asset which is curated for discovery in the Data Catalog is considered 'governed' when either of these conditions are met ([full details](https://learn.microsoft.com/en-us/purview/ms-purview-dg-pricing-concepts#what-is-a-governed-asset)):
+A Data Asset which is curated for discovery in the Unified Catalog is considered 'governed' when either of these conditions are met ([full details](https://learn.microsoft.com/en-us/purview/ms-purview-dg-pricing-concepts#what-is-a-governed-asset)):
 
 - It is attached to a Data Product or Critical Data Element
 - It is annotated with a Term (glossary), ~~Custom Attribute~~
 
 In other words, you can scan metadata into Microsoft Purview's Data Map (Multi-cloud Tables, Files, Datasets, Reports, Dashboards, Models etc.) without incurring costs until you decide to govern them. On average, only a minority (15-25%) of all assets are governed (in a large organization).
 
-| Feature      | SKU      | Pay-As-You-Go Price                            |
-| ------------ | -------- | ---------------------------------------------- |
-| Data Catalog | Standard | $0.0165 per asset per day or ~ $0.50 per month |
+| Feature         | SKU      | Pay-As-You-Go Price                            |
+| --------------- | -------- | ---------------------------------------------- |
+| Unified Catalog | Standard | $0.0165 per asset per day or ~ $0.50 per month |
 
 #### Examples in Practice
 
@@ -80,6 +80,6 @@ All deployments of Microsoft Purview default to the **Basic** tier. Coming soon,
 
 ## Congratulations, that's a wrap!
 
-**⏸️ Reflection:** Great job! You have made it to the end of the labs. This is a significant milestone in your learning journey. You have learned how to set up and configure Microsoft Purview, how to scan and classify data, and how to use the data catalog to search and federate data governance.
+**⏸️ Reflection:** Great job! You have made it to the end of the labs. This is a significant milestone in your learning journey. You have learned how to set up and configure Microsoft Purview, how to scan and classify data, and how to use the Unified Catalog to search and federate data governance.
 
 🏁 [Complete: Back to Overview](./README.md)

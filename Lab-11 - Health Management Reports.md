@@ -16,7 +16,7 @@ Let's delve into the built-in reports provided by Purview to monitor and manage 
 
 ## Task 1: Exploring Data Health Reports
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 15 minutes
 
@@ -37,7 +37,7 @@ The reports are as follows:
 
 - **Classic catalog adoption**
 
-  The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Data Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
+  The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Unified Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
 
 - **Classic classifications**
 
@@ -160,7 +160,7 @@ The data quality health report details page contains 2 visuals:
 - How have these reports improved your understanding of your data's health?
 - What new insights have you gained from analyzing these reports?
 - How can you leverage these reports to enhance your data governance practices?
-- Are there any requirements for additional/custom reports by your organization?
+- Are there any requirements for [custom reports](https://learn.microsoft.com/en-us/purview/purview-dg-self-service-analytics-and-insight) by your organization?
 
 At this stage we have covered the key portal interactions by various Discovery, Curation, and Reporting personas. In the next lab, you will learn about the Business Continuity approach to Microsoft Purview.
 

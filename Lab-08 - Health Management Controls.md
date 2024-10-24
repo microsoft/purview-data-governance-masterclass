@@ -19,7 +19,7 @@ The purpose of Purview's [Health Management](https://learn.microsoft.com/en-us/p
 Purview's Data Health Management capability has four components:
 
 - **Controls**: [Controls](https://learn.microsoft.com/purview/data-estate-health#controls) are a metric-based rules set at the global level, executed at the grain of the Governance domains. This enables the evaluation and audit of data health, aligned to industry and enterprise recognized standards.
-- **Data Quality**: A set of [configurable processes](https://learn.microsoft.com/purview/data-quality-overview#data-quality-features) which can provide data profiling, data quality scanning and scoring technical metadata, along with alerting into the Data Catalog.
+- **Data Quality**: A set of [configurable processes](https://learn.microsoft.com/purview/data-quality-overview#data-quality-features) which can provide data profiling, data quality scanning and scoring technical metadata, along with alerting into the Unified Catalog.
 - **Actions**: Providing [actionable insight](https://learn.microsoft.com/purview/data-estate-health-actions#available-actions) and notifications for steps you can take to improve data health and governance across your data estate.
 - **Reports**: A set of [out-of-box](https://learn.microsoft.com/purview/data-health-reports#currently-available-reports) reporting supporting deeper analysis on the health of your data estate.
 
@@ -27,7 +27,7 @@ By having this toolset available, focus can be placed on the need to have a more
 
 ## Task 1: Understand the Health Management Controls
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 15 minutes
 
@@ -74,7 +74,7 @@ Clicking on the arrow next to a Control Group, expands the list of Controls with
 
 ## Task 2: Updating Health Controls and thresholds
 
-> Microsoft Purview Solution: Data Catalog Health Controls
+> Microsoft Purview Solution: Unified Catalog Health Controls
 
 **⏰ Duration:** 15 minutes
 
@@ -123,7 +123,7 @@ The thresholds tab enables you to configure how the health status will be displa
 
 ## Task 3: Health Control Rules
 
-> Microsoft Purview Solution: Data Catalog Health Management
+> Microsoft Purview Solution: Unified Catalog Health Management
 
 **⏰ Duration:** 15 minutes
 
@@ -152,7 +152,7 @@ The example shown in this screenshot is a rule for "Self-serve access enablement
 
 ### Exercise: Update and Create Health Control Rules
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 25 minutes
 

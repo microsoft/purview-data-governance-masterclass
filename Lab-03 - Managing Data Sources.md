@@ -8,7 +8,7 @@
 
 **⏰ Duration:** 30 minutes
 
-**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Data Catalogue.
+**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Unified Catalog.
 
 ### Why register Data Sources?
 
@@ -45,7 +45,7 @@ Once registered, your data map needs to be populated with information. This done
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
 
-**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Data Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains.
+**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Unified Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains.
 
 - More [best practices](https://learn.microsoft.com/purview/concept-best-practices-domains-and-gov-domains) can be found in the Purview documentation.
 
@@ -165,6 +165,8 @@ An example of a custom classification would be a specifically formatted Invoice 
    - Leave the state as 'Enabled'.
    - Select the type, we will leave it at Regular Expression.
 
+   ![Create Classification Rule](/assets/new-classification-rule.png)
+
    Select 'Continue'.
 
 3. Now we can go ahead and configure our regular expression. Either do so by following the prompt to upload sample data or supplying your own regex pattern.
@@ -175,11 +177,18 @@ An example of a custom classification would be a specifically formatted Invoice 
      **✨ Pro Tip:** The suggested value is 60%. Note: If you specify multiple data patterns, this setting will be disabled, and the value will be fixed at 60%.</br>
 
    - You may decide to specify a pattern for the column name as well, this ensures that your rule will only apply to columns with a specific pattern, rather than any column in a dataset.
-   - Click 'Create' to confirm your classification rule.
+
+   ![Test Classification Rule](assets/test-classification-rule.png)
+
+   Click 'Create' to confirm your classification rule.
 
 You may decide to revise the Scan Rule Sets from task 3 to include your new custom classification.
 
-## Task 5: Understanding Integration Runtimes (optional)
+**✨ Pro Tip:** If you delete a classification rule in the future, you have options to determine what should happen in areas throughout your catalog where this classification is currently applied.
+
+![Delete Classification Rule](assets/delete-classification-rule.png)
+
+## Task 5: Understanding Integration Runtimes
 
 > Microsoft Purview Solution: Data Map
 
@@ -211,7 +220,7 @@ You can choose between:
 
 **🫂 Team Activity:** [10 minutes] Review the integration runtimes available in Purview and discuss which runtimes are best suited to your organization's needs.
 
-## Task 6: Monitoring (optional)
+## Task 6: Monitoring
 
 > Microsoft Purview Solution: Data Map
 

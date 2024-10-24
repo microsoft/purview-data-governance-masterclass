@@ -4,7 +4,7 @@
 
 ## Task 1: Creating OKRs
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 

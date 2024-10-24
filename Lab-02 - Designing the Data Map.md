@@ -137,8 +137,6 @@ Data Lineage represents the lifecycle of an organization's data, tracing its ori
 
 Understanding the lineage of data assets is important for troubleshooting data pipelines, data quality analysis, compliance, and impact analysis. It illustrates how data moves from source to destination, including the transformations and business rules applied.
 
-<!-- TODO: Update with latest lineage UI -->
-
 ![Asset Lineage](./assets/asset-lineage.png)
 
 **Types of Lineage:**
