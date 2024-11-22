@@ -60,9 +60,9 @@ Next cover the Industry Challenges and an Introduction to Microsoft Purview.
 At a summary level - Purview Data Governance contains two main components:
 
 - The Data Map – technical metadata and lineage from source are ingested and structured via the logical constructs of Domains & Collections.
-- The Data Catalog - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map.
+- The Unified Catalog - organizing, annotating, and publishing data, so that its accessible and understood by end-users, reflecting enterprise terminology and context. The abstraction of “data products” provide the linkage to the technical metadata and lineage from the data map.
 
-![Purview Overview](./assets/purview_summary.png)
+![Purview Overview](./assets/purview-summary.png)
 
 _Provide a overview of the Cloud Adoption Framework for Data Governance:_
 

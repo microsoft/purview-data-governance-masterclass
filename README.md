@@ -26,7 +26,7 @@ This masterclass is designed for: Data Stewards, Data Governance Managers, Domai
 
 ## 📋 Attendee Pre-requisites
 
-Each attendee should have access to the Purview portal at [purview.microsoft.com](https://purview.microsoft.com) and be granted permission to administer the Data Catalog (either temporarily or permanently) for the purpose of this workshop.
+Each attendee should have access to the Purview portal at [purview.microsoft.com](https://purview.microsoft.com) and be granted permission to administer the Unified Catalog (either temporarily or permanently) for the purpose of this workshop.
 If interested in loading existing business glossaries, the attendee should bring their business glossaries in an Excel spreadsheet to be loaded into Purview.
 
 ### Pre-reqs and Implications of Practical Exercises
@@ -71,7 +71,7 @@ The following is a suggested agenda for an action-packed 1 or 3-day workshop:
 Throughout this masterclass, you will interact with the following Microsoft Purview solutions:
 
 - Data Map
-- Data Catalog
+- Unified Catalog
 - Information Protection
 - Audit
 - Settings

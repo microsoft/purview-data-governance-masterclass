@@ -10,7 +10,7 @@
 
 In the sections on Health Management Controls (covered in [Lab 08](./Lab-08%20-%20Health%20Management%20Controls.md)) and Data Quality Management (covered in [Lab 09](./Lab-09%20-%20Data%20Quality%20Management.md)), we looked at how to configure the rules that determine the quality score of each of your health controls. In this section we will focus on the Data Estate Health Actions and how to use these to improve the overall health score of your data estate.
 
-Purview's Health Actions correspond to the checks made to calculate a data product's Health Control score. Addressing these actions raises your health score and promotes an overall more useable and discoverable data catalog.
+Purview's Health Actions correspond to the checks made to calculate a data product's Health Control score. Addressing these actions raises your health score and promotes an overall more useable and discoverable catalog.
 
 Actions can be assigned to individuals or teams and tracked to completion.
 
@@ -21,7 +21,7 @@ Actions can be assigned to individuals or teams and tracked to completion.
 
 ## Task 1: Understand the Health Management Dashboard
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 15 minutes
 

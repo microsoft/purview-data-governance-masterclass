@@ -8,7 +8,7 @@
 
 **⏰ Duration:** 30 minutes
 
-**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Data Catalogue.
+**🎯 Outcome:** At the end of this task you will have registered a series of data sources in the Data Map. These can then be scanned, bringing in source - technical metadata, which in turn can be available to end-users via the Unified Catalog.
 
 ### Why register Data Sources?
 
@@ -45,7 +45,7 @@ Once registered, your data map needs to be populated with information. This done
 - Navigate to the data source overview and observe the registration date, collection path, source hierarchy.
 - Should the data source be enabled for automated data access policy enforcement? (access policies will be set up in subsequent tasks)
 
-**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Data Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains.
+**✨ Pro Tip:** Because a data source can only be registered once, in cases where the data source is shared across Unified Catalog - [Governance domains](https://learn.microsoft.com/purview/what-is-data-catalog#governance-domains), it may make sense to lift the registration into a parent collection shared by both governance domains.
 
 - More [best practices](https://learn.microsoft.com/purview/concept-best-practices-domains-and-gov-domains) can be found in the Purview documentation.
 
@@ -184,7 +184,7 @@ An example of a custom classification would be a specifically formatted Invoice 
 
 You may decide to revise the Scan Rule Sets from task 3 to include your new custom classification.
 
-**✨ Pro Tip:** If you delete a classification rule in the future, you have options to determine what should happen in areas throughout your data catalog where this classification is currently applied.
+**✨ Pro Tip:** If you delete a classification rule in the future, you have options to determine what should happen in areas throughout your catalog where this classification is currently applied.
 
 ![Delete Classification Rule](assets/delete-classification-rule.png)
 

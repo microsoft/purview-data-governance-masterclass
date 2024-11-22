@@ -16,7 +16,7 @@ Let's delve into the built-in reports provided by Purview to monitor and manage 
 
 ## Task 1: Exploring Data Health Reports
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 15 minutes
 
@@ -37,7 +37,7 @@ The reports are as follows:
 
 - **Classic catalog adoption**
 
-  The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Data Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
+  The purpose of the Classic Catalog Adoption Report in Microsoft Purview is to provide administrators with insights into the usage and adoption of the Microsoft Purview Unified Catalog, helping them understand user activity, search behavior, feature utilization, and asset engagement.
 
 - **Classic classifications**
 

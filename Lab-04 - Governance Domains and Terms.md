@@ -4,7 +4,7 @@
 
 ## Task 1: Creating Governance Domains
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -49,13 +49,13 @@ Each team will briefly present their design back to the group. Once all teams ha
 
 You will expand on this master diagram as you continue through this course.
 
-**✍️ Do in Purview:** [10 minutes] Using your master diagram, transfer your governance domains, descriptions, owners etc into the Data Catalog solution. You will build on these going forward. You can mark them as '[draft](https://learn.microsoft.com/purview/how-to-create-manage-governance-domains#:~:text=governance%20domain%20until%20its%20status%20is%20set%20to%20Published)' to avoid them being visible to business users until you are ready to publish.
+**✍️ Do in Purview:** [10 minutes] Using your master diagram, transfer your governance domains, descriptions, owners etc into the Unified Catalog solution. You will build on these going forward. You can mark them as '[draft](https://learn.microsoft.com/purview/how-to-create-manage-governance-domains#:~:text=governance%20domain%20until%20its%20status%20is%20set%20to%20Published)' to avoid them being visible to business users until you are ready to publish.
 
 ![Create Governance Domain](assets/create-governance-domain.png)
 
 ## Task 2: Map Governance Domains to Data Map Collections
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **🎯 Outcome:** At the end of this task, you will have scoped your governance domains to a subset of collections from your Data Map.
 
@@ -65,7 +65,7 @@ Governance domains may change frequently as your organization evolves or adopts 
 
 This link (mapping to Data Map - Collections) is crucial for ensuring that data assets are managed and governed effectively. By mapping Governance domains to Data Map - Collections, you can ensure that the right people are responsible for, and the right policies applied to, the correct data assets.
 
-**🫂 Team Activity:** [5 minutes] As a group, discuss the relationship between the Data Map's Collections and the Data Catalog's Governance domains.
+**🫂 Team Activity:** [5 minutes] As a group, discuss the relationship between the Data Map's Collections and the Unified Catalog's Governance domains.
 
 - For a given Governance domain, which Collection hierarchies would you expect to be linked?
 - What are the key data assets that would be included in this Governance domain?
@@ -74,7 +74,7 @@ This link (mapping to Data Map - Collections) is crucial for ensuring that data 
 
 ## Task 3: Create Governance Domain Terms (Glossary Terms)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 10 minutes
 
@@ -104,7 +104,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 - Where do new starters go to get familiar with your glossary today?
 - Do you have one or more large spreadsheet(s) of terminology?
 - Are you using a SharePoint site to let users discover business terms?
-- How beneficial would it be to co-locate the business glossary with a centralised data governance tooling?
+- How beneficial would it be to co-locate the business glossary with a centralized data governance tooling?
 
 **✍️ Do in Purview:** [5 minutes] Create new terms for Governance Domains of your choosing and note the 'steward' and 'expert' fields where you can assign a respective colleague.
 
@@ -114,7 +114,7 @@ Data Governance scalability is achieved by transforming previously static glossa
 
 ## Task 4: Browse the Enterprise Glossary
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 5 minutes
 

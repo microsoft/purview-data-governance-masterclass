@@ -4,7 +4,7 @@
 
 ## Task 1: Curating Data Assets
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -42,7 +42,7 @@ With basic curation, the asset can be transformed into something much more usefu
 - Are experts and owners assigned?
 - Do we need to add any relevant tags to the asset to assist in its discovery?
 
-**_NB_**: the Asset Ratings & Comment Feature available for each asset. Any Reader of the Data Catalog can contribute these ratings and comments. This is a great feature to engage the business, allowing them to provide feedback on the data assets. It is important not to confuse this metric with an asset's [data quality](https://learn.microsoft.com/purview/data-quality-overview), which we will cover in a [future lab](/Lab-08%20-%20Data%20Quality%20Management.md).
+**_NB_**: the Asset Ratings & Comment Feature available for each asset. Any Data Map - Collection Data Reader can contribute these ratings and comments. This is a great feature to engage the business, allowing them to provide feedback on the data assets. It is important not to confuse this metric with an asset's [data quality](https://learn.microsoft.com/purview/data-quality-overview), which we will cover in a [future lab](/Lab-08%20-%20Data%20Quality%20Management.md).
 
 ![Asset Rating Flyout](assets/asset-rating-flyout.png)
 
@@ -59,17 +59,17 @@ At the end of the curation process, switch to the asset's History tab, and revie
 
 ## Task 2: Browse and Discover Data Assets
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 5 minutes
 
-**🎯 Outcome:** At the end of this task, you have understood the Data Catalog's Data search experience.
+**🎯 Outcome:** At the end of this task, you have understood the Unified Catalog's Data search experience.
 
 ### Exercise: Browsing and Discovering Data Assets
 
-With several data assets now curated, it is time to browse and discover these in the Data Catalog. This will help us understand how they are organized and presented to end users.
+With several data assets now curated, it is time to browse and discover these in the Unified Catalog. This will help us understand how they are organized and presented to end users.
 
-**✍️ Do in Purview:** [5 minutes] Navigate to the Data Catalog and browse through the curated data assets by heading to **Data search**. Use the search bar to find assets by name, description, or tags. Use the filters to narrow down the search results by classification, glossary terms, and more.
+**✍️ Do in Purview:** [5 minutes] Navigate to the Unified Catalog and browse through the curated data assets by heading to **Data search**. Use the search bar to find assets by name, description, or tags. Use the filters to narrow down the search results by classification, glossary terms, and more.
 
 **✨ Pro Tip:** You may see different assets to your colleagues based on your assigned roles and permissions at the Data Map collection into which the data source system scan indexed your assets, or the status of the Governance Domain to which the asset belongs.
 

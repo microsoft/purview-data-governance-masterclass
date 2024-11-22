@@ -4,7 +4,7 @@
 
 ## Task 1: Introduction to Data Quality
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -66,7 +66,7 @@ To assign permissions to a user or group, follow these steps:
 
 ## Task 3: Data Quality Connection Configuration (Step 5 to 6)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -107,7 +107,7 @@ To configure the data source connections for Data Quality, follow the steps belo
 
 ## Task 3: Configure and Run Profiling (Step 7)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -133,7 +133,7 @@ Follow the steps in the following tutorial to configure and run profiling: [Conf
 
 ## Task 4: Creating and Managing Data Quality Rules (Step 8 to 10)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
@@ -178,7 +178,7 @@ Go ahead and create a couple of data quality rules using the instructions in the
 
 ## Task 5: Schedule Data Quality Scans (Step 11)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 10 minutes
 
@@ -195,7 +195,7 @@ Follow the steps in the following tutorial to schedule a data quality scan: [Sch
 
 ## Task 6: Monitor Data Quality Scans (Step 12)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 10 minutes
 
@@ -216,7 +216,7 @@ This screen defaults to the Governance domain you clicked on but provides a drop
 
 ## Task 7: Improve Data Quality (Step 13 to 15)
 
-> Microsoft Purview Solution: Data Catalog
+> Microsoft Purview Solution: Unified Catalog
 
 **⏰ Duration:** 20 minutes
 
