@@ -68,9 +68,15 @@ A Data Governance Processing Unit (DGPU) equates to 60 minutes of data managemen
 | Data Health Management | Standard | $60 per Data Governance Processing Unit  | Up to 16 |
 | Data Health Management | Advanced | $240 per Data Governance Processing Unit | Up to 32 |
 
+Some activities such as Purview introspecting its own metadata store to evaluate health controls, publish metrics into an externally connected Azure Data Lake Gen2 (or Microsoft Fabric OneLake), or assigning health actions do not require higher levels of compute to execute. These activities will always run in the **Basic** SKU.
+
+Other activities such as executing data quality rules and profiling data, will benefit from a higher SKU to run faster and in parallel. The **Standard** SKU is recommended for most organizations. This information is also conveyed in Purview's Unified Catalog Settings (see screenshot below).
+
 #### Switching Between SKUs/Tiers
 
-All deployments of Microsoft Purview default to the **Basic** tier. Coming soon, your Data Governance Administrator (role) will be able to change this tier at any time via the Purview Settings page. All data management rules for Data Quality and Data Estate Health will run on a single SKU as a pool of compute.
+All deployments of Microsoft Purview default to the **Basic** tier. Your Data Governance Administrator (role) will be able to change this tier at any time via the Purview Settings page. All data management rules for Data Quality and Data Estate Health will run on a single SKU as a pool of compute.
+
+![Unified Catalog SKU Selector](./assets/unified-catalog-sku-selector.png)
 
 #### Examples in Practice
 
