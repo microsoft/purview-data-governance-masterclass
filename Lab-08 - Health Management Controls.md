@@ -19,6 +19,8 @@ The purpose of Purview's [Health Management](https://learn.microsoft.com/en-us/p
 Purview's Data Health Management capability has four components:
 
 - **Controls**: [Controls](https://learn.microsoft.com/purview/data-estate-health#controls) are a metric-based rules set at the global level, executed at the grain of the Governance domains. This enables the evaluation and audit of data health, aligned to industry and enterprise recognized standards.
+Controls are how you maintain consistency accross all of your governance domains. While the federates are able to manage their own governance domains, the controls are managed at the global level. 
+
 - **Data Quality**: A set of [configurable processes](https://learn.microsoft.com/purview/data-quality-overview#data-quality-features) which can provide data profiling, data quality scanning and scoring technical metadata, along with alerting into the Data Catalog.
 - **Actions**: Providing [actionable insight](https://learn.microsoft.com/purview/data-estate-health-actions#available-actions) and notifications for steps you can take to improve data health and governance across your data estate.
 - **Reports**: A set of [out-of-box](https://learn.microsoft.com/purview/data-health-reports#currently-available-reports) reporting supporting deeper analysis on the health of your data estate.
