@@ -2,13 +2,15 @@
 
 # Microsoft Purview Data Governance End-to-End
 
-> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) and [Minette Steynberg](https://www.linkedin.com/in/msteynberg) Data & AI Cloud Solution Architects, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations who have existing workloads and are looking to [migrate to the new Purview experience](https://learn.microsoft.com/en-us/purview/new-governance-experience#how-can-you-use-our-new-experience) may do so by following the supported migration paths, old concepts are however not covered by this guide.
+> **Disclaimer:** This guide was created by [Olaf Wrieden](https://www.linkedin.com/in/olafwrieden) and [Minette Steynberg](https://www.linkedin.com/in/msteynberg) Data & AI Cloud Solution Architects, to collate guidance, information, and best practices to support conversations and workshops. It is tailored to assist you in starting a new Microsoft Purview Data Governance implementation from scratch. Organizations with existing workloads looking to [migrate to the new Purview experience](https://learn.microsoft.com/en-us/purview/new-governance-experience#how-can-you-use-our-new-experience) may do so by following the supported migration paths, old concepts are not covered by this guide.
 
 ## 🤷🏼 Purpose
 
 This masterclass is designed to educate attendees on the end-to-end implementation of Microsoft Purview Data Governance in a "zero-to-hero"-style of approach. It assumes attendees know nothing about Purview or its functionality, but have defined a set of data governance requirements.
 
 This masterclass is split into multiple labs, each with its own objectives. At the end of this masterclass, participants will be equipped with a better understanding and functional knowledge to continue an implementation of data governance throughout their organization. This masterclass focuses on part conversation, part hands-on configuration in the Purview portal - with best practices and valuable take-aways throughout.
+
+🛣️ **Roadmap:** [Discover what's new and what's coming](https://learn.microsoft.com/en-us/purview/whats-new) in Microsoft Purview.
 
 ## 🗺️ Content Navigation
 

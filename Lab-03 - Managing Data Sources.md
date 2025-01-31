@@ -34,7 +34,7 @@ As such, data sources are typically registered once by a central IT team or usin
 - Do you have any data sources that are not on the supported list? </br>
   **_NB_** - We caution against custom/bespoke integrations, due to the Product Manager responsibilities this creates across the full product lifecycle for customers.
 
-**✨ Pro Tip:** - Purview regularly updates its published [roadmap](https://learn.microsoft.com/purview/whats-new#whats-planned-for-microsoft-purview), which includes the planned data source connector work.
+**✨ Pro Tip:** Purview regularly updates its published [roadmap](https://learn.microsoft.com/purview/whats-new#whats-planned-for-microsoft-purview), which includes the planned data source connector work.
 
 **✍️ Do in Purview:** [15 minutes] Using the Data Map solution, 'Register' a data source by following the wizard. Be sure to select the domain and collection name into which this data source should be registered. You should be confident on your collection hierarchy before continuing.
 
@@ -64,6 +64,10 @@ After registering your source, you can move it to another collection within the 
 ### Exercise: Scanning a Data Source
 
 **🫂 Team Activity:** [10 minutes] Purview scans technical metadata, based upon a sample a set number of rows (not the entire database or file). Discuss the frequency at which it makes sense to scan each data source.
+
+Since the new Purview pricing model was introduced in January 2025, there is no longer a compute cost associated with scanning data sources. This means that you can scan data sources as frequently as you like without incurring additional costs in Purview. However, scanning data sources will still consume networking resources outside Microsoft Purview.
+
+Good scanning design practices remain important, here are some questions to consider:
 
 - How often do data source schemas evolve?
 - What data lake layers make sense to be included in a scan? i.e. Do we need to scan raw zones in a data lake when we expect this data to be transformed by business processes prior to becoming "useful" throughout our organization?
